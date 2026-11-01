@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>About PTK | PT. Pirngadi Teberau Karya</title>
+<meta name="description" content="Learn about PT. Pirngadi Teberau Karya and our expertise in software licensing, IT solutions and engineering product procurement for organizations in Indonesia.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+      :root {
+        --navy: #1e2226;
+        --blue: #9b1c20;
+        --bg: #fff;
+        --soft: #f5f3f3;
+        --ink: #1e2226;
+        --mute: #5a6066;
+        --line: #dedada;
+        --card: #fff;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #14171a;
+          --soft: #1b1f23;
+          --ink: #eceeef;
+          --mute: #a4abb1;
+          --line: #2f353a;
+          --card: #1d2125;
+          --blue: #e0575b
+        }
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #14171a;
+        --soft: #1b1f23;
+        --ink: #eceeef;
+        --mute: #a4abb1;
+        --line: #2f353a;
+        --card: #1d2125;
+        --blue: #e0575b
+      }
+
+      html {
+        scroll-padding-top: 90px;
+        scroll-behavior: smooth
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 400 17px/1.55 "Source Sans 3", system-ui, Arial, sans-serif
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px
+      }
+
+      .util {
+        background: var(--navy);
+        color: #d3d6d9;
+        font-size: 14px
+      }
+
+      .util .wrap {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        flex-wrap: wrap
+      }
+
+      header {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        z-index: 5
+      }
+
+      header .wrap {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        height: 72px
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--navy);
+        line-height: 1.1
+      }
+
+      .logo img {
+        width: 44px;
+        height: 44px;
+        display: block
+      }
+
+      .logo small {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--mute)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) .logo {
+          color: #fff
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        flex: 1
+      }
+
+      nav a {
+        padding: 24px 0;
+        border-bottom: 3px solid transparent
+      }
+
+      nav a:hover {
+        border-color: var(--blue)
+      }
+
+      .navy {
+        background: var(--navy);
+        color: #fff
+      }
+
+      .navy .lead,
+      .navy .steps span {
+        color: #d3d6d9
+      }
+
+      .navy .steps div {
+        border-color: #e0575b
+      }
+
+      .navy .steps div::before {
+        color: #f0a3a5
+      }
+
+      .hero .btn:not(.ghost),
+      .band .btn {
+        background: #fff;
+        color: var(--navy)
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--blue);
+        color: #fff;
+        font: 700 16px "Source Sans 3", sans-serif;
+        padding: 13px 26px;
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border: 2px solid #fff
+      }
+
+      .btn.sm {
+        padding: 10px 20px
+      }
+
+      .hero {
+        background: radial-gradient(900px 420px at 85% 10%, #9b1c20 0%, rgba(155, 28, 32, 0) 70%), linear-gradient(135deg, #14171a 0%, #1e2226 60%, #2a1618 100%);
+        color: #fff;
+        padding: 96px 0 88px
+      }
+
+      h1 {
+        font-size: clamp(36px, 5.2vw, 60px);
+        line-height: 1.04;
+        margin: 0 0 20px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        max-width: 15em
+      }
+
+      .hero p {
+        font-size: 20px;
+        color: #d3d6d9;
+        max-width: 38em;
+        margin: 0 0 32px
+      }
+
+      .cta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap
+      }
+
+      .trust {
+        background: #9b1c20;
+        color: #fff
+      }
+
+      .trust .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 36px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-weight: 600;
+        font-size: 15px
+      }
+
+      .trust span::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-right: 10px
+      }
+
+      section {
+        padding: 80px 0
+      }
+
+      .soft {
+        background: var(--soft)
+      }
+
+      h2.t {
+        font-size: clamp(28px, 3.4vw, 40px);
+        line-height: 1.12;
+        margin: 0 0 12px;
+        letter-spacing: -.5px;
+        font-weight: 800
+      }
+
+      .lead {
+        color: var(--mute);
+        max-width: 42em;
+        margin: 0 0 36px
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 20px
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--mute);
+        font-size: 16px
+      }
+
+      .card .ex {
+        font-size: 15px;
+        color: var(--ink)
+      }
+
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+      }
+
+      .chips button {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        padding: 9px 16px;
+        font: 600 15px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        border-radius: 20px
+      }
+
+      .chips button[aria-pressed="true"] {
+        background: var(--blue);
+        border-color: var(--blue);
+        color: #fff
+      }
+
+      .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap
+      }
+
+      .tags i {
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 600;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        padding: 2px 8px
+      }
+
+      .card .q {
+        margin-top: auto;
+        padding-top: 10px;
+        background: none;
+        border: 0;
+        text-align: left;
+        color: var(--blue);
+        font: 700 16px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        padding-left: 0
+      }
+
+      .brands {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 14px
+      }
+
+      .brands div {
+        height: 84px;
+        background: #fff;
+        border: 1px solid var(--line);
+        display: grid;
+        place-items: center;
+        color: #1b2230;
+        font-weight: 800;
+        font-size: 18px
+      }
+
+      .note {
+        color: var(--mute);
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 56em
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        counter-reset: s
+      }
+
+      .steps div {
+        border-top: 4px solid var(--blue);
+        padding: 16px 16px 0 0;
+        counter-increment: s
+      }
+
+      .steps div::before {
+        content: counter(s);
+        font-weight: 800;
+        color: var(--blue);
+        font-size: 20px;
+        display: block
+      }
+
+      .steps b {
+        display: block;
+        margin-bottom: 4px
+      }
+
+      .steps span {
+        color: var(--mute);
+        font-size: 15px
+      }
+
+      form.rq {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 24px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-top: 5px solid var(--blue);
+        padding: 32px
+      }
+
+      form.rq label {
+        font-weight: 600;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px
+      }
+
+      form.rq input,
+      form.rq select,
+      form.rq textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid var(--line);
+        background: var(--bg);
+        color: var(--ink);
+        font: inherit
+      }
+
+      form.rq .full {
+        grid-column: 1/-1
+      }
+
+      #ok {
+        display: none;
+        padding: 14px;
+        background: var(--soft);
+        border-left: 4px solid var(--blue);
+        font-weight: 600
+      }
+
+      footer {
+        background: var(--navy);
+        color: #d3d6d9;
+        padding: 56px 0 32px;
+        font-size: 15px
+      }
+
+      footer .wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 40px
+      }
+
+      footer h4 {
+        color: #fff;
+        margin: 0 0 12px;
+        font-size: 16px
+      }
+
+      footer a {
+        display: block;
+        padding: 3px 0
+      }
+
+      footer .copy {
+        grid-column: 1/-1;
+        border-top: 1px solid #3a4147;
+        padding-top: 20px;
+        font-size: 13px
+      }
+
+      @media (max-width:900px) {
+        nav {
+          display: none
+        }
+
+        header .wrap {
+          justify-content: space-between
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr
+        }
+
+        .brands {
+          grid-template-columns: repeat(3, 1fr)
+        }
+
+        .steps {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px
+        }
+
+        form.rq,
+        footer .wrap {
+          grid-template-columns: 1fr
+        }
+      }
+
+      @media (max-width:560px) {
+        .grid {
+          grid-template-columns: 1fr
+        }
+
+        .hero {
+          padding: 56px 0
+        }
+
+        section {
+          padding: 56px 0
+        }
+
+        .brands {
+          grid-template-columns: 1fr 1fr
+        }
+
+        .steps {
+          grid-template-columns: 1fr
+        }
+      }
+    </style>
+<style>
+      /* Visual implementation aligned with the PTK design concept. Content and behaviour below remain unchanged. */
+      :root, :root[data-theme="dark"] { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; }
+      @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; } }
+      html { scroll-padding-top:86px; }
+      body { font:400 16px/1.65 Manrope,Arial,sans-serif; background:#fff; color:var(--ink); }
+      .wrap { max-width:1256px; padding-left:0; padding-right:0; }
+      .util { background:var(--soft); color:#696c70; font-size:12px; }
+      .util .wrap { min-height:0; padding-top:8px; padding-bottom:8px; justify-content:flex-end; gap:22px; }
+      .util a + a { border-left:1px solid var(--line); padding-left:22px; }
+      header { top:0; height:86px; border-bottom:1px solid var(--line); box-shadow:none; }
+      header .wrap { height:86px; gap:28px; }
+      .logo { color:var(--ink)!important; font-size:14px; line-height:1.25; letter-spacing:-.4px; }
+      .logo img { width:48px; height:48px; }
+      .logo small { font-size:9px; color:#74777b; letter-spacing:.1px; }
+      nav { margin-left:auto; gap:30px; flex:none; font-size:14px; font-weight:700; height:100%; }
+      nav a { display:flex; align-items:center; padding:0; border:0; position:relative; }
+      nav a.is-active:after { content:""; position:absolute; height:2px; width:25px; bottom:21px; left:0; background:var(--blue); }
+      nav a:hover { border:0; color:var(--blue); }
+      .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border-radius:5px; background:#b52228; font:800 14px Manrope,Arial,sans-serif; }
+      .btn.sm { padding:0 21px; margin-left:4px; }
+      .menu-btn { display:none; }
+      .hero { min-height:590px; padding:0; display:flex; align-items:center; position:relative; overflow:hidden; background-color:#000; background-image:linear-gradient(90deg,rgba(10,11,12,.16) 0%,rgba(10,11,12,.08) 48%,rgba(10,11,12,.28) 100%),url("img/Industrial Crimson Tech Assembly.png"); background-position:center, right center; background-size:cover, auto 100%; background-repeat:no-repeat; }
+      .hero:before, .hero:after { display:none; }
+      .hero .wrap { position:relative; z-index:1; width:100%; }
+      .hero h1 { max-width:670px; margin:0 0 23px; font-size:clamp(43px,5vw,65px); line-height:1.08; letter-spacing:-3px; font-weight:700; position:relative; }
+      .hero h1::before { content:"THE RIGHT SOLUTION STARTS HERE"; display:block; padding-left:47px; color:#e0e1e2; font-size:11px; line-height:1; letter-spacing:1.3px; font-weight:800; margin-bottom:23px; }
+      .hero h1::after { content:""; position:absolute; width:33px; height:3px; left:0; top:4px; background:#c92d33; }
+      .hero p { max-width:525px; font-size:16px; color:#c9cbcd; margin-bottom:30px; }
+      .hero .btn:not(.ghost) { background:#b52228; color:#fff; }
+      .btn.ghost { border:1px solid #616468; background:transparent; color:#fff; }
+      .cta { gap:14px; }
+      .trust { background:#242629; }
+      .trust .wrap { min-height:73px; display:grid; grid-template-columns:repeat(5,1fr); align-items:center; gap:0; padding:0; font-size:14px; font-weight:600; color:#dddfe0; }
+      .trust span { position:relative; display:flex; align-items:center; justify-content:center; text-align:center; white-space:nowrap; }
+      .trust span::before { content:""; position:absolute; left:0; top:50%; width:2px; height:14px; transform:translate(-50%,-50%); background:#cf3036; }
+      .trust span:first-child::before { display:none; }
+      section { padding:100px 0; }
+      h2.t { max-width:650px; margin:0 0 12px; font-size:clamp(31px,3.5vw,46px); line-height:1.12; letter-spacing:-2px; font-weight:700; }
+      .lead { max-width:650px; color:var(--mute); font-size:16px; margin-bottom:38px; }
+      .label { margin:0 0 12px; color:var(--blue); font-size:11px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; }
+      .solution-head { display:flex; align-items:end; justify-content:space-between; gap:30px; margin-bottom:38px; }
+      .solution-head h2 { max-width:600px; margin:0; font-size:clamp(31px,3.5vw,46px); font-weight:700; line-height:1.12; letter-spacing:-2px; }
+      .solution-head h2 span { color:#85888c; }
+      .solution-head > p { max-width:360px; margin:0; color:var(--mute); font-size:14px; }
+      .solutions { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+      article.solution { min-height:330px; padding:27px; display:flex; flex-direction:column; position:relative; border:1px solid var(--line); border-radius:5px; background:#fff; cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      article.solution.is-selected { border-top:3px solid var(--blue); border-color:var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .solution-icon { color:var(--blue); font-size:23px; line-height:1; }
+      .solution-number { position:absolute; top:27px; right:27px; color:#7d8084; font-size:12px; }
+      article.solution h3 { margin:22px 0 14px; font-size:23px; font-weight:700; line-height:1.12; letter-spacing:-1px; }
+      article.solution > p { margin:0 0 22px; color:var(--mute); font-size:14px; }
+      .solution-scope { padding-top:17px; border-top:1px solid var(--line); color:#73767b; font-size:12px; line-height:1.8; }
+      .solution-scope div::before { content:"+"; margin-right:8px; color:var(--blue); font-weight:800; }
+      .solution-link { margin-top:auto; padding-top:22px; color:var(--blue); font-size:13px; font-weight:800; }
+      .soft { background:var(--soft); }
+      .grid { gap:16px; }
+      .card { min-height:270px; padding:27px; border:1px solid var(--line); border-radius:5px; background:#fff; gap:12px; box-shadow:none; }
+      .card { cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      .card.is-selected { border-color:var(--blue); border-top:3px solid var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .card h3 { font-size:21px; line-height:1.16; letter-spacing:-.8px; }
+      .card p { font-size:14px; color:var(--mute); }
+      .card .ex { margin-top:auto; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:#777a7e; }
+      .chips { gap:0; margin-bottom:25px; border-bottom:1px solid var(--line); }
+      .chips button { border:0; border-bottom:2px solid transparent; border-radius:0; background:transparent; padding:0 0 13px; margin-right:28px; color:#4f5256; font:600 14px Manrope,Arial,sans-serif; }
+      .chips button[aria-pressed="true"] { border-color:var(--blue); background:transparent; color:var(--ink); }
+      #prod { grid-template-columns:repeat(4,1fr); }
+      #prod .card { min-height:270px; }
+      .tags i { border:0; background:transparent; color:#777a7e; padding:0; font-size:11px; }
+      .card .q { color:var(--blue); font:800 13px Manrope,Arial,sans-serif; }
+      .brands { gap:15px; }
+      .brands div { height:100px; border-radius:5px; color:var(--ink); font-size:15px; }
+      .brands img { display:block; width:132px; height:42px; object-fit:contain; object-position:center; }
+      .brands img.logo-large { width:160px; height:64px; }
+      .note { color:var(--mute); font-size:12px; }
+      .navy { background:#17191b; }
+      .navy .lead, .navy .steps span { color:#c8cacc; }
+      .steps div { border-top:2px solid #b52228; padding:16px 20px 0 0; }
+      .steps div::before { color:#d54247; font-size:18px; }
+      form.rq { border:0; border-top:3px solid var(--blue); padding:30px; background:#fff; gap:18px 24px; }
+      form.rq label { font:800 12px Manrope,Arial,sans-serif; }
+      form.rq input, form.rq select, form.rq textarea { padding:12px; border:0; border-bottom:1px solid #bfc2c5; border-radius:0; background:#fafafa; }
+      footer { background:#17191b; padding:57px 0 25px; font-size:13px; }
+      footer h4 { font:700 16px Manrope,Arial,sans-serif; }
+      footer .copy { border-color:#45474a; }
+      @media (max-width:1300px) { .wrap { width:calc(100% - 80px); } }
+      @media (max-width:960px) { .wrap { width:calc(100% - 48px); } header .wrap { justify-content:flex-start; position:relative; } .menu-btn { display:grid; place-items:center; margin-left:auto; width:42px; height:42px; padding:0; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--ink); font-size:21px; cursor:pointer; } nav, header .btn.sm { display:none; } nav.open { display:flex; position:absolute; top:72px; left:0; right:0; height:auto; flex-direction:column; gap:0; padding:12px 24px; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 12px 15px rgba(0,0,0,.08); } nav.open a { display:block; padding:12px 0; } nav.open a.is-active:after { display:none; } #prod { grid-template-columns:1fr 1fr; } }
+      @media (max-width:767px) { .wrap { width:calc(100% - 40px); } .util { display:none; } header,header .wrap { height:72px; } .hero { min-height:650px; align-items:flex-start; padding-top:68px; background-position:center, 65% center; } .hero h1 { font-size:41px; letter-spacing:-2px; } .hero h1::before { font-size:10px; margin-bottom:21px; } .hero h1::after { display:none; } .hero p { font-size:15px; } .cta { flex-direction:column; } .cta .btn { width:100%; } .trust .wrap { min-height:auto; padding:18px 0; display:grid; grid-template-columns:1fr 1fr; font-size:12px; } .trust span::before { display:none; } section { padding:60px 0; } .solution-head { display:block; margin-bottom:28px; } .solution-head h2 { margin-bottom:16px; } .solutions { grid-template-columns:1fr; } article.solution { min-height:0; } .grid,#prod { grid-template-columns:1fr; } .card { min-height:230px; } .brands { grid-template-columns:1fr 1fr; } .chips { overflow:auto; } .chips button { white-space:nowrap; } .steps { grid-template-columns:1fr; gap:20px; } form.rq { padding:25px; } footer .wrap { gap:25px; } }
+      @media (max-width:767px) {
+        .logo { gap:8px; font-size:11px; }
+        .logo img { width:40px; height:40px; }
+        .logo small { font-size:7px; }
+        .menu-btn { width:42px; height:42px; }
+        nav.open { top:72px; padding:10px 20px 14px; }
+        nav.open a { min-height:44px; display:flex; align-items:center; }
+        .hero { min-height:680px; padding-top:0; background-image:linear-gradient(180deg,rgba(10,11,12,.08) 0%,rgba(10,11,12,.15) 47%,rgba(10,11,12,.62) 100%),url("img/Industrial Crimson Tech Assembly.png"); background-position:center, 66% center; }
+        .hero .wrap { width:calc(100% - 40px); padding:61px 4px 0; }
+        .hero h1 { max-width:330px; font-size:clamp(38px,10.5vw,41px); line-height:1.1; margin-bottom:20px; }
+        .hero p { max-width:315px; margin-bottom:27px; line-height:1.7; }
+        .cta { gap:10px; max-width:350px; }
+        .cta .btn { min-height:50px; }
+        .trust .wrap { column-gap:18px; row-gap:10px; }
+        h2.t, .solution-head h2 { font-size:31px; letter-spacing:-1.4px; }
+        .lead { margin-bottom:28px; font-size:15px; }
+        article.solution { padding:25px; }
+        .solution-number { top:25px; right:25px; }
+        article.solution h3 { font-size:25px; }
+        .card { padding:24px; min-height:0; }
+        #prod .card { min-height:235px; }
+        .brands div { height:74px; font-size:12px; }
+        .brands img { width:112px; height:34px; }
+        .brands img.logo-large { width:128px; height:48px; }
+        form.rq { padding:24px 20px; }
+        footer { padding-top:45px; }
+      }
+    </style>
+<style>
+.about-hero{background:#17191b;color:white;min-height:560px;position:relative;overflow:hidden;display:flex;align-items:center;padding:90px 0}.about-hero .wrap{position:relative;z-index:1;width:100%}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#b52228;margin:0 0 24px}.about-hero .eyebrow{color:#e65c60}.about-hero h1{font-size:clamp(48px,6.5vw,86px);max-width:900px;letter-spacing:-4px;line-height:1.07;margin-bottom:26px}.about-hero h1 em{font-style:normal;color:#d7464b}.about-hero p:not(.eyebrow){color:#c5c7c9;max-width:610px;font-size:17px;margin-bottom:30px}.hero-mark{position:absolute;right:-45px;bottom:-155px;font-size:370px;line-height:1;font-weight:800;letter-spacing:-40px;color:rgba(255,255,255,.035);pointer-events:none}.hero-mark span{color:rgba(181,34,40,.18)}.about-strip{background:#a51e24;color:#fff}.about-strip .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:21px;padding-bottom:21px;font-size:12px;font-weight:800;letter-spacing:1.2px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}.intro h2,.vision h2,.industries h2,.approach h2,.expertise-section h2,.about-cta h2{font-size:clamp(36px,4.3vw,58px);line-height:1.13;letter-spacing:-2.5px;margin:0;font-weight:700}.intro h2 span{color:#8a8d91}.intro-grid p{color:#65696e}.intro-grid .intro-big{font-size:23px;color:#17191b;font-weight:700;line-height:1.45;margin-top:0}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.section-heading h2 span,.industries h2 span,.about-cta h2 span{color:#b52228}.section-heading p{max-width:360px;color:#6d7075;margin:0}.expertise-section{background:#f4f5f6}.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.expertise-grid article{background:white;border:1px solid #dee0e2;padding:32px;min-height:370px;display:flex;flex-direction:column}.num{font-size:11px;color:#85888b;letter-spacing:1px;font-weight:800}.glyph{font-size:44px;color:#b52228;margin:22px 0 12px}.expertise-grid h3{font-size:24px;line-height:1.2;letter-spacing:-1px;margin:0 0 15px}.expertise-grid p,.industry-grid p,.approach-grid p{font-size:14px;color:#6d7075}.expertise-grid a{margin-top:auto;color:#b52228;font-size:13px;font-weight:800}.vision{background:#17191b;color:white}.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.vision .muted{color:#aeb1b4;font-size:13px;margin-top:22px}.vision-items article{display:flex;gap:25px;padding:12px 0 32px;border-bottom:1px solid #46494c;margin-bottom:25px}.vision-items article>span{color:#e65c60;font-weight:800}.vision-items h3{margin:0 0 12px;font-size:23px}.vision-items p{color:#c2c5c8;margin:0;font-size:15px}.industries h2{margin-bottom:42px}.industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.industry-grid>div{border-top:2px solid #b52228;padding-top:20px}.industry-grid b{color:#b52228;font-size:13px}.industry-grid h3{font-size:21px;margin:25px 0 12px}.approach{background:#f4f5f6}.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.approach-grid strong{font-size:36px;color:#b52228}.approach-grid h3{font-size:19px;margin:20px 0 10px}.about-cta{background:#242629;color:white}.about-cta h2{margin-bottom:22px}.about-cta p:not(.eyebrow){max-width:530px;color:#c5c7c9;margin-bottom:28px}.about-cta .btn.ghost{background:transparent;border:1px solid #8c8f92;color:white}footer .wrap{width:calc(100% - 48px)}@media(max-width:800px){.intro-grid,.vision-grid{grid-template-columns:1fr;gap:30px}.expertise-grid{grid-template-columns:1fr}.industry-grid,.approach-grid{grid-template-columns:1fr 1fr}.section-heading{display:block}.section-heading p{margin-top:20px}.about-hero{min-height:540px}.hero-mark{font-size:220px;bottom:-80px;right:0;letter-spacing:-20px}}@media(max-width:560px){.about-hero h1{letter-spacing:-2px}.about-strip .wrap{flex-wrap:wrap;justify-content:flex-start;font-size:10px}.industry-grid,.approach-grid{grid-template-columns:1fr}.about-cta .cta{flex-direction:column}.about-hero{padding:65px 0}.hero-mark{font-size:150px}}
+</style><style>
+/* Shared strip dividers, matching the homepage separator dimensions. */
+.eng-strip .wrap,.about-strip .wrap{display:grid;grid-template-columns:repeat(var(--strip-columns),minmax(0,1fr));gap:0;align-items:center}
+.eng-strip{--strip-columns:6;--strip-divider:#cf3036}
+.about-strip{--strip-columns:3;--strip-divider:rgba(255,255,255,.75)}
+.eng-strip .wrap>span,.about-strip .wrap>span{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px;min-width:0}
+.eng-strip .wrap>span::before,.eng-strip .wrap>span:not(:first-child)::before,.about-strip .wrap>span::before{content:"";display:block;position:absolute;left:0;top:50%;width:2px;height:14px;transform:translate(-50%,-50%);background:var(--strip-divider);margin:0;border-radius:0}
+.eng-strip .wrap>span:first-child::before,.about-strip .wrap>span:first-child::before{display:none}
+@media(max-width:767px){
+.eng-strip .wrap,.about-strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+.eng-strip .wrap>span:nth-child(odd)::before,.about-strip .wrap>span:nth-child(odd)::before,.trust .wrap>span:nth-child(odd)::before{display:none}
+}
+</style>
+</head>
+<body id="top">
+<div class="util">
+<div class="wrap">
+<a href="#contact">Jakarta, Indonesia</a>
+<a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+<a href="request-quotation.html">Request quotation</a>
+</div>
+</div>
+<header>
+<div class="wrap">
+<a class="logo" href="home.html">
+<img alt="" height="44" src="data:image/png;base64,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" width="44"/>
+<span>PT. Pirngadi <br/>Teberau Karya <small>Software Licensing &amp; Engineering</small>
+</span>
+</a>
+<button aria-controls="mainnav" aria-expanded="false" aria-label="Open navigation" class="menu-btn" id="menu-btn" type="button">☰</button>
+<nav aria-label="Main navigation" id="mainnav">
+<a class="" href="home.html">Home</a>
+<a class="" href="home.html#solutions">Solutions</a>
+<a class="" href="home.html#featured">Products</a>
+<a class="is-active" href="about.html">About PTK</a>
+<a class="" href="#contact">Contact</a>
+</nav>
+<a class="btn sm" href="request-quotation.html">Request a quotation</a>
+</div>
+</header>
+<main><section class="about-hero"><div class="wrap"><p class="eyebrow">ABOUT OUR COMPANY</p><h1>Built on expertise.<br/><em>Driven by solutions.</em></h1><p>PT. Pirngadi Teberau Karya supports organizations with software licensing, IT solutions, and engineering products—helping teams source the tools and technologies that fit their needs.</p><a class="btn" href="#expertise">Discover our expertise ↗</a></div><div class="hero-mark">PTK<span>.</span></div></section>
+<div class="about-strip"><div class="wrap"><span>SOFTWARE LICENSING</span><span>IT &amp; INFRASTRUCTURE</span><span>ENGINEERING PRODUCTS</span></div></div>
+<section class="intro" id="about"><div class="wrap intro-grid"><div><p class="eyebrow">WHO WE ARE</p><h2>One partner.<br/><span>Multiple possibilities.</span></h2></div><div><p class="intro-big">Practical solutions for complex business requirements.</p><p>Based in Jakarta, Indonesia, PT. Pirngadi Teberau Karya provides software licenses and subscriptions, IT-related solutions, and engineering products for government institutions, enterprises, educational organizations, and nonprofits.</p><p>Our approach begins with understanding each customer's requirements, from product specifications and licensing models to procurement documentation and ongoing renewals.</p></div></div></section>
+<section class="expertise-section" id="expertise"><div class="wrap"><p class="eyebrow">WHAT WE DO</p><div class="section-heading"><h2>Three areas of expertise<span>.</span></h2><p>Connecting organizations with the technology and products they need to move forward.</p></div><div class="expertise-grid"><article><span class="num">01 / SOFTWARE</span><div class="glyph">⌘</div><h3>Software licensing</h3><p>Subscriptions, perpetual licenses, renewals, upgrades, and enterprise or volume licensing for professional software.</p><a href="software.html">Explore software ↗</a></article><article><span class="num">02 / TECHNOLOGY</span><div class="glyph">▤</div><h3>IT solutions &amp; infrastructure</h3><p>Cloud and hybrid infrastructure, security, digital workspace solutions, consulting, and managed services.</p><a href="it-solutions.html">Explore IT solutions ↗</a></article><article><span class="num">03 / INDUSTRY</span><div class="glyph">⌁</div><h3>Engineering products</h3><p>Electrical and control components, instrumentation, industrial equipment, weighing products, and replacement parts.</p><a href="engineering-products.html">Explore engineering ↗</a></article></div></div></section>
+<section class="vision"><div class="wrap vision-grid"><div><p class="eyebrow">HOW WE WORK</p><h2>Requirements first.<br/>Solutions that fit.</h2><p class="muted">We connect procurement needs with appropriate software, IT infrastructure, and engineering products, with a clear path from enquiry to quotation.</p></div><div class="vision-items"><article><span>01</span><div><h3>Specification-led sourcing</h3><p>We start with product specifications, licensing terms, quantities, and organizational requirements before discussing options.</p></div></article><article><span>02</span><div><h3>Procurement support</h3><p>Our scope includes quotations, procurement documentation, ordering coordination, delivery, and software renewal requirements.</p></div></article></div></div></section>
+<section class="industries"><div class="wrap"><p class="eyebrow">WHO WE SUPPORT</p><h2>Supporting diverse organizations<span>.</span></h2><div class="industry-grid"><div><b>01</b><h3>Government</h3><p>Software procurement and documentation aligned with institutional requirements.</p></div><div><b>02</b><h3>Enterprise</h3><p>Technology and engineering products for evolving operational needs.</p></div><div><b>03</b><h3>Education</h3><p>Licensing and technology tools for learning, teaching, and research.</p></div><div><b>04</b><h3>Nonprofit</h3><p>Product sourcing and licensing options appropriate to organizational needs.</p></div></div></div></section>
+<section class="approach"><div class="wrap"><p class="eyebrow">THE PTK APPROACH</p><div class="section-heading"><h2>A clear procurement process<span>.</span></h2><p>A straightforward, requirement-led approach from initial discussion through delivery and renewal.</p></div><div class="approach-grid"><article><strong>01</strong><h3>Understand the need</h3><p>We begin with your specifications, users, timelines, and procurement requirements.</p></article><article><strong>02</strong><h3>Find the right fit</h3><p>We help identify suitable licensing models, products, and sourcing options.</p></article><article><strong>03</strong><h3>Support the process</h3><p>We assist with quotations, documentation, ordering, and delivery coordination.</p></article><article><strong>04</strong><h3>Think beyond delivery</h3><p>We can support activation questions and planning for future renewals.</p></article></div></div></section>
+<section class="about-cta" id="enquiry"><div class="wrap"><p class="eyebrow">LET'S WORK TOGETHER</p><h2>Tell us what you<br/>need<span>?</span></h2><p>Tell us what your organization needs. Our team can help you explore the next step.</p><div class="cta"><a class="btn" href="mailto:info@pirngaditeberaukarya.com?subject=Inquiry%20for%20PTK">Get in touch ↗</a><a class="btn ghost" href="request-quotation.html">Request a quotation</a></div></div></section></main>
+<footer id="contact">
+<div class="wrap">
+<div>
+<h4>PT. Pirngadi Teberau Karya</h4>
+<p>Jalan Jaksa No. 7D, Kebon Sirih, Menteng, Jakarta Pusat, DKI Jakarta 10340</p>
+<a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+<a href="tel:+6282122167320">+62-82122167320</a>
+</div>
+<div>
+<h4>Company</h4>
+<a href="about.html">About us</a>
+<a href="software.html">Software</a>
+<a href="engineering-products.html">Engineering products</a>
+<a href="home.html#brands">Brands</a>
+</div>
+<div>
+<h4>Follow</h4>
+<a href="https://www.linkedin.com/company/pirngaditeberaukarya/">LinkedIn</a>
+<a href="https://wa.me/6285811151135">WhatsApp</a>
+</div>
+<div class="copy">© <span id="y">2026</span> PT. Pirngadi Teberau Karya. All rights reserved. Privacy policy · Terms of use </div>
+</div>
+</footer>
+
+<script>const menu=document.getElementById('menu-btn'),nav=document.getElementById('mainnav');menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});document.getElementById('y').textContent=new Date().getFullYear();</script></body>
+</html>

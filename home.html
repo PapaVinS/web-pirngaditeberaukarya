@@ -1,298 +1,1148 @@
-<!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PT. Pirngadi Teberau Karya — Enterprise Software Licensing & Engineering Product Catalog">
-<title>PTK — Software Licensing & Engineering Solutions</title>
-<style>
-:root{
-  --ink:#101318; --muted:#66707d; --line:#dfe3e8; --soft:#f5f6f8;
-  --accent:#e21b2d; --accent2:#b91527; --white:#fff; --dark:#151922;
-  --max:1240px; --radius:4px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
-a{color:inherit;text-decoration:none}
-.container{width:min(calc(100% - 40px),var(--max));margin:auto}
-.topbar{background:var(--dark);color:#fff;font-size:12px}
-.topbar .container{display:flex;justify-content:flex-end;gap:22px;padding:9px 0}
-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
-.nav{height:78px;display:flex;align-items:center;gap:38px}
-.logo{font-size:24px;font-weight:800;letter-spacing:-1px;white-space:nowrap}
-.logo span{color:var(--accent)}
-nav{display:flex;align-items:center;gap:26px;flex:1}
-nav a{font-size:14px;font-weight:700}
-nav a:hover{color:var(--accent)}
-.nav-cta{background:var(--accent);color:#fff!important;padding:13px 18px;border-radius:2px}
-.menu{display:none;background:none;border:0;font-size:26px}
-.hero{background:#f3f4f6;border-bottom:1px solid var(--line)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:590px}
-.hero-copy{padding:95px 40px 80px 0}
-.kicker{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
-h1{font-size:clamp(44px,5.7vw,76px);line-height:.98;letter-spacing:-3px;margin:0 0 26px;max-width:760px}
-.hero-copy p{font-size:20px;line-height:1.55;color:#414955;max-width:680px}
-.actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
-.btn{display:inline-block;padding:15px 21px;border:1px solid var(--ink);font-weight:800;font-size:13px}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.btn.secondary{background:#fff}
-.hero-panel{background:#191d26;color:#fff;display:flex;align-items:flex-end;padding:42px}
-.panel-inner{width:100%}
-.panel-title{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:#cbd0d8;font-weight:800}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:25px;background:#454a55}
-.stat{background:#191d26;padding:24px}
-.stat strong{display:block;font-size:36px;letter-spacing:-1px}
-.stat span{font-size:12px;color:#cbd0d8}
-.section{padding:90px 0}
-.section.alt{background:var(--soft)}
-.section-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;margin-bottom:38px}
-.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.8px;font-weight:800;color:var(--accent)}
-h2{font-size:42px;line-height:1.08;letter-spacing:-1.6px;margin:8px 0 0}
-.section-head p{max-width:540px;color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.card{border:1px solid var(--line);background:#fff;padding:24px;min-height:190px;transition:.2s}
-.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #1111}
-.card h3{margin:0 0 10px;font-size:19px}
-.card p{color:var(--muted);font-size:14px}
-.arrow{font-weight:800;color:var(--accent);font-size:13px}
-.principals{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.brand{background:#fff;min-height:115px;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;font-weight:800;font-size:17px}
-.brand small{display:block;color:#7b828c;font-size:10px;margin-top:5px;font-weight:500}
-.product-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
-select,.search{border:1px solid #cfd4da;background:#fff;padding:13px 14px;font-size:14px;min-width:190px}
-.search{flex:1;min-width:250px}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.product{border:1px solid var(--line);padding:24px;background:#fff}
-.product .brandtag{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--accent)}
-.product h3{font-size:21px;margin:7px 0}
-.product p{color:var(--muted);font-size:14px;min-height:64px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}
-.tag{font-size:10px;border:1px solid #d5d9de;padding:5px 7px;text-transform:uppercase;font-weight:700}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.darkbox{background:var(--dark);color:#fff;padding:55px}
-.darkbox h2{font-size:44px}
-.darkbox p{color:#c9ced6}
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}
-.check{border-top:1px solid #3e444e;padding-top:13px;font-size:14px}
-.catalog-note{margin-top:18px;font-size:12px;color:var(--muted)}
-footer{background:#11151c;color:#fff;padding:55px 0 25px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:35px}
-footer p,footer a{color:#aeb5bf;font-size:13px}
-footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1.4px}
-.copyright{border-top:1px solid #303640;margin-top:35px;padding-top:18px;color:#89919c;font-size:11px}
-.notice{font-size:11px;color:#7b838e;margin-top:18px}
-@media(max-width:980px){
-  nav{display:none}.menu{display:block;margin-left:auto}
-  .hero-grid,.split{grid-template-columns:1fr}
-  .hero-panel{min-height:360px}
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .products{grid-template-columns:repeat(2,1fr)}
-  .principals{grid-template-columns:repeat(3,1fr)}
-  .footer-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
-  .container{width:min(calc(100% - 28px),var(--max))}
-  .topbar .container{justify-content:center}
-  .hero-copy{padding:60px 0}
-  h1{letter-spacing:-2px}
-  .section{padding:60px 0}
-  .section-head{display:block}
-  .cards,.products,.principals{grid-template-columns:1fr}
-  .checks{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>PT. Pirngadi Teberau Karya | Software Licensing &amp; Engineering Solutions</title>
+<meta name="description" content="PT. Pirngadi Teberau Karya supplies enterprise software licensing, IT infrastructure and engineering products. Contact PTK for procurement support and quotations.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+    <style>
+      :root {
+        --navy: #1e2226;
+        --blue: #9b1c20;
+        --bg: #fff;
+        --soft: #f5f3f3;
+        --ink: #1e2226;
+        --mute: #5a6066;
+        --line: #dedada;
+        --card: #fff;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #14171a;
+          --soft: #1b1f23;
+          --ink: #eceeef;
+          --mute: #a4abb1;
+          --line: #2f353a;
+          --card: #1d2125;
+          --blue: #e0575b
+        }
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #14171a;
+        --soft: #1b1f23;
+        --ink: #eceeef;
+        --mute: #a4abb1;
+        --line: #2f353a;
+        --card: #1d2125;
+        --blue: #e0575b
+      }
+
+      html {
+        scroll-padding-top: 90px;
+        scroll-behavior: smooth
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 400 17px/1.55 "Source Sans 3", system-ui, Arial, sans-serif
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px
+      }
+
+      .util {
+        background: var(--navy);
+        color: #d3d6d9;
+        font-size: 14px
+      }
+
+      .util .wrap {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        flex-wrap: wrap
+      }
+
+      header {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        z-index: 5
+      }
+
+      header .wrap {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        height: 72px
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--navy);
+        line-height: 1.1
+      }
+
+      .logo img {
+        width: 44px;
+        height: 44px;
+        display: block
+      }
+
+      .logo small {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--mute)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) .logo {
+          color: #fff
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        flex: 1
+      }
+
+      nav a {
+        padding: 24px 0;
+        border-bottom: 3px solid transparent
+      }
+
+      nav a:hover {
+        border-color: var(--blue)
+      }
+
+      .navy {
+        background: var(--navy);
+        color: #fff
+      }
+
+      .navy .lead,
+      .navy .steps span {
+        color: #d3d6d9
+      }
+
+      .navy .steps div {
+        border-color: #e0575b
+      }
+
+      .navy .steps div::before {
+        color: #f0a3a5
+      }
+
+      .hero .btn:not(.ghost),
+      .band .btn {
+        background: #fff;
+        color: var(--navy)
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--blue);
+        color: #fff;
+        font: 700 16px "Source Sans 3", sans-serif;
+        padding: 13px 26px;
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border: 2px solid #fff
+      }
+
+      .btn.sm {
+        padding: 10px 20px
+      }
+
+      .hero {
+        background: radial-gradient(900px 420px at 85% 10%, #9b1c20 0%, rgba(155, 28, 32, 0) 70%), linear-gradient(135deg, #14171a 0%, #1e2226 60%, #2a1618 100%);
+        color: #fff;
+        padding: 96px 0 88px
+      }
+
+      h1 {
+        font-size: clamp(36px, 5.2vw, 60px);
+        line-height: 1.04;
+        margin: 0 0 20px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        max-width: 15em
+      }
+
+      .hero p {
+        font-size: 20px;
+        color: #d3d6d9;
+        max-width: 38em;
+        margin: 0 0 32px
+      }
+
+      .cta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap
+      }
+
+      .trust {
+        background: #9b1c20;
+        color: #fff
+      }
+
+      .trust .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 36px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-weight: 600;
+        font-size: 15px
+      }
+
+      .trust span::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        margin-right: 10px
+      }
+
+      section {
+        padding: 80px 0
+      }
+
+      .soft {
+        background: var(--soft)
+      }
+
+      h2.t {
+        font-size: clamp(28px, 3.4vw, 40px);
+        line-height: 1.12;
+        margin: 0 0 12px;
+        letter-spacing: -.5px;
+        font-weight: 800
+      }
+
+      .lead {
+        color: var(--mute);
+        max-width: 42em;
+        margin: 0 0 36px
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 20px
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--mute);
+        font-size: 16px
+      }
+
+      .card .ex {
+        font-size: 15px;
+        color: var(--ink)
+      }
+
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+      }
+
+      .chips button {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        padding: 9px 16px;
+        font: 600 15px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        border-radius: 20px
+      }
+
+      .chips button[aria-pressed="true"] {
+        background: var(--blue);
+        border-color: var(--blue);
+        color: #fff
+      }
+
+      .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap
+      }
+
+      .tags i {
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 600;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        padding: 2px 8px
+      }
+
+      .card .q {
+        margin-top: auto;
+        padding-top: 10px;
+        background: none;
+        border: 0;
+        text-align: left;
+        color: var(--blue);
+        font: 700 16px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        padding-left: 0
+      }
+
+      .brands {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 14px
+      }
+
+      .brands div {
+        height: 84px;
+        background: #fff;
+        border: 1px solid var(--line);
+        display: grid;
+        place-items: center;
+        color: #1b2230;
+        font-weight: 800;
+        font-size: 18px
+      }
+
+      .note {
+        color: var(--mute);
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 56em
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        counter-reset: s
+      }
+
+      .steps div {
+        border-top: 4px solid var(--blue);
+        padding: 16px 16px 0 0;
+        counter-increment: s
+      }
+
+      .steps div::before {
+        content: counter(s);
+        font-weight: 800;
+        color: var(--blue);
+        font-size: 20px;
+        display: block
+      }
+
+      .steps b {
+        display: block;
+        margin-bottom: 4px
+      }
+
+      .steps span {
+        color: var(--mute);
+        font-size: 15px
+      }
+
+      form.rq {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 24px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-top: 5px solid var(--blue);
+        padding: 32px
+      }
+
+      form.rq label {
+        font-weight: 600;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px
+      }
+
+      form.rq input,
+      form.rq select,
+      form.rq textarea {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid var(--line);
+        background: var(--bg);
+        color: var(--ink);
+        font: inherit
+      }
+
+      form.rq .full {
+        grid-column: 1/-1
+      }
+
+      #ok {
+        display: none;
+        padding: 14px;
+        background: var(--soft);
+        border-left: 4px solid var(--blue);
+        font-weight: 600
+      }
+
+      footer {
+        background: var(--navy);
+        color: #d3d6d9;
+        padding: 56px 0 32px;
+        font-size: 15px
+      }
+
+      footer .wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 40px
+      }
+
+      footer h4 {
+        color: #fff;
+        margin: 0 0 12px;
+        font-size: 16px
+      }
+
+      footer a {
+        display: block;
+        padding: 3px 0
+      }
+
+      footer .copy {
+        grid-column: 1/-1;
+        border-top: 1px solid #3a4147;
+        padding-top: 20px;
+        font-size: 13px
+      }
+
+      @media (max-width:900px) {
+        nav {
+          display: none
+        }
+
+        header .wrap {
+          justify-content: space-between
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr
+        }
+
+        .brands {
+          grid-template-columns: repeat(3, 1fr)
+        }
+
+        .steps {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px
+        }
+
+        form.rq,
+        footer .wrap {
+          grid-template-columns: 1fr
+        }
+      }
+
+      @media (max-width:560px) {
+        .grid {
+          grid-template-columns: 1fr
+        }
+
+        .hero {
+          padding: 56px 0
+        }
+
+        section {
+          padding: 56px 0
+        }
+
+        .brands {
+          grid-template-columns: 1fr 1fr
+        }
+
+        .steps {
+          grid-template-columns: 1fr
+        }
+      }
+    </style>
+    <style>
+      /* Visual implementation aligned with the PTK design concept. Content and behaviour below remain unchanged. */
+      :root, :root[data-theme="dark"] { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; }
+      @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; } }
+      html { scroll-padding-top:86px; }
+      body { font:400 16px/1.65 Manrope,Arial,sans-serif; background:#fff; color:var(--ink); }
+      .wrap { max-width:1256px; padding-left:0; padding-right:0; }
+      .util { background:var(--soft); color:#696c70; font-size:12px; }
+      .util .wrap { min-height:0; padding-top:8px; padding-bottom:8px; justify-content:flex-end; gap:22px; }
+      .util a + a { border-left:1px solid var(--line); padding-left:22px; }
+      header { top:0; height:86px; border-bottom:1px solid var(--line); box-shadow:none; }
+      header .wrap { height:86px; gap:28px; }
+      .logo { color:var(--ink)!important; font-size:14px; line-height:1.25; letter-spacing:-.4px; }
+      .logo img { width:48px; height:48px; }
+      .logo small { font-size:9px; color:#74777b; letter-spacing:.1px; }
+      nav { margin-left:auto; gap:30px; flex:none; font-size:14px; font-weight:700; height:100%; }
+      nav a { display:flex; align-items:center; padding:0; border:0; position:relative; }
+      nav a.is-active:after { content:""; position:absolute; height:2px; width:25px; bottom:21px; left:0; background:var(--blue); }
+      nav a:hover { border:0; color:var(--blue); }
+      .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border-radius:5px; background:#b52228; font:800 14px Manrope,Arial,sans-serif; }
+      .btn.sm { padding:0 21px; margin-left:4px; }
+      .menu-btn { display:none; }
+      .hero { min-height:590px; padding:0; display:flex; align-items:center; position:relative; overflow:hidden; background-color:#000; background-image:linear-gradient(90deg,rgba(10,11,12,.16) 0%,rgba(10,11,12,.08) 48%,rgba(10,11,12,.28) 100%),url("img/Industrial Crimson Tech Assembly.png"); background-position:center, right center; background-size:cover, auto 100%; background-repeat:no-repeat; }
+      .hero:before, .hero:after { display:none; }
+      .hero .wrap { position:relative; z-index:1; width:100%; }
+      .hero h1 { max-width:670px; margin:0 0 23px; font-size:clamp(43px,5vw,65px); line-height:1.08; letter-spacing:-3px; font-weight:700; position:relative; }
+      .hero h1::before { content:"THE RIGHT SOLUTION STARTS HERE"; display:block; padding-left:47px; color:#e0e1e2; font-size:11px; line-height:1; letter-spacing:1.3px; font-weight:800; margin-bottom:23px; }
+      .hero h1::after { content:""; position:absolute; width:33px; height:3px; left:0; top:4px; background:#c92d33; }
+      .hero p { max-width:525px; font-size:16px; color:#c9cbcd; margin-bottom:30px; }
+      .hero .btn:not(.ghost) { background:#b52228; color:#fff; }
+      .btn.ghost { border:1px solid #616468; background:transparent; color:#fff; }
+      .cta { gap:14px; }
+      .trust { background:#242629; }
+      .trust .wrap { min-height:73px; display:grid; grid-template-columns:repeat(5,1fr); align-items:center; gap:0; padding:0; font-size:14px; font-weight:600; color:#dddfe0; }
+      .trust span { position:relative; display:flex; align-items:center; justify-content:center; text-align:center; white-space:nowrap; }
+      .trust span::before { content:""; position:absolute; left:0; top:50%; width:2px; height:14px; transform:translate(-50%,-50%); background:#cf3036; }
+      .trust span:first-child::before { display:none; }
+      section { padding:100px 0; }
+      h2.t { max-width:650px; margin:0 0 12px; font-size:clamp(31px,3.5vw,46px); line-height:1.12; letter-spacing:-2px; font-weight:700; }
+      .lead { max-width:650px; color:var(--mute); font-size:16px; margin-bottom:38px; }
+      .label { margin:0 0 12px; color:var(--blue); font-size:11px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; }
+      .solution-head { display:flex; align-items:end; justify-content:space-between; gap:30px; margin-bottom:38px; }
+      .solution-head h2 { max-width:600px; margin:0; font-size:clamp(31px,3.5vw,46px); font-weight:700; line-height:1.12; letter-spacing:-2px; }
+      .solution-head h2 span { color:#85888c; }
+      .solution-head > p { max-width:360px; margin:0; color:var(--mute); font-size:14px; }
+      .solutions { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+      article.solution { min-height:330px; padding:27px; display:flex; flex-direction:column; position:relative; border:1px solid var(--line); border-radius:5px; background:#fff; cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      article.solution.is-selected { border-top:3px solid var(--blue); border-color:var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .solution-icon { color:var(--blue); font-size:23px; line-height:1; }
+      .solution-number { position:absolute; top:27px; right:27px; color:#7d8084; font-size:12px; }
+      article.solution h3 { margin:22px 0 14px; font-size:23px; font-weight:700; line-height:1.12; letter-spacing:-1px; }
+      article.solution > p { margin:0 0 22px; color:var(--mute); font-size:14px; }
+      .solution-scope { padding-top:17px; border-top:1px solid var(--line); color:#73767b; font-size:12px; line-height:1.8; }
+      .solution-scope div::before { content:"+"; margin-right:8px; color:var(--blue); font-weight:800; }
+      .solution-link { margin-top:auto; padding-top:22px; color:var(--blue); font-size:13px; font-weight:800; }
+      .soft { background:var(--soft); }
+      .grid { gap:16px; }
+      .card { min-height:270px; padding:27px; border:1px solid var(--line); border-radius:5px; background:#fff; gap:12px; box-shadow:none; }
+      .card { cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      .card.is-selected { border-color:var(--blue); border-top:3px solid var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .card h3 { font-size:21px; line-height:1.16; letter-spacing:-.8px; }
+      .card p { font-size:14px; color:var(--mute); }
+      .card .ex { margin-top:auto; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:#777a7e; }
+      .chips { gap:0; margin-bottom:25px; border-bottom:1px solid var(--line); }
+      .chips button { border:0; border-bottom:2px solid transparent; border-radius:0; background:transparent; padding:0 0 13px; margin-right:28px; color:#4f5256; font:600 14px Manrope,Arial,sans-serif; }
+      .chips button[aria-pressed="true"] { border-color:var(--blue); background:transparent; color:var(--ink); }
+      #prod { grid-template-columns:repeat(4,1fr); }
+      #prod .card { min-height:270px; }
+      .tags i { border:0; background:transparent; color:#777a7e; padding:0; font-size:11px; }
+      .card .q { color:var(--blue); font:800 13px Manrope,Arial,sans-serif; }
+      .brands { gap:15px; }
+      .brands div { height:100px; border-radius:5px; color:var(--ink); font-size:15px; }
+      .brands img { display:block; width:132px; height:42px; object-fit:contain; object-position:center; }
+      .brands img.logo-large { width:160px; height:64px; }
+      .note { color:var(--mute); font-size:12px; }
+      .navy { background:#17191b; }
+      .navy .lead, .navy .steps span { color:#c8cacc; }
+      .steps div { border-top:2px solid #b52228; padding:16px 20px 0 0; }
+      .steps div::before { color:#d54247; font-size:18px; }
+      form.rq { border:0; border-top:3px solid var(--blue); padding:30px; background:#fff; gap:18px 24px; }
+      form.rq label { font:800 12px Manrope,Arial,sans-serif; }
+      form.rq input, form.rq select, form.rq textarea { padding:12px; border:0; border-bottom:1px solid #bfc2c5; border-radius:0; background:#fafafa; }
+      footer { background:#17191b; padding:57px 0 25px; font-size:13px; }
+      footer h4 { font:700 16px Manrope,Arial,sans-serif; }
+      footer .copy { border-color:#45474a; }
+      @media (max-width:1300px) { .wrap { width:calc(100% - 80px); } }
+      @media (max-width:960px) { .wrap { width:calc(100% - 48px); } header .wrap { justify-content:flex-start; position:relative; } .menu-btn { display:grid; place-items:center; margin-left:auto; width:42px; height:42px; padding:0; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--ink); font-size:21px; cursor:pointer; } nav, header .btn.sm { display:none; } nav.open { display:flex; position:absolute; top:72px; left:0; right:0; height:auto; flex-direction:column; gap:0; padding:12px 24px; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 12px 15px rgba(0,0,0,.08); } nav.open a { display:block; padding:12px 0; } nav.open a.is-active:after { display:none; } #prod { grid-template-columns:1fr 1fr; } }
+      @media (max-width:767px) { .wrap { width:calc(100% - 40px); } .util { display:none; } header,header .wrap { height:72px; } .hero { min-height:650px; align-items:flex-start; padding-top:68px; background-position:center, 65% center; } .hero h1 { font-size:41px; letter-spacing:-2px; } .hero h1::before { font-size:10px; margin-bottom:21px; } .hero h1::after { display:none; } .hero p { font-size:15px; } .cta { flex-direction:column; } .cta .btn { width:100%; } .trust .wrap { min-height:auto; padding:18px 0; display:grid; grid-template-columns:1fr 1fr; font-size:12px; } .trust span::before { display:none; } section { padding:60px 0; } .solution-head { display:block; margin-bottom:28px; } .solution-head h2 { margin-bottom:16px; } .solutions { grid-template-columns:1fr; } article.solution { min-height:0; } .grid,#prod { grid-template-columns:1fr; } .card { min-height:230px; } .brands { grid-template-columns:1fr 1fr; } .chips { overflow:auto; } .chips button { white-space:nowrap; } .steps { grid-template-columns:1fr; gap:20px; } form.rq { padding:25px; } footer .wrap { gap:25px; } }
+      @media (max-width:767px) {
+        .logo { gap:8px; font-size:11px; }
+        .logo img { width:40px; height:40px; }
+        .logo small { font-size:7px; }
+        .menu-btn { width:42px; height:42px; }
+        nav.open { top:72px; padding:10px 20px 14px; }
+        nav.open a { min-height:44px; display:flex; align-items:center; }
+        .hero { min-height:680px; padding-top:0; background-image:linear-gradient(180deg,rgba(10,11,12,.08) 0%,rgba(10,11,12,.15) 47%,rgba(10,11,12,.62) 100%),url("img/Industrial Crimson Tech Assembly.png"); background-position:center, 66% center; }
+        .hero .wrap { width:calc(100% - 40px); padding:61px 4px 0; }
+        .hero h1 { max-width:330px; font-size:clamp(38px,10.5vw,41px); line-height:1.1; margin-bottom:20px; }
+        .hero p { max-width:315px; margin-bottom:27px; line-height:1.7; }
+        .cta { gap:10px; max-width:350px; }
+        .cta .btn { min-height:50px; }
+        .trust .wrap { column-gap:18px; row-gap:10px; }
+        h2.t, .solution-head h2 { font-size:31px; letter-spacing:-1.4px; }
+        .lead { margin-bottom:28px; font-size:15px; }
+        article.solution { padding:25px; }
+        .solution-number { top:25px; right:25px; }
+        article.solution h3 { font-size:25px; }
+        .card { padding:24px; min-height:0; }
+        #prod .card { min-height:235px; }
+        .brands div { height:74px; font-size:12px; }
+        .brands img { width:112px; height:34px; }
+        .brands img.logo-large { width:128px; height:48px; }
+        form.rq { padding:24px 20px; }
+        footer { padding-top:45px; }
+      }
+    </style>
+  <style>
+/* Shared strip dividers, matching the homepage separator dimensions. */
+.eng-strip .wrap,.about-strip .wrap{display:grid;grid-template-columns:repeat(var(--strip-columns),minmax(0,1fr));gap:0;align-items:center}
+.eng-strip{--strip-columns:6;--strip-divider:#cf3036}
+.about-strip{--strip-columns:3;--strip-divider:rgba(255,255,255,.75)}
+.eng-strip .wrap>span,.about-strip .wrap>span{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px;min-width:0}
+.eng-strip .wrap>span::before,.eng-strip .wrap>span:not(:first-child)::before,.about-strip .wrap>span::before{content:"";display:block;position:absolute;left:0;top:50%;width:2px;height:14px;transform:translate(-50%,-50%);background:var(--strip-divider);margin:0;border-radius:0}
+.eng-strip .wrap>span:first-child::before,.about-strip .wrap>span:first-child::before{display:none}
+@media(max-width:767px){
+.eng-strip .wrap,.about-strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+.eng-strip .wrap>span:nth-child(odd)::before,.about-strip .wrap>span:nth-child(odd)::before,.trust .wrap>span:nth-child(odd)::before{display:none}
 }
 </style>
 </head>
-<body>
-
-<div class="topbar"><div class="container">
-  <span>Enterprise & Government Procurement</span>
-  <span>software@pirngaditeberaukarya.com</span>
-</div></div>
-
-<header>
-  <div class="container nav">
-    <a class="logo" href="#">PT<span>K</span> <small style="font-size:10px;color:#69717c;font-weight:600;letter-spacing:0">PIRNGADI TEBERAU KARYA</small></a>
-    <nav>
-      <a href="#software">Software</a>
-      <a href="#engineering">Engineering</a>
-      <a href="#brands">Principals</a>
-      <a href="#experience">Why PTK</a>
-      <a href="#about">About</a>
-      <a class="nav-cta" href="#software">View Catalog</a>
-    </nav>
-    <button class="menu" aria-label="Menu">☰</button>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="kicker">Software Licensing & Engineering Solutions</div>
-      <h1>Technology products for decisions that matter.</h1>
-      <p>PT. Pirngadi Teberau Karya supplies software licenses, subscriptions, renewals and engineering products for government institutions, enterprises, education and nonprofit organizations.</p>
-      <div class="actions">
-        <a class="btn primary" href="#software">EXPLORE SOFTWARE</a>
-        <a class="btn secondary" href="#brands">VIEW PRINCIPALS</a>
+  <body id="top">
+    <div class="util">
+      <div class="wrap">
+        <a href="#contact">Jakarta, Indonesia</a>
+        <a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+        <a href="request-quotation.html">Request quotation</a>
       </div>
     </div>
-    <div class="hero-panel">
-      <div class="panel-inner">
-        <div class="panel-title">One procurement partner</div>
-        <div class="stat-grid">
-          <div class="stat"><strong>15+</strong><span>Software Principals</span></div>
-          <div class="stat"><strong>17</strong><span>Core products already supplied</span></div>
-          <div class="stat"><strong>3</strong><span>Licensing models</span></div>
-          <div class="stat"><strong>1</strong><span>Integrated quotation channel</span></div>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="#">
+          <img src="data:image/png;base64,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" alt="" width="44" height="44">
+          <span>PT. Pirngadi <br>Teberau Karya <small>Software Licensing &amp; Engineering</small>
+          </span>
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainnav">&#9776;</button>
+        <nav id="mainnav" aria-label="Main navigation">
+          <a class="is-active" href="#top" aria-current="page">Home</a>
+          <a href="#solutions">Solutions</a>
+          <a href="home.html#featured">Products</a>
+          <a href="about.html">About PTK</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn sm" href="request-quotation.html">Request a quotation</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="wrap">
+          <h1>Enterprise Software Licensing &amp; Engineering Solutions</h1>
+          <p>We supply software licenses, subscriptions, perpetual licenses, and renewals, plus engineering products, for government institutions, enterprises, education, and nonprofit organizations.</p>
+          <div class="cta">
+            <a class="btn" href="request-quotation.html">Request a quotation</a>
+            <a class="btn ghost" href="#solutions">Explore our solutions</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="software">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Software Portfolio</div><h2>Find the right software for your organization.</h2></div>
-      <p>Organized by business need, not by a long product list. This structure is designed for enterprise and government buyers.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><h3>Creative & Design</h3><p>Adobe, CorelDRAW and Wondershare solutions for creative production, documents and media.</p><span class="arrow">Explore category →</span></article>
-      <article class="card"><h3>CAD, BIM & Engineering</h3><p>Autodesk and SketchUp solutions for design, construction, manufacturing and visualization.</p><span class="arrow">Explore category →</span></article>
-      <article class="card"><h3>Developer Tools</h3><p>DevExpress, JetBrains and Aspose products for software development and document processing.</p><span class="arrow">Explore category →</span></article>
-      <article class="card"><h3>Data, Research & Analytics</h3><p>Stata, SmartPLS, NVivo/Lumivero and database tools for research and decision support.</p><span class="arrow">Explore category →</span></article>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="products">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Featured Products</div><h2>Software catalog</h2></div>
-      <p>Prototype catalog. In the production CMS, every product can have its own detail page, license options and quotation button.</p>
-    </div>
-    <p class="catalog-note">Catalog information is provided for product discovery. Availability, licensing terms and product editions are subject to the respective publisher/principal.</p>
-  <div class="product-toolbar">
-      <input class="search" id="search" placeholder="Search software or principal…">
-      <select id="category"><option value="">All categories</option><option>Developer Tools</option><option>Creative & Design</option><option>CAD / BIM</option><option>Research & Analytics</option><option>Database</option><option>IT Research</option><option>Remote Administration</option></select>
-      <select id="license"><option value="">All licensing</option><option>Subscription</option><option>Perpetual</option><option>Renewal</option><option>Floating / Concurrent</option></select>
-    </div>
-    <div class="products" id="productGrid"></div>
-  </div>
-</section>
-
-<section class="section" id="brands">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Software Principals</div><h2>Technology brands we supply.</h2></div>
-      <p>Use official, high-resolution brand assets in production. This prototype uses text placeholders to avoid reproducing third-party logos.</p>
-    </div>
-    <div class="principals">
-      <div class="brand">DevExpress</div><div class="brand">Adobe</div><div class="brand">Autodesk</div><div class="brand">CorelDRAW</div><div class="brand">SketchUp</div>
-      <div class="brand">Wondershare</div><div class="brand">Gartner</div><div class="brand">Stata</div><div class="brand">SmartPLS</div><div class="brand">Lumivero</div>
-      <div class="brand">JetBrains</div><div class="brand">Quest</div><div class="brand">Navicat</div><div class="brand">MobaXterm</div><div class="brand">Aspose</div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="engineering">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Engineering Products</div><h2>Physical products. Engineering expertise.</h2></div>
-      <p>Keep the established engineering business visible while making software licensing a clear, equal business line.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><h3>Electrical & Power</h3><p>Power components, switching, protection and related industrial products.</p></article>
-      <article class="card"><h3>Motor Control</h3><p>Contactors, starters and replacement parts for industrial applications.</p></article>
-      <article class="card"><h3>Automation & Control</h3><p>Industrial controls, instrumentation and engineering components.</p></article>
-      <article class="card"><h3>MRO & Replacement Parts</h3><p>Industrial spare and replacement products for operational continuity.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="experience">
-  <div class="container split">
-    <div>
-      <div class="eyebrow">Why PTK</div>
-      <h2>A focused catalog for enterprise technology products.</h2>
-      <p style="color:var(--muted);font-size:17px">PTK presents software licenses and engineering products in one structured corporate catalog, making it easier for organizations to discover the technologies relevant to their teams and operations.</p>
-      <div class="checks">
-        <div class="check">✓ Software licensing portfolio</div><div class="check">✓ Subscription & renewal options</div>
-        <div class="check">✓ Perpetual licensing products</div><div class="check">✓ Floating / concurrent licensing</div>
-        <div class="check">✓ Enterprise & institutional solutions</div><div class="check">✓ Engineering product portfolio</div>
+      <div class="trust">
+        <div class="wrap">
+          <span>Subscription</span>
+          <span>Perpetual license</span>
+          <span>Renewal</span>
+          <span>Floating and concurrent</span>
+          <span>Enterprise and volume</span>
+        </div>
       </div>
-    </div>
-    <div class="darkbox">
-      <div class="eyebrow" style="color:#ff6b77">Catalog experience</div>
-      <h2>Discover → Explore → Compare</h2>
-      <p>Browse products by category, principal and licensing model. The site is designed as a corporate product catalog, not an online ordering system.</p>
-      <a class="btn primary" href="#software">EXPLORE CATALOG</a>
-    </div>
-  </div>
-</section>
+      <section id="solutions">
+        <div class="wrap">
+          <div class="solution-head">
+            <div><p class="label">Our solutions</p><h2>Different needs.<br><span>One capable partner.</span></h2></div>
+            <p>Bring your requirements together. Find the right place to start.</p>
+          </div>
+          <div class="solutions">
+            <article class="solution" data-href="software.html" role="link" tabindex="0" aria-label="Explore software licensing">
+              <span class="solution-icon">⌘</span><span class="solution-number">01</span>
+              <h3>Software<br>licensing</h3><p>Licences and subscriptions for the tools your teams use every day.</p>
+              <div class="solution-scope"><div>New licences &amp; subscriptions</div><div>Perpetual &amp; volume licensing</div><div>Renewals &amp; upgrades</div></div>
+              <a class="solution-link" href="software.html">Explore software</a>
+            </article>
+            <article class="solution" data-href="it-solutions.html" role="link" tabindex="0" aria-label="Explore IT solutions and infrastructure">
+              <span class="solution-icon">▤</span><span class="solution-number">02</span>
+              <h3>IT solutions<br>&amp; infrastructure</h3><p>Connect the systems, data, and workspaces that support your business.</p>
+              <div class="solution-scope"><div>Cloud &amp; hybrid infrastructure</div><div>Security &amp; digital workspace</div><div>Consulting &amp; managed services</div></div>
+              <a class="solution-link" href="it-solutions.html">Explore IT solutions</a>
+            </article>
+            <article class="solution" data-href="engineering-products.html" role="link" tabindex="0" aria-label="Explore engineering products">
+              <span class="solution-icon">⌁</span><span class="solution-number">03</span>
+              <h3>Engineering<br>products</h3><p>Industrial components and instruments, guided by your specifications.</p>
+              <div class="solution-scope"><div>Measurement &amp; instrumentation</div><div>Electrical &amp; control products</div><div>Industrial equipment &amp; parts</div></div>
+              <a class="solution-link" href="engineering-products.html">Explore engineering</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="software" class="soft">
+        <div class="wrap">
+          <h2 class="t">Software by category</h2>
+          <p class="lead">Choose a category, or filter the featured products by license type below.</p>
+          <div class="grid">
+            <div class="card">
+              <h3>Creative and design</h3>
+              <p>Graphics, photo, video, and presentation tools.</p>
+              <span class="ex">Adobe, CorelDRAW, Wondershare</span>
+            </div>
+            <div class="card">
+              <h3>CAD, BIM and engineering</h3>
+              <p>Design and modelling for buildings and products.</p>
+              <span class="ex">Autodesk, SketchUp</span>
+            </div>
+            <div class="card">
+              <h3>Developer tools and components</h3>
+              <p>IDEs, UI controls, and document libraries.</p>
+              <span class="ex">DevExpress, JetBrains, Aspose</span>
+            </div>
+            <div class="card">
+              <h3>Database and data management</h3>
+              <p>Build, query, and manage databases.</p>
+              <span class="ex">Quest Toad, Navicat</span>
+            </div>
+            <div class="card">
+              <h3>Research and analytics</h3>
+              <p>Statistics and qualitative research software.</p>
+              <span class="ex">Stata, SmartPLS, NVivo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="featured">
+        <div class="wrap">
+          <h2 class="t">Featured software</h2>
+          <p class="lead">No prices are shown. Each product is quoted per publisher terms, customer type, and quantity.</p>
+          <div class="chips" id="chips"></div>
+          <div class="grid" id="prod"></div>
+          <p class="note">License tags are examples for this concept. Confirm each product's available license types with the publisher before launch.</p>
+        </div>
+      </section>
+      <section id="brands" class="soft">
+        <div class="wrap">
+          <h2 class="t">Software principals and brands we supply</h2>
+          <p class="lead"></p>
+          <div class="brands" id="bl"></div>
+          <p class="note">All product names, trademarks, and logos are the property of their respective owners. Product availability and licensing terms are subject to the applicable publisher and distribution channel.</p>
+        </div>
+      </section>
+      <section id="engineering">
+        <div class="wrap">
+          <h2 class="t">Engineering products</h2>
+          <p class="lead">Our established range of industrial products, grouped by division.</p>
+          <div class="grid">
+            <div class="card">
+              <h3>Electrical and power</h3>
+              <p>Switching and protection components.</p>
+            </div>
+            <div class="card">
+              <h3>Motor control</h3>
+              <p>Contactors, starters, and related parts.</p>
+            </div>
+            <div class="card">
+              <h3>Instrumentation</h3>
+              <p>Pressure, temperature, flow, and level.</p>
+            </div>
+            <div class="card">
+              <h3>Weighing</h3>
+              <p>Industrial and retail scales.</p>
+            </div>
+            <div class="card">
+              <h3>Control power</h3>
+              <p>Control power transformers and equipment.</p>
+            </div>
+            <div class="card">
+              <h3>Replacement parts</h3>
+              <p>Spare and replacement parts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="process" class="navy">
+        <div class="wrap">
+          <h2 class="t">Government and enterprise software procurement</h2>
+          <p class="lead">We guide you from choosing the right license to renewing it.</p>
+          <div class="steps">
+            <div>
+              <b>Consultation</b>
+              <span>Identify the product and license type.</span>
+            </div>
+            <div>
+              <b>Quotation</b>
+              <span>Formal quotation for your requirement.</span>
+            </div>
+            <div>
+              <b>Documentation</b>
+              <span>Procurement documents and ordering.</span>
+            </div>
+            <div>
+              <b>Delivery</b>
+              <span>Electronic delivery and activation support.</span>
+            </div>
+            <div>
+              <b>Renewal</b>
+              <span>Reminders ahead of expiry.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="wrap">
+          <h2 class="t">Project experience</h2>
+          <p class="lead">Experience supporting software procurement requirements for government institutions and enterprise customers. Customer names appear only with permission.</p>
+        </div>
+      </section>
+      <section id="quote" class="soft">
+        <div class="wrap">
+          <h2 class="t">Request software quotation</h2>
+          <p class="lead">Need help choosing the correct license? Prepare your requirements, then review the email draft before sending it to our team.</p>
+          <form class="rq" id="rq">
+            <div>
+              <label for="c">Company or institution</label>
+              <input id="c" required>
+            </div>
+            <div>
+              <label for="p">Contact person</label>
+              <input id="p" required>
+            </div>
+            <div>
+              <label for="e">Work email</label>
+              <input id="e" type="email" required>
+            </div>
+            <div>
+              <label for="cat">Customer category</label>
+              <select id="cat">
+                <option>Commercial</option>
+                <option>Government</option>
+                <option>Nonprofit</option>
+                <option>Education</option>
+              </select>
+            </div>
+            <div>
+              <label for="pr">Principal</label>
+              <select id="pr"></select>
+            </div>
+            <div>
+              <label for="pd">Product</label>
+              <input id="pd" placeholder="e.g. AutoCAD">
+            </div>
+            <div>
+              <label for="rqt">Requirement</label>
+              <select id="rqt">
+                <option>New license</option>
+                <option>Renewal</option>
+                <option>Upgrade</option>
+              </select>
+            </div>
+            <div>
+              <label for="lt">License type</label>
+              <select id="lt">
+                <option>Subscription</option>
+                <option>Perpetual</option>
+                <option>Floating / concurrent</option>
+                <option>Named user</option>
+              </select>
+            </div>
+            <div>
+              <label for="qty">Quantity</label>
+              <input id="qty" type="number" min="1" value="1">
+            </div>
+            <div>
+              <label for="per">License period</label>
+              <select id="per">
+                <option>1 year</option>
+                <option>Multi-year</option>
+                <option>Perpetual</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="n">Notes</label>
+              <textarea id="n" rows="3"></textarea>
+            </div>
+            <div class="full">
+              <button class="btn" type="submit">Review quotation request</button>
+            </div>
+            <div class="full" id="ok" role="status">Your details are ready for review on the quotation page.</div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="wrap">
+        <div>
+          <h4>PT. Pirngadi Teberau Karya</h4>
+          <p>Jalan Jaksa No. 7D, Kebon Sirih, Menteng, Jakarta Pusat, DKI Jakarta 10340</p>
+          <a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+          <a href="tel:+6282122167320">+62-82122167320</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="#software">Software</a>
+          <a href="#engineering">Engineering products</a>
+          <a href="#brands">Brands</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://www.linkedin.com/company/pirngaditeberaukarya/">LinkedIn</a>
+          <a href="https://wa.me/6285811151135">WhatsApp</a>
+        </div>
+        <div class="copy">&copy; <span id="y">2026</span> PT. Pirngadi Teberau Karya. All rights reserved. Privacy policy &middot; Terms of use </div>
+      </div>
+    </footer>
+    <script>
+      var menuBtn = document.getElementById("menu-btn"), mainNav = document.getElementById("mainnav");
+      menuBtn.onclick = function() {
+        var isOpen = mainNav.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", isOpen);
+        menuBtn.textContent = isOpen ? "\u00d7" : "\u2630";
+      };
+      mainNav.querySelectorAll("a").forEach(function(link) {
+        link.onclick = function() {
+          mainNav.querySelectorAll("a").forEach(function(item) {
+            item.classList.remove("is-active");
+            item.removeAttribute("aria-current");
+          });
+          link.classList.add("is-active");
+          link.setAttribute("aria-current", "page");
+          mainNav.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuBtn.textContent = "\u2630";
+        };
+      });
+      var P = [
+        ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]],
+        ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]],
+        ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]],
+        ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]],
+        ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]],
+        ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]],
+        ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]],
+        ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]],
+        ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]],
+        ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]],
+        ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]],
+        ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]],
+        ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]],
+        ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]],
+      ];
+      var B = ["DevExpress", "Adobe", "Autodesk", "CorelDRAW", "SketchUp", "Wondershare", "Gartner", "Stata", "SmartPLS", "Lumivero", "JetBrains", "Quest", "Navicat", "MobaXterm", "Aspose"];
+      var F = ["All", "Subscription", "Perpetual", "Renewal", "Floating", "Government"],
+        cur = "All";
+      var chips = document.getElementById("chips"),
+        prod = document.getElementById("prod");
 
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">About PTK</div><h2>Software licensing and engineering solutions.</h2></div>
-      <p>PT. Pirngadi Teberau Karya can position its established engineering capability alongside a structured software licensing portfolio for enterprise and institutional customers.</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div><div class="logo">PT<span>K</span></div><p>Enterprise Software Licensing & Engineering Solutions.</p><p>Indonesia</p></div>
-      <div><h4>Software</h4><p><a href="#software">Product Catalog</a></p><p><a href="#brands">Principals</a></p><p><a href="#software">Browse Products</a></p></div>
-      <div><h4>Company</h4><p><a href="#about">About Us</a></p><p><a href="#experience">Project Experience</a></p><p><a href="#engineering">Engineering Products</a></p></div>
-      <div><h4>Contact</h4><p>software@pirngaditeberaukarya.com</p><p>www.pirngaditeberaukarya.com</p></div>
-    </div>
-    <div class="copyright">© 2026 PT. Pirngadi Teberau Karya. All Rights Reserved. · All trademarks and product names belong to their respective owners.</div>
-  </div>
-</footer>
-
-<script>
-const products=[
-{name:"DXperience",brand:"DevExpress",cat:"Developer Tools",lic:"Subscription, Renewal",desc:"Developer UI controls, tools and components for application development."},
-{name:"Creative Cloud",brand:"Adobe",cat:"Creative & Design",lic:"Subscription, Renewal",desc:"Creative applications and services for professional design and content workflows."},
-{name:"Photoshop",brand:"Adobe",cat:"Creative & Design",lic:"Subscription, Renewal",desc:"Professional image editing and creative production software."},
-{name:"AutoCAD",brand:"Autodesk",cat:"CAD / BIM",lic:"Subscription, Renewal",desc:"CAD software for precise 2D and 3D design and documentation."},
-{name:"CorelDRAW Graphics Suite",brand:"CorelDRAW",cat:"Creative & Design",lic:"Subscription, Perpetual",desc:"Professional graphic design and illustration software."},
-{name:"SketchUp Pro",brand:"SketchUp",cat:"CAD / BIM",lic:"Subscription, Renewal",desc:"3D modeling and visualization workflow for design professionals."},
-{name:"Filmora",brand:"Wondershare",cat:"Creative & Design",lic:"Subscription, Perpetual",desc:"Video editing software for professional and business content creation."},
-{name:"Gartner for IT Leaders",brand:"Gartner",cat:"IT Research",lic:"Subscription, Renewal",desc:"Business and technology research and advisory access for IT leaders."},
-{name:"Stata/MP 4 Core",brand:"Stata",cat:"Research & Analytics",lic:"Perpetual, Subscription, Renewal",desc:"High-performance statistical software for research and data analysis."},
-{name:"SmartPLS Professional",brand:"SmartPLS",cat:"Research & Analytics",lic:"Subscription, Floating / Concurrent",desc:"Structural equation modeling and PLS-SEM software."},
-{name:"NVivo",brand:"Lumivero",cat:"Research & Analytics",lic:"Subscription, Renewal",desc:"Qualitative data analysis and research workflow software."},
-{name:"All Products Pack",brand:"JetBrains",cat:"Developer Tools",lic:"Subscription, Renewal",desc:"Collection of JetBrains professional developer tools."},
-{name:"Toad for Oracle Xpert Plus",brand:"Quest",cat:"Database",lic:"Subscription, Renewal",desc:"Database development and administration tooling for Oracle environments."},
-{name:"Navicat Premium Enterprise",brand:"Navicat",cat:"Database",lic:"Perpetual, Subscription, Renewal",desc:"Database management, administration and development environment."},
-{name:"MobaXterm Professional",brand:"MobaXterm",cat:"Remote Administration",lic:"Perpetual, Renewal",desc:"Advanced Windows terminal and remote computing toolbox."},
-{name:"Aspose.Total for .NET",brand:"Aspose",cat:"Developer Tools",lic:"Subscription, Perpetual, Renewal",desc:"Document, file and data processing APIs for .NET developers."}
-];
-
-function render(){
- const q=document.getElementById('search').value.toLowerCase();
- const c=document.getElementById('category').value;
- const l=document.getElementById('license').value;
- const data=products.filter(p=>
-   (!q || (p.name+" "+p.brand+" "+p.desc).toLowerCase().includes(q)) &&
-   (!c || p.cat===c) &&
-   (!l || p.lic.includes(l))
- );
- document.getElementById('productGrid').innerHTML=data.map(p=>`
- <article class="product">
-   <div class="brandtag">${p.brand}</div>
-   <h3>${p.name}</h3>
-   <p>${p.desc}</p>
-   <div class="tags">${p.lic.split(', ').map(x=>`<span class="tag">${x}</span>`).join('')}<span class="tag">${p.cat}</span></div>
-   <span class="arrow">Explore product →</span>
- </article>`).join('') || '<p>No products found.</p>';
-}
-['search','category','license'].forEach(id=>document.getElementById(id).addEventListener('input',render));
-render();
-</script>
-</body>
+      function draw() {
+        chips.innerHTML = "";
+        F.forEach(function(f) {
+          var b = document.createElement("button");
+          b.textContent = f === "Floating" ? "Floating / concurrent" : f === "Government" ? "Government / nonprofit" : f;
+          b.setAttribute("aria-pressed", f === cur);
+          b.onclick = function() {
+            cur = f;
+            draw()
+          };
+          chips.appendChild(b)
+        });
+        prod.innerHTML = "";
+        P.forEach(function(p, i) {
+          if (cur !== "All" && p[3].indexOf(cur) < 0) return;
+          var d = document.createElement("div");
+          d.className = "card";
+          d.innerHTML = "<h3></h3><p></p><div class='tags'></div><button class='q' type='button'>Request a quotation</button>";
+          d.querySelector("h3").textContent = p[0];
+          d.querySelector("p").textContent = p[2];
+          p[3].forEach(function(t) {
+            var s = document.createElement("i");
+            s.textContent = t;
+            d.querySelector(".tags").appendChild(s)
+          });
+          d.querySelector(".q").onclick = function() {
+            document.getElementById("pd").value = p[0];
+            var s = document.getElementById("pr");
+            for (var k = 0; k < s.options.length; k++) {
+              if (p[0].indexOf(s.options[k].text) === 0 || p[1] === s.options[k].text) s.selectedIndex = k
+            }
+            document.getElementById("quote").scrollIntoView()
+          };
+          prod.appendChild(d)
+        })
+      }
+      draw();
+      var bl = document.getElementById("bl"),
+        pr = document.getElementById("pr");
+      B.forEach(function(b) {
+        var d = document.createElement("div");
+        if (b === "DevExpress") {
+          var logo = document.createElement("img");
+          logo.src = "img/DevExpress-Logo-Extra-Large-Color.png";
+          logo.alt = "DevExpress";
+          d.appendChild(logo);
+        } else if (b === "Adobe") {
+          var adobeLogo = document.createElement("img");
+          adobeLogo.src = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg";
+          adobeLogo.alt = "Adobe";
+          d.appendChild(adobeLogo);
+        } else if (b === "Autodesk") {
+          var autodeskLogo = document.createElement("img");
+          autodeskLogo.src = "img/autodesk.png";
+          autodeskLogo.alt = "Autodesk";
+          autodeskLogo.className = "logo-large";
+          d.appendChild(autodeskLogo);
+        } else if (b === "CorelDRAW") {
+          var corelLogo = document.createElement("img");
+          corelLogo.src = "https://upload.wikimedia.org/wikipedia/commons/f/f1/CorelDraw_logo.svg";
+          corelLogo.alt = "CorelDRAW";
+          corelLogo.className = "logo-large";
+          d.appendChild(corelLogo);
+        } else if (b === "SketchUp") {
+          var sketchupLogo = document.createElement("img");
+          sketchupLogo.src = "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/SketchUp_logo.svg/960px-SketchUp_logo.svg.png";
+          sketchupLogo.alt = "SketchUp";
+          d.appendChild(sketchupLogo);
+        } else if (b === "Gartner") {
+          var gartnerLogo = document.createElement("img");
+          gartnerLogo.src = "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Gartner_logo.svg/960px-Gartner_logo.svg.png";
+          gartnerLogo.alt = "Gartner";
+          d.appendChild(gartnerLogo);
+        } else if (b === "Wondershare") {
+          var wondershareLogo = document.createElement("img");
+          wondershareLogo.src = "https://upload.wikimedia.org/wikipedia/commons/f/f8/Wondershare_Logo.svg";
+          wondershareLogo.alt = "Wondershare";
+          d.appendChild(wondershareLogo);
+        } else if (b === "Stata") {
+          var stataLogo = document.createElement("img");
+          stataLogo.src = "https://upload.wikimedia.org/wikipedia/commons/5/5c/Stata_Logo.svg";
+          stataLogo.alt = "Stata";
+          d.appendChild(stataLogo);
+        } else if (b === "SmartPLS") {
+          var smartplsLogo = document.createElement("img");
+          smartplsLogo.src = "https://upload.wikimedia.org/wikipedia/commons/2/29/SmartPLS_Logo.png";
+          smartplsLogo.alt = "SmartPLS";
+          d.appendChild(smartplsLogo);
+        } else if (b === "Lumivero") {
+          var lumiveroLogo = document.createElement("img");
+          lumiveroLogo.src = "https://upload.wikimedia.org/wikipedia/commons/4/4c/Lumivero_logo.png";
+          lumiveroLogo.alt = "Lumivero";
+          d.appendChild(lumiveroLogo);
+        } else if (b === "JetBrains") {
+          var jetbrainsLogo = document.createElement("img");
+          jetbrainsLogo.src = "https://upload.wikimedia.org/wikipedia/commons/2/2d/JetBrains_company_logo.svg";
+          jetbrainsLogo.alt = "JetBrains";
+          d.appendChild(jetbrainsLogo);
+        } else if (b === "Quest") {
+          var questLogo = document.createElement("img");
+          questLogo.src = "https://upload.wikimedia.org/wikipedia/commons/f/fd/Quest_Software_logo.svg";
+          questLogo.alt = "Quest";
+          d.appendChild(questLogo);
+        } else if (b === "Navicat") {
+          var navicatLogo = document.createElement("img");
+          navicatLogo.src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Navicat_logo.png";
+          navicatLogo.alt = "Navicat";
+          d.appendChild(navicatLogo);
+        } else if (b === "MobaXterm") {
+          var mobaxtermLogo = document.createElement("img");
+          mobaxtermLogo.src = "https://mobaxterm.mobatek.net/favicon.ico";
+          mobaxtermLogo.alt = "MobaXterm";
+          d.appendChild(mobaxtermLogo);
+        } else if (b === "Aspose") {
+          var asposeLogo = document.createElement("img");
+          asposeLogo.src = "https://upload.wikimedia.org/wikipedia/commons/f/f2/Aspose_united_logo.png";
+          asposeLogo.alt = "Aspose";
+          d.appendChild(asposeLogo);
+        } else {
+          d.textContent = b;
+        }
+        bl.appendChild(d);
+        var o = document.createElement("option");
+        o.textContent = b;
+        pr.appendChild(o)
+      });
+      document.getElementById("rq").onsubmit = function(e) {
+        e.preventDefault();
+        var draft = {};
+        var fields = {c:'company',p:'name',e:'email',cat:'category',pr:'principal',pd:'product',rqt:'requestType',lt:'license',qty:'quantity',per:'period',n:'requirements'};
+        Object.keys(fields).forEach(function(id){draft[fields[id]]=document.getElementById(id).value;});
+        try { sessionStorage.setItem('ptkQuotationDraft', JSON.stringify(draft)); window.location.href='request-quotation.html'; }
+        catch(error) { document.getElementById('ok').textContent='Your browser could not keep the draft. Please use the quotation page link above, or email info@pirngaditeberaukarya.com.'; document.getElementById('ok').style.display='block'; }
+      };
+      document.addEventListener("click", function(e) {
+        var card = e.target.closest(".card, .solution");
+        if (!card) return;
+        if (card.dataset.href) {
+          if (!e.target.closest("a")) window.location.href = card.dataset.href;
+          return;
+        }
+        var grid = card.parentElement;
+        if (grid && (grid.classList.contains("grid") || grid.classList.contains("solutions"))) {
+          grid.querySelectorAll(".card, .solution").forEach(function(item) { item.classList.remove("is-selected") });
+        }
+        card.classList.add("is-selected");
+      });
+      document.querySelectorAll(".solution[data-href]").forEach(function(card) {
+        card.addEventListener("keydown", function(e) {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); window.location.href = card.dataset.href; }
+        });
+      });
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Software Licensing Catalog | PT. Pirngadi Teberau Karya</title>
+<meta name="description" content="Explore software licensing from PT. Pirngadi Teberau Karya, including design, CAD, developer tools and research software. Request a quotation for your organization.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+    <style>
+      :root {
+        --navy: #1e2226;
+        --blue: #9b1c20;
+        --bg: #fff;
+        --soft: #f5f3f3;
+        --ink: #1e2226;
+        --mute: #5a6066;
+        --line: #dedada;
+        --card: #fff;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #14171a;
+          --soft: #1b1f23;
+          --ink: #eceeef;
+          --mute: #a4abb1;
+          --line: #2f353a;
+          --card: #1d2125;
+          --blue: #e0575b
+        }
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #14171a;
+        --soft: #1b1f23;
+        --ink: #eceeef;
+        --mute: #a4abb1;
+        --line: #2f353a;
+        --card: #1d2125;
+        --blue: #e0575b
+      }
+
+      html {
+        scroll-padding-top: 90px;
+        scroll-behavior: smooth
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 400 17px/1.55 "Source Sans 3", system-ui, Arial, sans-serif
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px
+      }
+
+      .util {
+        background: var(--navy);
+        color: #d3d6d9;
+        font-size: 14px
+      }
+
+      .util .wrap {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        flex-wrap: wrap
+      }
+
+      header {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        z-index: 5
+      }
+
+      header .wrap {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        height: 72px
+      }
+
+      .logo {
+        display:flex;align-items:center;gap:12px;font-weight:800;
+        font-size: 20px;
+        color: var(--navy);
+        line-height: 1.1
+      }
+
+      .logo img{width:44px;height:44px;display:block}
+      .logo small {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--mute)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) .logo {
+          color: #fff
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        flex: 1
+      }
+
+      nav a {
+        padding: 24px 0;
+        border-bottom: 3px solid transparent
+      }
+
+      nav a:hover,
+      nav a.active {
+        border-color: var(--blue)
+      }
+
+      .navy {
+        background: var(--navy);
+        color: #fff
+      }
+
+      .navy .lead,
+      .navy .steps span {
+        color: #d3d6d9
+      }
+
+      .navy .steps div {
+        border-color: #e0575b
+      }
+
+      .navy .steps div::before {
+        color: #f0a3a5
+      }
+
+      .hero .btn:not(.ghost),
+      .band .btn {
+        background: #fff;
+        color: var(--navy)
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--blue);
+        color: #fff;
+        font: 700 16px "Source Sans 3", sans-serif;
+        padding: 13px 26px;
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border: 2px solid #fff
+      }
+
+      .btn.sm {
+        padding: 10px 20px
+      }
+
+      .hero-sm {
+        background: radial-gradient(900px 200px at 85% 10%, #9b1c20 0%, rgba(155,28,32,0) 70%), linear-gradient(135deg, #14171a 0%, #1e2226 55%, #2a1618 100%);
+        color: #fff;
+        padding: 64px 0
+      }
+
+      h1 {
+        font-size: clamp(32px, 4.5vw, 48px);
+        line-height: 1.08;
+        margin: 0 0 16px;
+        font-weight: 800;
+        letter-spacing: -1px
+      }
+
+      .hero-sm p {
+        font-size: 18px;
+        color: #d3d6d9;
+        max-width: 42em;
+        margin: 0
+      }
+
+      section {
+        padding: 80px 0
+      }
+
+      .soft {
+        background: var(--soft)
+      }
+
+      h2.t {
+        font-size: clamp(28px, 3.4vw, 40px);
+        line-height: 1.12;
+        margin: 0 0 12px;
+        letter-spacing: -.5px;
+        font-weight: 800
+      }
+
+      .lead {
+        color: var(--mute);
+        max-width: 42em;
+        margin: 0 0 36px
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 20px
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--mute);
+        font-size: 16px
+      }
+
+      .card .ex {
+        font-size: 15px;
+        color: var(--ink);
+        font-weight: 600
+      }
+
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+      }
+
+      .chips button {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        padding: 9px 16px;
+        font: 600 15px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        border-radius: 20px
+      }
+
+      .chips button[aria-pressed="true"] {
+        background: var(--blue);
+        border-color: var(--blue);
+        color: #fff
+      }
+
+      .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap
+      }
+
+      .tags i {
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 600;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        padding: 2px 8px
+      }
+
+      .card .q {
+        margin-top: auto;
+        padding-top: 10px;
+        background: none;
+        border: 0;
+        text-align: left;
+        color: var(--blue);
+        font: 700 16px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        padding-left: 0
+      }
+
+      .note {
+        color: var(--mute);
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 56em
+      }
+
+      footer {
+        background: var(--navy);
+        color: #d3d6d9;
+        padding: 56px 0 32px;
+        font-size: 15px
+      }
+
+      footer .wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 40px
+      }
+
+      footer h4 {
+        color: #fff;
+        margin: 0 0 12px;
+        font-size: 16px
+      }
+
+      footer a {
+        display: block;
+        padding: 3px 0
+      }
+
+      footer .copy {
+        grid-column: 1/-1;
+        border-top: 1px solid #3a4147;
+        padding-top: 20px;
+        font-size: 13px
+      }
+
+      @media (max-width:900px) {
+        nav {
+          display: none
+        }
+
+        header .wrap {
+          justify-content: space-between
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr
+        }
+
+        footer .wrap {
+          grid-template-columns: 1fr
+        }
+      }
+
+      @media (max-width:560px) {
+        .grid {
+          grid-template-columns: 1fr
+        }
+
+        section {
+          padding: 56px 0
+        }
+      }
+      /* PTK concept alignment, matching home.html */
+      :root, :root[data-theme="dark"] { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; }
+      @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; } }
+      html { scroll-padding-top:86px; }
+      body { font:400 16px/1.65 Manrope,Arial,sans-serif; background:#fff; color:var(--ink); }
+      .wrap { max-width:1256px; padding-left:0; padding-right:0; }
+      .util { background:var(--soft); color:#696c70; font-size:12px; }
+      .util .wrap { min-height:0; padding-top:8px; padding-bottom:8px; justify-content:flex-end; gap:22px; }
+      .util a + a { border-left:1px solid var(--line); padding-left:22px; }
+      header { top:0; height:86px; background:#fff; border-bottom:1px solid var(--line); box-shadow:none; }
+      header .wrap { height:86px; gap:28px; }
+      .logo { color:var(--ink)!important; font-size:14px; line-height:1.25; letter-spacing:-.4px; }
+      .logo img { width:48px; height:48px; }
+      .logo small { font-size:9px; color:#74777b; letter-spacing:.1px; }
+      nav { margin-left:auto; gap:30px; flex:none; font-size:14px; font-weight:700; height:100%; }
+      nav a { display:flex; align-items:center; padding:0; border:0; position:relative; }
+      nav a:hover { border:0; color:var(--blue); }
+      nav a.active:after, nav a.is-active:after { content:""; position:absolute; height:2px; width:25px; bottom:21px; left:0; background:var(--blue); }
+      .menu-btn { display:none; }
+      .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border-radius:5px; background:#b52228; font:800 14px Manrope,Arial,sans-serif; }
+      .btn.sm { padding:0 21px; margin-left:4px; }
+      .hero-sm { background:#17191b; color:#fff; padding:84px 0 88px; }
+      h1 { max-width:760px; margin:0 0 20px; font-size:clamp(41px,5vw,65px); line-height:1.08; letter-spacing:-3px; font-weight:700; }
+      .hero-sm p { max-width:690px; font-size:16px; color:#c9cbcd; }
+      section { padding:100px 0; }
+      .soft { background:var(--soft); }
+      h2.t { max-width:650px; margin:0 0 12px; font-size:clamp(31px,3.5vw,46px); line-height:1.12; letter-spacing:-2px; font-weight:700; }
+      .lead { max-width:650px; color:var(--mute); font-size:16px; margin-bottom:38px; }
+      .grid { gap:16px; }
+      .card { min-height:270px; padding:27px; border:1px solid var(--line); border-radius:5px; background:#fff; gap:12px; box-shadow:none; cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      .card.is-selected { border-color:var(--blue); border-top:3px solid var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .card h3 { font-size:21px; line-height:1.16; letter-spacing:-.8px; }
+      .card p { font-size:14px; color:var(--mute); }
+      .card .ex { margin-top:auto; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:#777a7e; font-weight:500; }
+      .chips { gap:0; margin-bottom:25px; border-bottom:1px solid var(--line); }
+      .chips button { border:0; border-bottom:2px solid transparent; border-radius:0; background:transparent; padding:0 0 13px; margin-right:28px; color:#4f5256; font:600 14px Manrope,Arial,sans-serif; }
+      .chips button[aria-pressed="true"] { border-color:var(--blue); background:transparent; color:var(--ink); font-weight:800; }
+      #prod { grid-template-columns:repeat(4,1fr); }
+      #prod .card { min-height:270px; }
+      .tags i { border:0; background:transparent; color:#777a7e; padding:0; font-size:11px; }
+      .card .q { color:var(--blue); font:800 13px Manrope,Arial,sans-serif; }
+      .note { color:var(--mute); font-size:12px; }
+      footer { background:#17191b; padding:57px 0 25px; font-size:13px; }
+      footer h4 { font:700 16px Manrope,Arial,sans-serif; }
+      footer .copy { border-color:#45474a; }
+      @media (max-width:1300px) { .wrap { width:calc(100% - 80px); } }
+      @media (max-width:960px) { .wrap { width:calc(100% - 48px); } header .wrap { justify-content:flex-start; position:relative; } .menu-btn { display:grid; place-items:center; margin-left:auto; width:42px; height:42px; padding:0; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--ink); font-size:21px; cursor:pointer; } nav, header .btn.sm { display:none; } nav.open { display:flex; position:absolute; top:72px; left:0; right:0; height:auto; flex-direction:column; gap:0; padding:12px 24px; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 12px 15px rgba(0,0,0,.08); } nav.open a { display:block; padding:12px 0; } nav.open a.active:after, nav.open a.is-active:after { display:none; } #prod { grid-template-columns:1fr 1fr; } }
+      @media (max-width:767px) { .wrap { width:calc(100% - 40px); } .util { display:none; } header,header .wrap { height:72px; } .logo { gap:8px; font-size:11px; } .logo img { width:40px; height:40px; } .logo small { font-size:7px; } .hero-sm { padding:60px 0; } h1 { font-size:41px; letter-spacing:-2px; } .hero-sm p { font-size:15px; line-height:1.7; } section { padding:60px 0; } h2.t { font-size:31px; letter-spacing:-1.4px; } .lead { margin-bottom:28px; font-size:15px; } .grid,#prod { grid-template-columns:1fr; } .card,#prod .card { min-height:0; padding:24px; } .chips { overflow:auto; } .chips button { white-space:nowrap; } footer .wrap { gap:25px; } }
+    </style>
+  <style>
+/* Shared strip dividers, matching the homepage separator dimensions. */
+.eng-strip .wrap,.about-strip .wrap{display:grid;grid-template-columns:repeat(var(--strip-columns),minmax(0,1fr));gap:0;align-items:center}
+.eng-strip{--strip-columns:6;--strip-divider:#cf3036}
+.about-strip{--strip-columns:3;--strip-divider:rgba(255,255,255,.75)}
+.eng-strip .wrap>span,.about-strip .wrap>span{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px;min-width:0}
+.eng-strip .wrap>span::before,.eng-strip .wrap>span:not(:first-child)::before,.about-strip .wrap>span::before{content:"";display:block;position:absolute;left:0;top:50%;width:2px;height:14px;transform:translate(-50%,-50%);background:var(--strip-divider);margin:0;border-radius:0}
+.eng-strip .wrap>span:first-child::before,.about-strip .wrap>span:first-child::before{display:none}
+@media(max-width:767px){
+.eng-strip .wrap,.about-strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+.eng-strip .wrap>span:nth-child(odd)::before,.about-strip .wrap>span:nth-child(odd)::before,.trust .wrap>span:nth-child(odd)::before{display:none}
+}
+</style>
+</head>
+  <body>
+    <div class="util">
+      <div class="wrap">
+        <a href="#contact">Jakarta, Indonesia</a>
+        <a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+        <a href="request-quotation.html">Request quotation</a>
+      </div>
+    </div>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="home.html"><img src="data:image/png;base64,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" alt="" width="44" height="44"><span>PT. Pirngadi <br>Teberau Karya <small>Software Licensing &amp; Engineering</small></span></a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainnav">&#9776;</button>
+        <nav id="mainnav" aria-label="Main navigation">
+          <a href="home.html#top">Home</a>
+          <a href="home.html#solutions">Solutions</a>
+          <a href="home.html#featured" class="active" aria-current="page">Products</a>
+          <a href="about.html">About PTK</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn sm" href="request-quotation.html">Request a quotation</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero-sm">
+        <div class="wrap">
+          <h1>Software Licensing Catalog</h1>
+          <p>Browse our comprehensive range of software solutions. We support a variety of licensing models including subscriptions, perpetual licenses, renewals, and enterprise volume arrangements.</p>
+        </div>
+      </div>
+      <section id="categories" class="soft">
+        <div class="wrap">
+          <h2 class="t">Software Categories</h2>
+          <p class="lead">Explore our software portfolio by specific industry and application domain.</p>
+          <div class="grid">
+            <div class="card">
+              <h3>Creative and design</h3>
+              <p>Graphics, photo, video, and presentation tools.</p>
+              <span class="ex">Adobe, CorelDRAW, Wondershare</span>
+            </div>
+            <div class="card">
+              <h3>CAD, BIM and engineering</h3>
+              <p>Design and modelling for buildings and products.</p>
+              <span class="ex">Autodesk, SketchUp</span>
+            </div>
+            <div class="card">
+              <h3>Developer tools and components</h3>
+              <p>IDEs, UI controls, and document libraries.</p>
+              <span class="ex">DevExpress, JetBrains, Aspose</span>
+            </div>
+            <div class="card">
+              <h3>Database and data management</h3>
+              <p>Build, query, and manage databases.</p>
+              <span class="ex">Quest Toad, Navicat</span>
+            </div>
+            <div class="card">
+              <h3>Research and analytics</h3>
+              <p>Statistics and qualitative research software.</p>
+              <span class="ex">Stata, SmartPLS, Lumivero / NVivo</span>
+            </div>
+            <div class="card">
+              <h3>IT research and advisory</h3>
+              <p>Research subscriptions for technology leaders.</p>
+              <span class="ex">Gartner</span>
+            </div>
+            <div class="card">
+              <h3>Remote administration</h3>
+              <p>Advanced terminal and network administration tools.</p>
+              <span class="ex">MobaXterm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="catalog">
+        <div class="wrap">
+          <h2 class="t">Product Explorer</h2>
+          <p class="lead">Filter available software by your required licensing model to find the right fit for your organization. Please request a formal quotation for exact pricing.</p>
+          <div class="chips" id="chips"></div>
+          <div class="grid" id="prod"></div>
+          <p class="note">License tags indicate common procurement options. Please confirm specific availability and terms for your organization type with our licensing team.</p>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="wrap">
+        <div>
+          <h4>PT. Pirngadi Teberau Karya</h4>
+          <p>Jalan Jaksa No. 7D, Kebon Sirih, Menteng, Jakarta Pusat, DKI Jakarta 10340</p>
+          <a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+          <a href="tel:+6282122167320">+62-82122167320</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="software.html">Software</a>
+          <a href="engineering-products.html">Engineering products</a>
+          <a href="home.html#brands">Brands</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="https://www.linkedin.com/company/pirngaditeberaukarya/">LinkedIn</a>
+          <a href="https://wa.me/6285811151135">WhatsApp</a>
+        </div>
+        <div class="copy">© <span id="y">2026</span> PT. Pirngadi Teberau Karya. All rights reserved. <span>Privacy policy</span> · <span>Terms of use</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menuBtn = document.getElementById("menu-btn"), mainNav = document.getElementById("mainnav");
+      menuBtn.onclick = function() {
+        var isOpen = mainNav.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", isOpen);
+        menuBtn.textContent = isOpen ? "\u00d7" : "\u2630";
+      };
+      mainNav.querySelectorAll("a").forEach(function(link) {
+        link.onclick = function() {
+          mainNav.querySelectorAll("a").forEach(function(item) {
+            item.classList.remove("is-active");
+            if (!item.classList.contains("active")) item.removeAttribute("aria-current");
+          });
+          link.classList.add("is-active");
+          mainNav.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuBtn.textContent = "\u2630";
+        };
+      });
+      var P = [
+        ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]],
+        ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]],
+        ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]],
+        ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]],
+        ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]],
+        ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]],
+        ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]],
+        ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]],
+        ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]],
+        ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]],
+        ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]],
+        ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]],
+        ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]],
+        ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]],
+        ["Gartner for IT Leaders", "Gartner", "Research and advisory access.", ["Subscription"]]
+      ];
+      var F = ["All", "Subscription", "Perpetual", "Renewal", "Floating", "Government"],
+        cur = "All";
+      var chips = document.getElementById("chips"),
+        prod = document.getElementById("prod");
+
+      function draw() {
+        chips.innerHTML = "";
+        F.forEach(function(f) {
+          var b = document.createElement("button");
+          b.textContent = f === "Floating" ? "Floating / concurrent" : f === "Government" ? "Government / nonprofit" : f;
+          b.setAttribute("aria-pressed", f === cur);
+          b.onclick = function() {
+            cur = f;
+            draw()
+          };
+          chips.appendChild(b)
+        });
+        prod.innerHTML = "";
+        P.forEach(function(p, i) {
+          if (cur !== "All" && p[3].indexOf(cur) < 0) return;
+          var d = document.createElement("div");
+          d.className = "card";
+          d.innerHTML = "<h3></h3><p></p><div class='tags'></div><a class='q'>Request a quotation</a>";
+          d.querySelector(".q").href = "request-quotation.html?principal=" + encodeURIComponent(p[1]) + "&product=" + encodeURIComponent(p[0]);
+          d.querySelector("h3").textContent = p[0];
+          d.querySelector("p").textContent = p[2];
+          p[3].forEach(function(t) {
+            var s = document.createElement("i");
+            s.textContent = t;
+            d.querySelector(".tags").appendChild(s)
+          });
+          prod.appendChild(d)
+        });
+      }
+      draw();
+      document.addEventListener("click", function(e) {
+        var card = e.target.closest(".card");
+        if (!card) return;
+        var grid = card.parentElement;
+        if (grid && grid.classList.contains("grid")) {
+          grid.querySelectorAll(".card").forEach(function(item) { item.classList.remove("is-selected") });
+        }
+        card.classList.add("is-selected");
+      });
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

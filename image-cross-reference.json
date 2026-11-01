@@ -1,0 +1,125 @@
+{
+  "products": 1861,
+  "linked_products": 1840,
+  "unique_images_used": 1166,
+  "archive_files": 1628,
+  "corrected_assignments": [
+    {
+      "name": "ATEX Differential Pressure Switch LGW-2G-SIL / Ex-i | SIL | ATEX | Zone 1, 2 (Type LGW-2G-40-300-SIL)",
+      "old_path": "img\\sensor2\\ATEX Differential Pressure Switch LGW-2G-SIL  Ex-i  SIL  ATEX  Zone 1, 2 (Type LGW-2G-40-300-SIL).jpg",
+      "new_path": "img/sensor2/Differential pressure transmitters air side/ATEX Differential Pressure Switch LGW-2G-SIL  Ex-i  SIL  ATEX  Zone 1, 2 (Type LGW-2G-40-300-SIL).jpg"
+    },
+    {
+      "name": "1502 vacuum - 400 amp",
+      "old_path": "img/sensor2/Trafag Pressure Stations/Trafag Piston Pressure Switch PST4K164.jpg",
+      "new_path": "img/product/Contactors/1502V4C1D1-032214-1.jpg"
+    }
+  ],
+  "products_without_assigned_image": [
+    {
+      "name": "1502 vacuum - 450 amp",
+      "model": "Product3",
+      "category": "Contractors"
+    },
+    {
+      "name": "Allen Bradley 1500 - 400 Amp",
+      "model": "Product6",
+      "category": "Contractors"
+    },
+    {
+      "name": "Allen Bradley - 1152 - 400 Amp",
+      "model": "Product9",
+      "category": "Contractors"
+    },
+    {
+      "name": "SJA-25 - 720 Amp",
+      "model": "Product18",
+      "category": "Contractors"
+    },
+    {
+      "name": "C80 - 1350 Amp",
+      "model": "Product22",
+      "category": "Contractors"
+    },
+    {
+      "name": "CR193WB - 400 Amp",
+      "model": "Product27",
+      "category": "Contractors"
+    },
+    {
+      "name": "IC-2814 - 700 Amp",
+      "model": "Product32",
+      "category": "Contractors"
+    },
+    {
+      "name": "7840 Vacuum - 400 Amp",
+      "model": "Product35",
+      "category": "Contractors"
+    },
+    {
+      "name": "7850 Air - 360 Amp",
+      "model": "Product36",
+      "category": "Contractors"
+    },
+    {
+      "name": "MVC77U032A50-76 - 200 Amp",
+      "model": "Product37",
+      "category": "Contractors"
+    },
+    {
+      "name": "MVC77U034A50-125 - 400 Amp",
+      "model": "Product38",
+      "category": "Contractors"
+    },
+    {
+      "name": "MVC77U034A72-76 - 400 Amp",
+      "model": "Product40",
+      "category": "Contractors"
+    },
+    {
+      "name": "MVC77U036A72-76 - 400 Amp",
+      "model": "Product42",
+      "category": "Contractors"
+    },
+    {
+      "name": "VZ8-PE-D - 800 Amp",
+      "model": "Product46",
+      "category": "Contractors"
+    },
+    {
+      "name": "456-D - 360 Amp, Black plastic arch chuts",
+      "model": "Product55",
+      "category": "Contractors"
+    },
+    {
+      "name": "SL-50 - 200 Amp",
+      "model": "Product57",
+      "category": "Contractors"
+    },
+    {
+      "name": "SJA-50- 360 Amp",
+      "model": "Product58",
+      "category": "Contractors"
+    },
+    {
+      "name": "SJA-50 - 650 Amp",
+      "model": "Product79",
+      "category": "Contractors"
+    },
+    {
+      "name": "SJA-72 - 360 Amp",
+      "model": "Product80",
+      "category": "Contractors"
+    },
+    {
+      "name": "LF-50 - 180 Amp",
+      "model": "Product83",
+      "category": "Contractors"
+    },
+    {
+      "name": "H230-D - 200 Amp",
+      "model": "Product86",
+      "category": "Contractors"
+    }
+  ]
+}
