@@ -670,7 +670,20 @@
 .it-strip .wrap>span{white-space:normal;line-height:1.5}
 @media(max-width:560px){.it-strip .wrap{grid-template-columns:1fr;row-gap:14px}.it-strip .wrap>span::before{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head>
+</style><style id="ptk-header-brand">
+header .logo { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; font-size:11px; line-height:1.15; letter-spacing:0; }
+header .logo > img { width:32px; height:32px; flex:0 0 auto; object-fit:contain; }
+header .logo > span { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1px; min-width:0; text-align:center; line-height:1.15; color:#9a1c20; }
+header .logo > span > small { margin:0; font-size:8px; line-height:1.2; color:#74777b; }
+@media(max-width:767px) {
+header,header .wrap { height:72px; }
+header .logo { font-size:10px; gap:2px; }
+header .logo > img { width:28px; height:28px; }
+header .logo > span > small { font-size:7px; }
+nav.open { top:72px; }
+}
+</style>
+</head>
 <body id="top">
 <div class="util">
 <div class="wrap">

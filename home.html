@@ -659,6 +659,42 @@
 .eng-strip .wrap>span:nth-child(odd)::before,.about-strip .wrap>span:nth-child(odd)::before,.trust .wrap>span:nth-child(odd)::before{display:none}
 }
 </style>
+    <style>
+      /* Keep the company name and subtitle centered beside the logo. */
+      header .logo { flex-direction: column; align-items: center; justify-content: center; gap: 4px; }
+      header .logo > img { flex: 0 0 auto; object-fit: contain; }
+      header .logo > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        min-width: 0;
+        text-align: center;
+        line-height: 1.25;
+      }
+      header .logo > span > small { margin: 0; line-height: 1.35; }
+      @media (max-width: 767px) {
+        header, header .wrap { height: 100px; }
+        header .logo > span { gap: 2px; }
+        nav.open { top: 100px; }
+      }
+    </style>
+    <style>
+      /* Compact stacked brand sized to the navigation bar. */
+      header .logo { gap: 2px; font-size: 11px; line-height: 1.15; letter-spacing: 0; }
+      header .logo > img { width: 32px; height: 32px; }
+      header .logo > span { gap: 1px; line-height: 1.15; }
+      header .logo > span > small { font-size: 8px; line-height: 1.2; }
+      @media (max-width: 767px) {
+        header, header .wrap { height: 72px; }
+        header .logo { gap: 2px; font-size: 10px; }
+        header .logo > img { width: 28px; height: 28px; }
+        header .logo > span > small { font-size: 7px; }
+        nav.open { top: 72px; }
+      }
+    </style>
+    <style>header .logo > span { color: #9a1c20; } header .logo > span > small { color: #74777b; }</style>
 </head>
   <body id="top">
     <div class="util">

@@ -658,12 +658,12 @@
 .category-filter{display:flex;flex-direction:column;gap:7px;flex:1 1 280px;min-width:0;font-size:14px;font-weight:600}
 .category-filter select{width:100%;min-height:48px;border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--card);color:var(--ink);font:inherit}
 .filterbar .searchbox{flex:1 1 280px;min-width:0}
-.product-media{height:200px;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:#f6f6f6;margin-bottom:16px}
-.product-media img{display:block;width:100%;height:100%;object-fit:contain;padding:12px}
+.product-media{width:100%;height:auto;aspect-ratio:4/3;min-width:0;display:grid;place-items:center;overflow:hidden;border:0;border-radius:0;background:transparent;margin:0 0 16px}
+.product-media img{display:block;width:100%;height:100%;min-width:0;max-width:100%;object-fit:contain;object-position:center;padding:0;margin:0}
 .product-media img[hidden]{display:none}
 .product-placeholder{display:none;color:#5a6066;font-size:14px;padding:20px;text-align:center}
 .product-media:not(:has(img)) .product-placeholder,.product-media.image-missing .product-placeholder{display:block}
-@media(max-width:560px){.filterbar{display:grid;grid-template-columns:minmax(0,1fr)}.product-media{height:180px}}
+@media(max-width:560px){.filterbar{display:grid;grid-template-columns:minmax(0,1fr)}}
 </style>
 <style>
 /* Shared strip dividers, matching the homepage separator dimensions. */
@@ -690,7 +690,20 @@
 .spec-list dd{font-size:14px;line-height:1.6;margin:0;white-space:pre-line}
 .spec-content .spec-note{font-size:12px;line-height:1.6;color:var(--mute);margin-top:16px}
 .eng-grid{align-items:start}
-</style></head>
+</style><style id="ptk-header-brand">
+header .logo { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; font-size:11px; line-height:1.15; letter-spacing:0; }
+header .logo > img { width:32px; height:32px; flex:0 0 auto; object-fit:contain; }
+header .logo > span { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1px; min-width:0; text-align:center; line-height:1.15; color:#9a1c20; }
+header .logo > span > small { margin:0; font-size:8px; line-height:1.2; color:#74777b; }
+@media(max-width:767px) {
+header,header .wrap { height:72px; }
+header .logo { font-size:10px; gap:2px; }
+header .logo > img { width:28px; height:28px; }
+header .logo > span > small { font-size:7px; }
+nav.open { top:72px; }
+}
+</style>
+</head>
 <body id="top">
 <div class="util">
 <div class="wrap">
