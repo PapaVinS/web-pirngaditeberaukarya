@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Gartner for Infrastructure &amp; Operations | PTK</title>
+<meta name="description" content="Explore Gartner research and advisory enquiries for Infrastructure &amp; Operations.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+    <style>
+      :root {
+        --navy: #1e2226;
+        --blue: #9b1c20;
+        --bg: #fff;
+        --soft: #f5f3f3;
+        --ink: #1e2226;
+        --mute: #5a6066;
+        --line: #dedada;
+        --card: #fff;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #14171a;
+          --soft: #1b1f23;
+          --ink: #eceeef;
+          --mute: #a4abb1;
+          --line: #2f353a;
+          --card: #1d2125;
+          --blue: #e0575b
+        }
+      }
+
+      :root[data-theme="dark"] {
+        --bg: #14171a;
+        --soft: #1b1f23;
+        --ink: #eceeef;
+        --mute: #a4abb1;
+        --line: #2f353a;
+        --card: #1d2125;
+        --blue: #e0575b
+      }
+
+      html {
+        scroll-padding-top: 90px;
+        scroll-behavior: smooth
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 400 17px/1.55 "Source Sans 3", system-ui, Arial, sans-serif
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 2px
+      }
+
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px
+      }
+
+      .util {
+        background: var(--navy);
+        color: #d3d6d9;
+        font-size: 14px
+      }
+
+      .util .wrap {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        flex-wrap: wrap
+      }
+
+      header {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+        z-index: 5
+      }
+
+      header .wrap {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        height: 72px
+      }
+
+      .logo {
+        display:flex;align-items:center;gap:12px;font-weight:800;
+        font-size: 20px;
+        color: var(--navy);
+        line-height: 1.1
+      }
+
+      .logo img{width:44px;height:44px;display:block}
+      .logo small {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--mute)
+      }
+
+      @media (prefers-color-scheme:dark) {
+        :root:not([data-theme="light"]) .logo {
+          color: #fff
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        flex: 1
+      }
+
+      nav a {
+        padding: 24px 0;
+        border-bottom: 3px solid transparent
+      }
+
+      nav a:hover,
+      nav a.active {
+        border-color: var(--blue)
+      }
+
+      .navy {
+        background: var(--navy);
+        color: #fff
+      }
+
+      .navy .lead,
+      .navy .steps span {
+        color: #d3d6d9
+      }
+
+      .navy .steps div {
+        border-color: #e0575b
+      }
+
+      .navy .steps div::before {
+        color: #f0a3a5
+      }
+
+      .hero .btn:not(.ghost),
+      .band .btn {
+        background: #fff;
+        color: var(--navy)
+      }
+
+      .btn {
+        display: inline-block;
+        background: var(--blue);
+        color: #fff;
+        font: 700 16px "Source Sans 3", sans-serif;
+        padding: 13px 26px;
+        border-radius: 2px;
+        border: 0;
+        cursor: pointer
+      }
+
+      .btn.ghost {
+        background: transparent;
+        border: 2px solid #fff
+      }
+
+      .btn.sm {
+        padding: 10px 20px
+      }
+
+      .hero-sm {
+        background: radial-gradient(900px 200px at 85% 10%, #9b1c20 0%, rgba(155,28,32,0) 70%), linear-gradient(135deg, #14171a 0%, #1e2226 55%, #2a1618 100%);
+        color: #fff;
+        padding: 64px 0
+      }
+
+      h1 {
+        font-size: clamp(32px, 4.5vw, 48px);
+        line-height: 1.08;
+        margin: 0 0 16px;
+        font-weight: 800;
+        letter-spacing: -1px
+      }
+
+      .hero-sm p {
+        font-size: 18px;
+        color: #d3d6d9;
+        max-width: 42em;
+        margin: 0
+      }
+
+      section {
+        padding: 80px 0
+      }
+
+      .soft {
+        background: var(--soft)
+      }
+
+      h2.t {
+        font-size: clamp(28px, 3.4vw, 40px);
+        line-height: 1.12;
+        margin: 0 0 12px;
+        letter-spacing: -.5px;
+        font-weight: 800
+      }
+
+      .lead {
+        color: var(--mute);
+        max-width: 42em;
+        margin: 0 0 36px
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+      }
+
+      .card h3 {
+        margin: 0;
+        font-size: 20px
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--mute);
+        font-size: 16px
+      }
+
+      .card .ex {
+        font-size: 15px;
+        color: var(--ink);
+        font-weight: 600
+      }
+
+      .chips {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+      }
+
+      .chips button {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        padding: 9px 16px;
+        font: 600 15px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        border-radius: 20px
+      }
+
+      .chips button[aria-pressed="true"] {
+        background: var(--blue);
+        border-color: var(--blue);
+        color: #fff
+      }
+
+      .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap
+      }
+
+      .tags i {
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 600;
+        background: var(--soft);
+        border: 1px solid var(--line);
+        padding: 2px 8px
+      }
+
+      .card .q {
+        margin-top: auto;
+        padding-top: 10px;
+        background: none;
+        border: 0;
+        text-align: left;
+        color: var(--blue);
+        font: 700 16px "Source Sans 3", sans-serif;
+        cursor: pointer;
+        padding-left: 0
+      }
+
+      .note {
+        color: var(--mute);
+        font-size: 14px;
+        margin-top: 20px;
+        max-width: 56em
+      }
+
+      footer {
+        background: var(--navy);
+        color: #d3d6d9;
+        padding: 56px 0 32px;
+        font-size: 15px
+      }
+
+      footer .wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 40px
+      }
+
+      footer h4 {
+        color: #fff;
+        margin: 0 0 12px;
+        font-size: 16px
+      }
+
+      footer a {
+        display: block;
+        padding: 3px 0
+      }
+
+      footer .copy {
+        grid-column: 1/-1;
+        border-top: 1px solid #3a4147;
+        padding-top: 20px;
+        font-size: 13px
+      }
+
+      @media (max-width:900px) {
+        nav {
+          display: none
+        }
+
+        header .wrap {
+          justify-content: space-between
+        }
+
+        .grid {
+          grid-template-columns: 1fr 1fr
+        }
+
+        footer .wrap {
+          grid-template-columns: 1fr
+        }
+      }
+
+      @media (max-width:560px) {
+        .grid {
+          grid-template-columns: 1fr
+        }
+
+        section {
+          padding: 56px 0
+        }
+      }
+      /* PTK concept alignment, matching home.html */
+      :root, :root[data-theme="dark"] { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; }
+      @media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --navy:#17191b; --blue:#9a1c20; --bg:#fff; --soft:#f4f5f6; --ink:#17191b; --mute:#6d7075; --line:#dee0e2; --card:#fff; } }
+      html { scroll-padding-top:86px; }
+      body { font:400 16px/1.65 Manrope,Arial,sans-serif; background:#fff; color:var(--ink); }
+      .wrap { max-width:1256px; padding-left:0; padding-right:0; }
+      .util { background:var(--soft); color:#696c70; font-size:12px; }
+      .util .wrap { min-height:0; padding-top:8px; padding-bottom:8px; justify-content:flex-end; gap:22px; }
+      .util a + a { border-left:1px solid var(--line); padding-left:22px; }
+      header { top:0; height:86px; background:#fff; border-bottom:1px solid var(--line); box-shadow:none; }
+      header .wrap { height:86px; gap:28px; }
+      .logo { color:var(--ink)!important; font-size:14px; line-height:1.25; letter-spacing:-.4px; }
+      .logo img { width:48px; height:48px; }
+      .logo small { font-size:9px; color:#74777b; letter-spacing:.1px; }
+      nav { margin-left:auto; gap:30px; flex:none; font-size:14px; font-weight:700; height:100%; }
+      nav a { display:flex; align-items:center; padding:0; border:0; position:relative; }
+      nav a:hover { border:0; color:var(--blue); }
+      nav a.active:after, nav a.is-active:after { content:""; position:absolute; height:2px; width:25px; bottom:21px; left:0; background:var(--blue); }
+      .menu-btn { display:none; }
+      .btn { min-height:48px; display:inline-flex; align-items:center; justify-content:center; padding:0 24px; border-radius:5px; background:#b52228; font:800 14px Manrope,Arial,sans-serif; }
+      .btn.sm { padding:0 21px; margin-left:4px; }
+      .hero-sm { background:#17191b; color:#fff; padding:84px 0 88px; }
+      h1 { max-width:760px; margin:0 0 20px; font-size:clamp(41px,5vw,65px); line-height:1.08; letter-spacing:-3px; font-weight:700; }
+      .hero-sm p { max-width:690px; font-size:16px; color:#c9cbcd; }
+      section { padding:100px 0; }
+      .soft { background:var(--soft); }
+      h2.t { max-width:650px; margin:0 0 12px; font-size:clamp(31px,3.5vw,46px); line-height:1.12; letter-spacing:-2px; font-weight:700; }
+      .lead { max-width:650px; color:var(--mute); font-size:16px; margin-bottom:38px; }
+      .grid { gap:16px; }
+      .card { min-height:270px; padding:27px; border:1px solid var(--line); border-radius:5px; background:#fff; gap:12px; box-shadow:none; cursor:pointer; transition:border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease; }
+      .card.is-selected { border-color:var(--blue); border-top:3px solid var(--blue); background:#fbf7f7; box-shadow:0 10px 22px rgba(23,25,27,.09); transform:translateY(-2px); }
+      .card h3 { font-size:21px; line-height:1.16; letter-spacing:-.8px; }
+      .card p { font-size:14px; color:var(--mute); }
+      .card .ex { margin-top:auto; padding-top:16px; border-top:1px solid var(--line); font-size:12px; color:#777a7e; font-weight:500; }
+      .chips { gap:0; margin-bottom:25px; border-bottom:1px solid var(--line); }
+      .chips button { border:0; border-bottom:2px solid transparent; border-radius:0; background:transparent; padding:0 0 13px; margin-right:28px; color:#4f5256; font:600 14px Manrope,Arial,sans-serif; }
+      .chips button[aria-pressed="true"] { border-color:var(--blue); background:transparent; color:var(--ink); font-weight:800; }
+      #prod { grid-template-columns:repeat(4,1fr); }
+      #prod .card { min-height:270px; }
+      .tags i { border:0; background:transparent; color:#777a7e; padding:0; font-size:11px; }
+      .card .q { color:var(--blue); font:800 13px Manrope,Arial,sans-serif; }
+      .note { color:var(--mute); font-size:12px; }
+      footer { background:#17191b; padding:57px 0 25px; font-size:13px; }
+      footer h4 { font:700 16px Manrope,Arial,sans-serif; }
+      footer .copy { border-color:#45474a; }
+      @media (max-width:1300px) { .wrap { width:calc(100% - 80px); } }
+      @media (max-width:960px) { .wrap { width:calc(100% - 48px); } header .wrap { justify-content:flex-start; position:relative; } .menu-btn { display:grid; place-items:center; margin-left:auto; width:42px; height:42px; padding:0; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--ink); font-size:21px; cursor:pointer; } nav, header .btn.sm { display:none; } nav.open { display:flex; position:absolute; top:72px; left:0; right:0; height:auto; flex-direction:column; gap:0; padding:12px 24px; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 12px 15px rgba(0,0,0,.08); } nav.open a { display:block; padding:12px 0; } nav.open a.active:after, nav.open a.is-active:after { display:none; } #prod { grid-template-columns:1fr 1fr; } }
+      @media (max-width:767px) { .wrap { width:calc(100% - 40px); } .util { display:none; } header,header .wrap { height:72px; } .logo { gap:8px; font-size:11px; } .logo img { width:40px; height:40px; } .logo small { font-size:7px; } .hero-sm { padding:60px 0; } h1 { font-size:41px; letter-spacing:-2px; } .hero-sm p { font-size:15px; line-height:1.7; } section { padding:60px 0; } h2.t { font-size:31px; letter-spacing:-1.4px; } .lead { margin-bottom:28px; font-size:15px; } .grid,#prod { grid-template-columns:1fr; } .card,#prod .card { min-height:0; padding:24px; } .chips { overflow:auto; } .chips button { white-space:nowrap; } footer .wrap { gap:25px; } }
+    </style>
+  <style>
+/* Shared strip dividers, matching the homepage separator dimensions. */
+.eng-strip .wrap,.about-strip .wrap{display:grid;grid-template-columns:repeat(var(--strip-columns),minmax(0,1fr));gap:0;align-items:center}
+.eng-strip{--strip-columns:6;--strip-divider:#cf3036}
+.about-strip{--strip-columns:3;--strip-divider:rgba(255,255,255,.75)}
+.eng-strip .wrap>span,.about-strip .wrap>span{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px;min-width:0}
+.eng-strip .wrap>span::before,.eng-strip .wrap>span:not(:first-child)::before,.about-strip .wrap>span::before{content:"";display:block;position:absolute;left:0;top:50%;width:2px;height:14px;transform:translate(-50%,-50%);background:var(--strip-divider);margin:0;border-radius:0}
+.eng-strip .wrap>span:first-child::before,.about-strip .wrap>span:first-child::before{display:none}
+@media(max-width:767px){
+.eng-strip .wrap,.about-strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+.eng-strip .wrap>span:nth-child(odd)::before,.about-strip .wrap>span:nth-child(odd)::before,.trust .wrap>span:nth-child(odd)::before{display:none}
+}
+</style>
+<style id="ptk-header-brand">
+header .logo { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; font-size:11px; line-height:1.15; letter-spacing:0; }
+header .logo > img { width:32px; height:32px; flex:0 0 auto; object-fit:contain; }
+header .logo > span { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1px; min-width:0; text-align:center; line-height:1.15; color:#9a1c20; }
+header .logo > span > small { margin:0; font-size:8px; line-height:1.2; color:#74777b; }
+@media(max-width:767px) {
+header,header .wrap { height:72px; }
+header .logo { font-size:10px; gap:2px; }
+header .logo > img { width:28px; height:28px; }
+header .logo > span > small { font-size:7px; }
+nav.open { top:72px; }
+}
+</style>
+<style>
+.g-hero{background:#f4f5f6;padding:56px 0;border-bottom:1px solid var(--line)}
+.g-kicker{color:#9a1c20;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.g-hero h1{font-size:clamp(30px,4vw,48px);line-height:1.15;max-width:900px;margin:12px 0 20px}
+.g-hero p{max-width:750px}.g-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+.g-card{border:1px solid var(--line);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:12px;background:white}
+.g-card h2,.g-card h3{margin:0;font-size:20px}.g-card p{margin:0;color:#6d7075}.g-card a{margin-top:auto;color:#9a1c20;font-weight:800}
+.g-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(240px,1fr);gap:36px}.g-side{background:#f4f5f6;padding:26px;border-radius:6px;align-self:start}
+.g-list{padding-left:22px;line-height:1.9}.g-breadcrumb{font-size:13px;margin-bottom:24px}.g-input{width:100%;max-width:600px;padding:14px;border:1px solid #aaa;border-radius:5px;font:inherit}
+.g-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}.g-count{font-size:13px;color:#6d7075}
+@media(max-width:1200px){header nav{gap:16px;font-size:13px}}
+@media(max-width:900px){.g-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.g-layout{grid-template-columns:1fr}}
+@media(max-width:600px){.g-grid{grid-template-columns:1fr}.g-hero{padding:36px 0}.g-actions .btn{width:100%}}
+</style><style id="ptk-logo-position">
+header { height:86px; }
+header > .wrap { display:flex; align-items:center; justify-content:flex-start; height:86px; max-width:1256px; width:100%; margin:0 auto; padding:0; gap:28px; box-sizing:border-box; }
+header .logo { display:flex; flex-direction:column; align-items:center; justify-content:center; flex:0 0 auto; margin:0; padding:0; gap:2px; font-size:11px; line-height:1.15; letter-spacing:0; }
+header .logo > img { display:block; width:32px; height:32px; flex:0 0 auto; object-fit:contain; }
+header .logo > span { display:flex; flex-direction:column; align-items:center; justify-content:center; margin:0; padding:0; gap:1px; text-align:center; line-height:1.15; color:#9a1c20; }
+header .logo small { margin:0; font-size:8px; line-height:1.2; color:#74777b; }
+@media(max-width:1300px){header > .wrap {width:calc(100% - 80px)}}
+@media(max-width:960px){header > .wrap {width:calc(100% - 48px)}header nav.open {top:86px}}
+@media(max-width:767px){
+header,header > .wrap {height:72px}
+header > .wrap {width:calc(100% - 40px)}
+header .logo {font-size:10px}
+header .logo > img {width:28px;height:28px}
+header .logo small {font-size:7px}
+header nav.open {top:72px}
+}
+</style><style id="ptk-contact-details">
+.util .wrap { flex-wrap:wrap; height:auto; gap:8px 18px; }
+.util a { overflow-wrap:anywhere; }
+footer a[href^="mailto:"] { overflow-wrap:anywhere; }
+</style><style>footer .contact-group{margin-top:18px}footer .contact-group h5{margin:0 0 8px;font:700 13px Manrope,Arial,sans-serif;color:#fff}footer .contact-group a{display:block;margin-bottom:6px;overflow-wrap:anywhere}</style><style id="ptk-approved-footer">
+footer.ptk-contact {background:#17191b;border-top:3px solid #9a1c20;padding:34px 0 18px}
+footer.ptk-contact > .wrap {display:block}
+.ptk-contact .contact-grid {display:grid;grid-template-columns:1.35fr .8fr 1.4fr 1fr;gap:24px;align-items:start}
+.ptk-contact .contact-item {display:flex;align-items:flex-start;gap:12px;min-width:0}
+.ptk-contact .contact-item > svg {width:28px;height:28px;flex:0 0 28px;color:#c93b40}
+.ptk-contact .contact-item > div {min-width:0}
+footer.ptk-contact h4 {font:700 14px Manrope,Arial,sans-serif;color:#fff;margin:2px 0 12px}
+footer.ptk-contact p,footer.ptk-contact a {font-size:12px;line-height:1.65;color:#c8cacc;margin:0 0 4px;overflow-wrap:anywhere}
+footer.ptk-contact a {display:block}
+footer.ptk-contact a:hover {color:#fff}
+footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-top:14px;font-size:11px;color:#92969a;text-align:left}
+@media(max-width:1100px){.ptk-contact .contact-grid{grid-template-columns:1.2fr 1fr;gap:26px 32px}}
+@media(max-width:600px){footer.ptk-contact{padding-top:26px}.ptk-contact .contact-grid{grid-template-columns:1fr;gap:22px}.ptk-contact .contact-item{gap:14px}footer.ptk-contact h4{margin-bottom:7px}}
+</style><style id="gartner-ptk-contrast">
+.g-hero{background:#65171b;border-bottom:4px solid #9a1c20;color:#fff}
+.g-hero h1,.g-hero p,.g-hero .note{color:#fff}
+.g-hero .g-kicker{color:#f2b9bc}
+.g-hero .g-breadcrumb,.g-hero .g-breadcrumb a{color:#f5d6d7}
+.g-hero .btn{background:#fff;color:#65171b;border:1px solid #fff}
+.g-hero .btn.ghost{background:transparent;color:#fff;border:1px solid #e8b6b9}
+.g-hero .btn:hover{background:#f8e9e9;color:#65171b}
+.g-card{background:#fff;border:1px solid #b7bcc3;border-top:3px solid #9a1c20;box-shadow:0 3px 12px rgba(23,25,27,.05)}
+.g-card:hover{border-color:#9a1c20;box-shadow:0 5px 18px rgba(101,23,27,.12)}
+.g-card h3{color:#17191b}.g-card p{color:#525760}.g-card a{color:#9a1c20}
+.g-side{background:#f8e9e9;border:1px solid #c99397;border-left:4px solid #9a1c20;color:#292326}
+.g-side h2{color:#65171b}.g-side a{color:#841d24;text-decoration:underline}
+.g-side hr{border:0;border-top:1px solid #c99397;margin:20px 0}
+main>section.soft{background:#e9edf2;border-top:1px solid #b7bcc3}
+.g-input{background:#fff;border-color:#7c838d;color:#17191b}
+.g-input:focus{outline:2px solid #9a1c20;outline-offset:2px}
+</style><style id="gartner-shared-header">
+header,.util{font-family:Manrope,Arial,sans-serif}
+header{background:#fff;color:#17191b;border-bottom:1px solid #dee0e2;box-shadow:none;position:sticky;top:0;z-index:50}
+header nav{display:flex;margin-left:auto;gap:30px;flex:none;font-size:14px;font-weight:700;height:100%}
+header nav a{color:#17191b;display:flex;align-items:center;padding:0;border:0;position:relative;text-decoration:none}
+header nav a:hover{color:#9a1c20}
+header nav a.is-active:after{content:"";position:absolute;height:2px;width:25px;bottom:21px;left:0;background:#9a1c20}
+header .btn.sm{min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:0 21px;margin-left:4px;border-radius:5px;background:#b52228;color:#fff;font:800 14px Manrope,Arial,sans-serif}
+.util{background:#f4f5f6;color:#696c70;font-size:12px}
+.util .wrap{max-width:1256px;margin:auto;padding:8px 0;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 18px}
+@media(max-width:1300px){.util .wrap{width:calc(100% - 80px)}}
+@media(max-width:960px){header nav,header .btn.sm{display:none}header .menu-btn{display:grid;place-items:center;margin-left:auto;width:42px;height:42px;padding:0;border:1px solid #dee0e2;border-radius:5px;background:#fff;color:#17191b;font-size:21px;cursor:pointer}header nav.open{display:flex;position:absolute;top:86px;left:0;right:0;height:auto;flex-direction:column;gap:0;padding:12px 24px;background:#fff;box-shadow:0 12px 15px rgba(0,0,0,.08)}header nav.open a{display:block;padding:12px 0}header nav.open a.is-active:after{display:none}}
+@media(max-width:767px){.util{display:none}header nav.open{top:72px;padding:10px 20px 14px}}
+</style></head>
+  <body id="top"><div class="util">
+      <div class="wrap">
+        <a href="#contact">Jakarta, Indonesia</a>
+        <a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a>
+<a href="request-quotation.html">Request quotation</a>
+      </div>
+    </div><header>
+      <div class="wrap">
+        <a class="logo" href="home.html">
+          <img src="data:image/png;base64,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" alt="PTK" width="44" height="44">
+          <span>PT. Pirngadi Teberau Karya <small>Software Licensing &amp; Engineering</small>
+          </span>
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainnav">&#9776;</button>
+        <nav id="mainnav" aria-label="Main navigation">
+          <a href="home.html#top">Home</a>
+          <a href="home.html#solutions">Solutions</a>
+          <a class="is-active" href="home.html#featured" aria-current="page">Products</a>
+          <a href="about.html">About PTK</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn sm" href="request-quotation.html">Request a quotation</a>
+      </div>
+    </header><main><div class="g-hero"><div class="wrap"><div class="g-breadcrumb"><a href="home.html">Home</a> / <a href="gartner.html">Gartner Product</a> / Infrastructure &amp; Operations</div><p class="g-kicker">Gartner • By Function</p><h1>Gartner for Infrastructure &amp; Operations</h1><p>Explore research and advisory options for your infrastructure &amp; operations priorities. Use this overview to prepare your requirements and identify the appropriate Gartner offering.</p><div class="g-actions"><a class="btn" href="request-quotation.html?principal=Gartner&amp;product=Gartner+%E2%80%94+Infrastructure+%26+Operations">Enquire about this function</a><a class="btn ghost" href="https://www.gartner.com/en/infrastructure-and-it-operations-leaders" target="_blank" rel="noopener">Official Gartner overview ↗</a></div></div></div>
+<section><div class="wrap g-layout"><div><h2>Priorities to discuss</h2><p>Build your enquiry around the decisions your team needs to make.</p><ul class="g-list"><li>Cloud and infrastructure strategy</li><li>Operational reliability and resilience</li><li>Infrastructure cost and service management</li></ul><h2>Research and advisory requirements</h2><p>Identify your research needs, the roles that require access, and whether you need expert discussions, benchmarks, or decision-support tools. Confirm the specific scope and entitlements for the selected offering before purchase.</p><h2>Prepare your enquiry</h2><ol class="g-list"><li>Describe your organisation, team and current challenge.</li><li>Specify the number of users and their roles.</li><li>Include your preferred subscription period and procurement timeline.</li><li>List any required tools, advisory access or deliverables for confirmation.</li></ol></div><aside class="g-side"><h2>Function summary</h2><p><strong>Infrastructure &amp; Operations</strong></p><p>Research and advisory enquiry</p><p>Pricing, availability and access depend on the selected offering and applicable terms.</p><a href="request-quotation.html?principal=Gartner&amp;product=Gartner+%E2%80%94+Infrastructure+%26+Operations">Request scope and quotation →</a><hr><a href="https://www.gartner.com/en/infrastructure-and-it-operations-leaders" target="_blank" rel="noopener">Source: Gartner’s official function page ↗</a></aside></div></section>
+<section class="soft"><div class="wrap"><h2>Explore another function</h2><p><a href="gartner.html">View all 23 Gartner functions →</a></p><p class="note">Gartner is a trademark of Gartner, Inc. Offering details and subscription entitlements are subject to confirmation.</p></div></section></main><footer id="contact" class="ptk-contact"><div class="wrap"><div class="contact-grid"><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><h4>Address</h4><p>Jalan Jaksa No. 7D, Kebon Sirih, Menteng<br>Jakarta Pusat, DKI Jakarta 10340</p></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7c-2 4 3 9 7 8l1-2-3-1-1 1-2-2 1-1-1-3Z"/></svg><div><h4>WhatsApp</h4><a href="https://wa.me/6285811151135" target="_blank" rel="noopener">085811151135</a><a href="https://wa.me/6282122167320" target="_blank" rel="noopener">082122167320</a></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg><div><h4>Email</h4><a href="mailto:romiyan@pirngaditeberaukarya.com">romiyan@pirngaditeberaukarya.com</a><a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a><a href="mailto:corp.pirngaditeberaukarya@gmail.com">corp.pirngaditeberaukarya@gmail.com</a></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M11 17v-7M11 13c0-4 6-4 6 0v4"/><circle cx="7" cy="7" r=".5"/></svg><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/company/pirngaditeberaukarya/" target="_blank" rel="noopener">PT. Pirngadi Teberau Karya ↗</a></div></div></div><div class="copy">&copy; <span id="y">2026</span> PT. Pirngadi Teberau Karya. All rights reserved. Privacy policy &middot; Terms of use</div></div></footer><script>
+const toggle=document.getElementById('menu-btn'),nav=document.getElementById('mainnav');
+if(toggle&&nav)toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+const year=document.getElementById('y');if(year)year.textContent=new Date().getFullYear();
+const search=document.getElementById('g-search');if(search)search.addEventListener('input',()=>{let n=0;document.querySelectorAll('[data-function]').forEach(c=>{c.hidden=!c.dataset.function.includes(search.value.toLowerCase().trim());if(!c.hidden)n++});document.getElementById('g-count').textContent=n+' functions found';});
+</script></body></html>
