@@ -1,0 +1,1563 @@
+{
+  "categories": [
+    [
+      "Cyber Security",
+      "cyber-security",
+      "Plan protection for identities, networks and connected systems.",
+      [
+        "sonicwall",
+        "firemon",
+        "piolink",
+        "huawei",
+        "ruijie",
+        "one-identity"
+      ]
+    ],
+    [
+      "Data Center Infrastructure",
+      "data-center-infrastructure",
+      "Explore server and storage options for business workloads.",
+      [
+        "gigabyte",
+        "infortrend",
+        "seagate"
+      ]
+    ],
+    [
+      "Database Management Tools",
+      "database-management-tools",
+      "Explore database development, monitoring, replication and analytics.",
+      [
+        "foglight",
+        "toad",
+        "shareplex",
+        "mariadb"
+      ]
+    ],
+    [
+      "Internet of Things (IoT)",
+      "internet-of-things-iot",
+      "Connect industrial equipment, gateways and remote sites.",
+      [
+        "robustel",
+        "teltonika"
+      ]
+    ],
+    [
+      "Enterprise Network",
+      "enterprise-network",
+      "Plan wired and wireless connectivity for enterprise environments.",
+      [
+        "ruijie",
+        "altai",
+        "omada"
+      ]
+    ],
+    [
+      "Small & Medium Business Network",
+      "small-medium-business-network",
+      "Explore manageable networking options for offices and growing businesses.",
+      [
+        "tplink",
+        "huawei",
+        "reyee",
+        "engenius",
+        "omada",
+        "linkyfi"
+      ]
+    ],
+    [
+      "Smart Classroom",
+      "smart-classroom",
+      "Explore interactive learning, presentation and recording equipment.",
+      [
+        "huawei",
+        "bunka"
+      ]
+    ],
+    [
+      "Surveillance",
+      "surveillance",
+      "Explore video surveillance and recording systems.",
+      [
+        "vigi"
+      ]
+    ]
+  ],
+  "brands": {
+    "sonicwall": [
+      "SonicWall",
+      "Network security appliances and software."
+    ],
+    "firemon": [
+      "FireMon",
+      "Network security policy management."
+    ],
+    "piolink": [
+      "PIOLINK",
+      "Application delivery and network security solutions."
+    ],
+    "huawei": [
+      "HUAWEI eKit",
+      "Business networking and collaboration equipment."
+    ],
+    "ruijie": [
+      "Ruijie",
+      "Enterprise networking equipment."
+    ],
+    "one-identity": [
+      "One Identity",
+      "Identity governance and access security."
+    ],
+    "gigabyte": [
+      "GIGABYTE",
+      "Servers for infrastructure and computing workloads."
+    ],
+    "infortrend": [
+      "Infortrend",
+      "Enterprise storage systems."
+    ],
+    "seagate": [
+      "Seagate",
+      "Enterprise storage and data systems."
+    ],
+    "foglight": [
+      "Foglight by Quest",
+      "Database monitoring and performance diagnostics."
+    ],
+    "toad": [
+      "Toad by Quest",
+      "Database development and administration tools."
+    ],
+    "shareplex": [
+      "SharePlex by Quest",
+      "Database replication and migration software."
+    ],
+    "mariadb": [
+      "MariaDB",
+      "Enterprise database and analytics options."
+    ],
+    "robustel": [
+      "Robustel",
+      "Industrial routers, gateways and IoT devices."
+    ],
+    "teltonika": [
+      "Teltonika Networks",
+      "Industrial connectivity and networking."
+    ],
+    "altai": [
+      "Altai",
+      "Industrial and enterprise Wi-Fi."
+    ],
+    "omada": [
+      "Omada",
+      "Managed business networks and cloud control."
+    ],
+    "tplink": [
+      "TP-Link",
+      "Networking for business and everyday connectivity."
+    ],
+    "reyee": [
+      "Reyee",
+      "Networking for small and medium businesses."
+    ],
+    "engenius": [
+      "EnGenius",
+      "Cloud-managed networking equipment."
+    ],
+    "linkyfi": [
+      "Linkyfi",
+      "Guest Wi-Fi access and marketing platform."
+    ],
+    "bunka": [
+      "BUNKA",
+      "Interactive displays, lecterns and recording equipment."
+    ],
+    "vigi": [
+      "VIGI",
+      "Surveillance cameras and recording systems."
+    ]
+  },
+  "products": [
+    {
+      "url": "https://www.wpteknologi.com/smart-lectern/",
+      "brand": "bunka",
+      "name": "Smart Lectern",
+      "verification": "Source title checked",
+      "image": "img/solutions/b909546d9509b667e1.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/Smart-Lectern.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/electric-smart-lectern/",
+      "brand": "bunka",
+      "name": "Electric Smart Lectern",
+      "verification": "Source title checked",
+      "image": "img/solutions/9bb3af75568884f355.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/conference-interactive-display/",
+      "brand": "bunka",
+      "name": "Conference Interactive Display",
+      "verification": "Source title checked",
+      "image": "img/solutions/9bb3af75568884f355.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/interactive-education-display/",
+      "brand": "bunka",
+      "name": "Interactive Education Display",
+      "verification": "Source title checked",
+      "image": "img/solutions/9bb3af75568884f355.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/outdoor-record-and-broadcasting-equipment/",
+      "brand": "bunka",
+      "name": "Outdoor Record and Broadcasting Equipment",
+      "verification": "Source title checked",
+      "image": "img/solutions/d3a8a1b001d9d88531.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/Outdoor-Record-and-Broadcasting-Equipment.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/4k-record-and-broadcasting-equipment4k-record-and-broadcasting-equipment/",
+      "brand": "bunka",
+      "name": "4K Record and Broadcasting Equipment",
+      "verification": "Source title checked",
+      "image": "img/solutions/ee69a1eabfa62a30e4.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/4K-Record-and-Broadcasting-Equipment4K-Record-and-Broadcasting-Equipment.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/normalized-record-and-broadcasting-equipment/",
+      "brand": "bunka",
+      "name": "Normalized Record and Broadcasting Equipment",
+      "verification": "Source title checked",
+      "image": "img/solutions/9bb3af75568884f355.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/training-record-and-broadcasting-equipment/",
+      "brand": "bunka",
+      "name": "Training Record and Broadcasting Equipment",
+      "verification": "Source title checked",
+      "image": "img/solutions/9bb3af75568884f355.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/portable-recording-and-broadcasting-equipment/",
+      "brand": "bunka",
+      "name": "Portable Recording and Broadcasting Equipment",
+      "verification": "Source title checked",
+      "image": "img/solutions/bc02e4c685f8dc2b9c.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/Portable-Recording-and-Broadcasting-Equipment.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s380-s8p2t/",
+      "brand": "huawei",
+      "name": "S380-S8P2T",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ar730/",
+      "brand": "huawei",
+      "name": "AR730",
+      "verification": "Source title checked",
+      "image": "img/solutions/53cb0c9727008bb800.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/AR730.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ar720/",
+      "brand": "huawei",
+      "name": "AR720",
+      "verification": "Source title checked",
+      "image": "img/solutions/e8b7be2613521a09bd.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/AR720.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ac650-128ap/",
+      "brand": "huawei",
+      "name": "AC650-128AP",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/usg6000e-s03-ac/",
+      "brand": "huawei",
+      "name": "USG6000E-S03-AC",
+      "verification": "Source title checked",
+      "image": "img/solutions/0491798378c70db755.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/USG6000E-S03-AC.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s310-24p4x/",
+      "brand": "huawei",
+      "name": "S310-24P4X",
+      "verification": "Source title checked",
+      "image": "img/solutions/d4d78ab7743abddb28.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/S310-24P4X.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s310-24t4s/",
+      "brand": "huawei",
+      "name": "S310-24T4S",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s310-48t4s/",
+      "brand": "huawei",
+      "name": "S310-48T4S",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s220s-8p4j/",
+      "brand": "huawei",
+      "name": "S220S-8P4J",
+      "verification": "Source title checked",
+      "image": "img/solutions/78bc28d0a0d5db8253.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/S220S-8P4J.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s220-24p4x/",
+      "brand": "huawei",
+      "name": "S220-24P4X",
+      "verification": "Source title checked",
+      "image": "img/solutions/f346e890272576274c.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/S220-24P4X.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eonstor-gs-4000/",
+      "brand": "infortrend",
+      "name": "EonStor GS 4000",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d5585588c195b31c0.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eonstor-gs-3000/",
+      "brand": "infortrend",
+      "name": "EonStor GS 3000",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d5585588c195b31c0.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eonstor-gs-2000/",
+      "brand": "infortrend",
+      "name": "EonStor GS 2000",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d5585588c195b31c0.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eonstor-ds-3000/",
+      "brand": "infortrend",
+      "name": "EonStor DS 3000",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d5585588c195b31c0.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eonstor-ds-2000/",
+      "brand": "infortrend",
+      "name": "Eonstor DS 2000",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d5585588c195b31c0.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-sm5310-t/",
+      "brand": "omada",
+      "name": "TL-SM5310-T",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-sg3452x/",
+      "brand": "omada",
+      "name": "TL-SG3452X",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-sg3428x/",
+      "brand": "omada",
+      "name": "TL-SG3428X",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/psm500-ac/",
+      "brand": "omada",
+      "name": "PSM500-AC",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/sg6428x/",
+      "brand": "omada",
+      "name": "SG6428X",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/sg2428p/",
+      "brand": "omada",
+      "name": "SG2428P",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s5500-48gp4xf/",
+      "brand": "omada",
+      "name": "S5500-48GP4XF",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/g611/",
+      "brand": "omada",
+      "name": "G611",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap8635-i/",
+      "brand": "omada",
+      "name": "AP8635-I",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/er7212pc/",
+      "brand": "omada",
+      "name": "ER7212PC",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rutx11/",
+      "brand": "teltonika",
+      "name": "RUTX11",
+      "verification": "Source title checked",
+      "image": "img/solutions/03e39050a10e282e61.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rut956/",
+      "brand": "teltonika",
+      "name": "RUT956",
+      "verification": "Source title checked",
+      "image": "img/solutions/03e39050a10e282e61.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rut-951/",
+      "brand": "teltonika",
+      "name": "RUT 951",
+      "verification": "Source title checked",
+      "image": "img/solutions/03e39050a10e282e61.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rut-901/",
+      "brand": "teltonika",
+      "name": "RUT 901",
+      "verification": "Source title checked",
+      "image": "img/solutions/03e39050a10e282e61.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rut200/",
+      "brand": "teltonika",
+      "name": "RUT200",
+      "verification": "Source title checked",
+      "image": "img/solutions/03e39050a10e282e61.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s220-48p4s/",
+      "brand": "huawei",
+      "name": "S220-48P4S",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s110-8p2st/",
+      "brand": "huawei",
+      "name": "S110-8P2ST",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s110-24lp2sr/",
+      "brand": "huawei",
+      "name": "S110-24LP2SR",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap761/",
+      "brand": "huawei",
+      "name": "AP761",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap362e/",
+      "brand": "huawei",
+      "name": "AP362E",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap371/",
+      "brand": "huawei",
+      "name": "AP371",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap265e/",
+      "brand": "huawei",
+      "name": "AP265E",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap160/",
+      "brand": "huawei",
+      "name": "AP160",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap661/",
+      "brand": "huawei",
+      "name": "AP661",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ap361/",
+      "brand": "huawei",
+      "name": "AP361",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/er706w-4g/",
+      "brand": "omada",
+      "name": "ER706W-4G",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/oc-200-v3/",
+      "brand": "omada",
+      "name": "OC 200 V3",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/oc300/",
+      "brand": "omada",
+      "name": "OC300",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap610-outdoor/",
+      "brand": "omada",
+      "name": "EAP610-OUTDOOR",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap623-outdoor-hd/",
+      "brand": "omada",
+      "name": "EAP623-Outdoor HD",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap235-wall/",
+      "brand": "omada",
+      "name": "EAP235-WALL",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap223/",
+      "brand": "omada",
+      "name": "EAP223",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap245/",
+      "brand": "omada",
+      "name": "EAP245",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap670-hd/",
+      "brand": "omada",
+      "name": "EAP670 HD",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eap660-hd/",
+      "brand": "omada",
+      "name": "EAP660 HD",
+      "verification": "Source title checked",
+      "image": "img/solutions/752e7764d70eeda5a8.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eoc610/",
+      "brand": "engenius",
+      "name": "EOC610",
+      "verification": "Source title checked",
+      "image": "img/solutions/eb58f19d35f8bbfe0c.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EOC610.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ews356-fit/",
+      "brand": "engenius",
+      "name": "EWS356-FIT",
+      "verification": "Source title checked",
+      "image": "img/solutions/068520d3220fb4d5a9.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EWS356.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecw220/",
+      "brand": "engenius",
+      "name": "ECW220",
+      "verification": "Source title checked",
+      "image": "img/solutions/c3f28feba3e9ebfa80.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/ECW-220.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecs1528fp/",
+      "brand": "engenius",
+      "name": "ECS1528FP",
+      "verification": "Source title checked",
+      "image": "img/solutions/7e4e76c77bce048eff.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/ECS-1528-FP.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecs1528t/",
+      "brand": "engenius",
+      "name": "ECS1528T",
+      "verification": "Source title checked",
+      "image": "img/solutions/95f9fd2080d32638c2.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/ECS1528-T.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecs1112fp/",
+      "brand": "engenius",
+      "name": "ECS1112FP",
+      "verification": "Source title checked",
+      "image": "img/solutions/db21103aba01a218bb.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/ECS1112FP.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecs1008p/",
+      "brand": "engenius",
+      "name": "ECS1008P",
+      "verification": "Source title checked",
+      "image": "img/solutions/4333479332c62ff44c.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/ECS1008P.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecw536/",
+      "brand": "engenius",
+      "name": "ECW536",
+      "verification": "Source title checked",
+      "image": "img/solutions/f8af2aabd95d50ffa4.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecw526/",
+      "brand": "engenius",
+      "name": "ECW526",
+      "verification": "Source title checked",
+      "image": "img/solutions/f8af2aabd95d50ffa4.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ecw516l/",
+      "brand": "engenius",
+      "name": "ECW516L",
+      "verification": "Source title checked",
+      "image": "img/solutions/f8af2aabd95d50ffa4.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r-133/",
+      "brand": "gigabyte",
+      "name": "R 133",
+      "verification": "Source title checked",
+      "image": "img/solutions/4f23f560b9bd541499.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R133-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r264/",
+      "brand": "gigabyte",
+      "name": "R264",
+      "verification": "Source title checked",
+      "image": "img/solutions/7efddfc4ff1d5bc768.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/xv24-ax0/",
+      "brand": "gigabyte",
+      "name": "XV24-AX0",
+      "verification": "Source title checked",
+      "image": "img/solutions/e523703a53ca13ed86.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/XV24-AX0-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/e264/",
+      "brand": "gigabyte",
+      "name": "E264",
+      "verification": "Source title checked",
+      "image": "img/solutions/7efddfc4ff1d5bc768.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r164/",
+      "brand": "gigabyte",
+      "name": "R164",
+      "verification": "Source title checked",
+      "image": "img/solutions/cdfab3afd2f02605a4.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R164-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r184/",
+      "brand": "gigabyte",
+      "name": "R184",
+      "verification": "Source title checked",
+      "image": "img/solutions/46d4ddcfe1008b5f59.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R184-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r284/",
+      "brand": "gigabyte",
+      "name": "R284",
+      "verification": "Source title checked",
+      "image": "img/solutions/b9b407a8f96f827d25.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R284-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/e284-a90/",
+      "brand": "gigabyte",
+      "name": "E284-A90",
+      "verification": "Source title checked",
+      "image": "img/solutions/31e8744a48752e5c44.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/E284-A90-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/web-aplication-firewall/",
+      "brand": "piolink",
+      "name": "Web Aplication Firewall",
+      "verification": "Source title checked",
+      "image": "img/solutions/b4333f120ac469daa9.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/Web-Application-Firewall.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/application-delivery-controller/",
+      "brand": "piolink",
+      "name": "Application Delivery Controller",
+      "verification": "Source title checked",
+      "image": "img/solutions/67568543d024835918.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/Application-Delivery-Delivery.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-rap52-od/",
+      "brand": "reyee",
+      "name": "RG-RAP52-OD",
+      "verification": "Source title checked",
+      "image": "img/solutions/b14a934bd94b3d1bc8.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-RAP52-OD.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-nbs3300-16mg4xs-hp-2/",
+      "brand": "reyee",
+      "name": "RG-NBS3300-16MG4XS-HP",
+      "verification": "Source title checked",
+      "image": "img/solutions/1fa816acc9b3ab4c4b.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-NBS3300-16MG4XS-HP.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/router-wireless-gigabit/",
+      "brand": "reyee",
+      "name": "Router Wireless Gigabit",
+      "verification": "Source title checked",
+      "image": "img/solutions/40360f4ae29da0cc42.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-nis3100-4gt2sfp-hp/",
+      "brand": "reyee",
+      "name": "RG-NIS3100-4GT2SFP-HP",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/40360f4ae29da0cc42.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-nbs3300-8mg2xs-p/",
+      "brand": "reyee",
+      "name": "RG-NBS3300-8MG2XS-P",
+      "verification": "Source title checked",
+      "image": "img/solutions/d7da71441af482d6bb.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-NBS3300-8MG2XS-P.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-eg1510xs/",
+      "brand": "reyee",
+      "name": "RG-EG1510XS",
+      "verification": "Source title checked",
+      "image": "img/solutions/8468325b8541730d2a.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-EG1510XS.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-rap73hd/",
+      "brand": "reyee",
+      "name": "RG-RAP73HD",
+      "verification": "Source title checked",
+      "image": "img/solutions/0e4ac77f7bce04c00e.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-RAP73HD.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-rap72pro/",
+      "brand": "reyee",
+      "name": "RG-RAP72PRO",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/40360f4ae29da0cc42.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eg5100-industrial-edge-computing-gateway/",
+      "brand": "robustel",
+      "name": "EG5100 Industrial Edge Computing Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/d5857c3dcbb5e1a0d8.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EG-5100-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eg5101-industrial-edge-computing-gateway/",
+      "brand": "robustel",
+      "name": "EG5101 Industrial Edge Computing Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/0d3a9610300400ed47.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EG5101-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eg5120-industrial-edge-computing-gateway/",
+      "brand": "robustel",
+      "name": "EG5120 Industrial Edge Computing Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/332a5981d3935e1fb2.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EG5120-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/eg5200-industrial-edge-computing-gateway/",
+      "brand": "robustel",
+      "name": "EG5200 INDUSTRIAL EDGE COMPUTING GATEWAY",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/s6000u-multifunctional-smart-sensor/",
+      "brand": "robustel",
+      "name": "S6000U Multifunctional Smart Sensor",
+      "verification": "Source title checked",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r1511p-embedded-lte-router/",
+      "brand": "robustel",
+      "name": "R1511P EMBEDDED LTE ROUTER",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r1520lg-universal-lorawan-gateway/",
+      "brand": "robustel",
+      "name": "R1520LG Universal LoRaWAN Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/lg5100-industrial-edge-computing-lorawan-gateway/",
+      "brand": "robustel",
+      "name": "LG5100 Industrial Edge Computing LoRaWAN Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/d7e632972bf80b4254.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/LG5100-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ev8100-elevator-voice-gateway/",
+      "brand": "robustel",
+      "name": "EV8100 Elevator Voice Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/f741b4799324987d87.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/EV8100-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/mg460-maritime-cyber-security-gateway/",
+      "brand": "robustel",
+      "name": "MG460 MARITIME CYBER SECURITY GATEWAY",
+      "verification": "Catalogue listing only",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-wall-1600-z3200-s/",
+      "brand": "ruijie",
+      "name": "RG-WALL 1600-Z3200-S",
+      "verification": "Source title checked",
+      "image": "img/solutions/736a330a3ce96e87f6.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-Wall-1600.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-cs85-24sfp-8gt8xs-d-24-port/",
+      "brand": "ruijie",
+      "name": "RG-CS85-24SFP/8GT8XS-D 24-Port",
+      "verification": "Source title checked",
+      "image": "img/solutions/9cdb7925c7fb1974b5.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-CS85-24SFP-8GT8XS-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-cs86-24xmg4xs4vs-upd-24-port/",
+      "brand": "ruijie",
+      "name": "RG-CS86-24XMG4XS4VS-UPD 24-Port",
+      "verification": "Source title checked",
+      "image": "img/solutions/bd4efdfb3e874b3fd3.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-CS86-24XMG4XS4VS-UPD-24-Port-Multi-GE.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-s2915-24gt4ms-p-l/",
+      "brand": "ruijie",
+      "name": "RG-S2915-24GT4MS-P-L",
+      "verification": "Source title checked",
+      "image": "img/solutions/a74ea5a8e9455f7c22.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-S2915-24GT4MS-P-L-24-.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-cs83-24gt4xs-p/",
+      "brand": "ruijie",
+      "name": "RG-CS83-24GT4XS-P",
+      "verification": "Source title checked",
+      "image": "img/solutions/75867e0e83496c8cb9.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-CS83-24GT4XS-P-300x300.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-ap680cd/",
+      "brand": "ruijie",
+      "name": "RG-AP680(CD)",
+      "verification": "Source title checked",
+      "image": "img/solutions/7496b9c901e506f087.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-ap680p-l/",
+      "brand": "ruijie",
+      "name": "RG-AP680P-L",
+      "verification": "Source title checked",
+      "image": "img/solutions/61842ace1c15d2c973.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-AP680P-L.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-ap680-l/",
+      "brand": "ruijie",
+      "name": "RG-AP680-L",
+      "verification": "Source title checked",
+      "image": "img/solutions/61842ace1c15d2c973.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-AP680P-L.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-ap840-l/",
+      "brand": "ruijie",
+      "name": "RG-AP840-L",
+      "verification": "Source title checked",
+      "image": "img/solutions/31b2abfb26d3274e5a.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-AP840-L-pict-scaled.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/rg-ap820-lv3/",
+      "brand": "ruijie",
+      "name": "RG-AP820-L(V3)",
+      "verification": "Source title checked",
+      "image": "img/solutions/6720c4177c5fa6f3f1.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/RG-AP820-L-V3.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nssp15700/",
+      "brand": "sonicwall",
+      "name": "NSsp15700",
+      "verification": "Source title checked",
+      "image": "img/solutions/13e4b9544d484ffb93.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/NSsp15700.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nssp13700/",
+      "brand": "sonicwall",
+      "name": "NSsp13700",
+      "verification": "Source title checked",
+      "image": "img/solutions/6c31cc002100144b4a.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nssp11700/",
+      "brand": "sonicwall",
+      "name": "NSsp11700",
+      "verification": "Source title checked",
+      "image": "img/solutions/32da89aa34d6abde7e.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/NSsp11700.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nssp10700/",
+      "brand": "sonicwall",
+      "name": "NSsp10700",
+      "verification": "Source title checked",
+      "image": "img/solutions/a382f4fe41f9fc9bae.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/NSsp10700.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nsa6700/",
+      "brand": "sonicwall",
+      "name": "NSa6700",
+      "verification": "Source title checked",
+      "image": "img/solutions/6c31cc002100144b4a.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nsa5700/",
+      "brand": "sonicwall",
+      "name": "NSa5700",
+      "verification": "Source title checked",
+      "image": "img/solutions/50291accfdbbdf4484.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/NSa5700.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nsa4700/",
+      "brand": "sonicwall",
+      "name": "NSa4700",
+      "verification": "Source title checked",
+      "image": "img/solutions/6c31cc002100144b4a.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nsa3700/",
+      "brand": "sonicwall",
+      "name": "NSa3700",
+      "verification": "Source title checked",
+      "image": "img/solutions/5940310075d9a72e9c.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/NSa3700.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/nsa2700/",
+      "brand": "sonicwall",
+      "name": "NSa2700",
+      "verification": "Source title checked",
+      "image": "img/solutions/6c31cc002100144b4a.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tz670/",
+      "brand": "sonicwall",
+      "name": "TZ670",
+      "verification": "Source title checked",
+      "image": "img/solutions/51423ddeb93cd17963.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/TZ670.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/cpe-610/",
+      "brand": "tplink",
+      "name": "CPE 610",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/cpe710/",
+      "brand": "tplink",
+      "name": "CPE710",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tapo-c520ws/",
+      "brand": "tplink",
+      "name": "Tapo C520WS",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tapo-c310/",
+      "brand": "tplink",
+      "name": "Tapo C310",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tapo-c200/",
+      "brand": "tplink",
+      "name": "Tapo C200",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-wn725n/",
+      "brand": "tplink",
+      "name": "TL-WN725N",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-mr105/",
+      "brand": "tplink",
+      "name": "TL-MR105",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-mr100/",
+      "brand": "tplink",
+      "name": "TL-MR100",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tl-wr840n/",
+      "brand": "tplink",
+      "name": "TL-WR840N",
+      "verification": "Source title checked",
+      "image": "img/solutions/9ac1135e379965644f.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/TL-WR840N.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/deco-x50/",
+      "brand": "tplink",
+      "name": "Deco X50",
+      "verification": "Source title checked",
+      "image": "img/solutions/7303fb529eb39c7df5.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-nvr2016h/",
+      "brand": "vigi",
+      "name": "VIGI NVR2016H",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-nvr2016h-16mp/",
+      "brand": "vigi",
+      "name": "VIGI NVR2016H-16MP",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-nvr4032h/",
+      "brand": "vigi",
+      "name": "VIGI NVR4032H",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-nvr1004h-4p/",
+      "brand": "vigi",
+      "name": "VIGI NVR1004H-4P",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c240/",
+      "brand": "vigi",
+      "name": "VIGI SP9030",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c250/",
+      "brand": "vigi",
+      "name": "VIGI C250",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c340/",
+      "brand": "vigi",
+      "name": "VIGI C340",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c340s/",
+      "brand": "vigi",
+      "name": "VIGI C340S",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c385/",
+      "brand": "vigi",
+      "name": "VIGI C385",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c450/",
+      "brand": "vigi",
+      "name": "VIGI C450",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ideahub-s2/",
+      "brand": "huawei",
+      "name": "IdeaHub S2",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/ideahub-board-2/",
+      "brand": "huawei",
+      "name": "IdeaHub Board 2",
+      "verification": "Source title checked",
+      "image": "img/solutions/2fac3e7e057a34efa2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r5010-high-speed-5g-router/",
+      "brand": "robustel",
+      "name": "R5010 High Speed 5G Router",
+      "verification": "Source title checked",
+      "image": "img/solutions/48b2854d6642c67008.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R5010-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r5020-lite-5g-router/",
+      "brand": "robustel",
+      "name": "R5020 Lite 5G Router",
+      "verification": "Source title checked",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r5020-5g-iot-router/",
+      "brand": "robustel",
+      "name": "R5020 5G IoT Router",
+      "verification": "Source title checked",
+      "image": "img/solutions/fe7f5146ccd66703c9.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R5020-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r2011-versatile-iot-router-with-5-ethernet-ports/",
+      "brand": "robustel",
+      "name": "R2011 Versatile IoT Router with 5 Ethernet Ports",
+      "verification": "Source title checked",
+      "image": "img/solutions/86e227abd82415747e.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R2011-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r2010-dual-sim-vpn-iot-gateway/",
+      "brand": "robustel",
+      "name": "R2010 Dual-SIM VPN IoT Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/0420f1a4b787521347.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R2010-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r2110-high-speed-smart-lte-lte-a-iot-gateway/",
+      "brand": "robustel",
+      "name": "R2110 High Speed Smart LTE / LTE-A IoT Gateway",
+      "verification": "Source title checked",
+      "image": "img/solutions/c5519b71356db43adb.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R2110-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r1510-industrial-cellular-vpn-router/",
+      "brand": "robustel",
+      "name": "R1510 Industrial Cellular VPN Router",
+      "verification": "Source title checked",
+      "image": "img/solutions/2a607ea7f287414be1.png",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/R1510-300x300.png"
+    },
+    {
+      "url": "https://www.wpteknologi.com/r1520-dual-sim-cellular-vpn-router/",
+      "brand": "robustel",
+      "name": "R1520 Dual-SIM Cellular VPN Router",
+      "verification": "Source title checked",
+      "image": "img/solutions/a20b219b9b10201cf1.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tz570/",
+      "brand": "sonicwall",
+      "name": "TZ570",
+      "verification": "Source title checked",
+      "image": "img/solutions/18d5781a2c935a1f23.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/TZ570.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tz470/",
+      "brand": "sonicwall",
+      "name": "TZ470",
+      "verification": "Source title checked",
+      "image": "img/solutions/6c31cc002100144b4a.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tz370/",
+      "brand": "sonicwall",
+      "name": "TZ370",
+      "verification": "Source title checked",
+      "image": "img/solutions/ab687d0ddf9ea9a216.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/TZ370.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/tz270/",
+      "brand": "sonicwall",
+      "name": "TZ270",
+      "verification": "Source title checked",
+      "image": "img/solutions/754305b7f065f59037.webp",
+      "image_type": "product image",
+      "image_source": "https://www.wpteknologi.com/wp-content/uploads/2024/12/TZ270.webp"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c485/",
+      "brand": "vigi",
+      "name": "VIGI C485",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c540v/",
+      "brand": "vigi",
+      "name": "VIGI C540V",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "url": "https://www.wpteknologi.com/vigi-c540-4g/",
+      "brand": "vigi",
+      "name": "VIGI C540-4G",
+      "verification": "Source title checked",
+      "image": "img/solutions/ff8a9efd3f4a062f34.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "FireMon",
+      "brand": "firemon",
+      "url": "https://www.wpteknologi.com/firemon/",
+      "verification": "Source brand listing",
+      "image": "img/solutions/340fca9da872c4d4b2.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "One Identity",
+      "brand": "one-identity",
+      "url": "https://www.wpteknologi.com/one-identity/",
+      "verification": "Source brand listing",
+      "image": "img/brands/one-identity.svg",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Foglight by Quest",
+      "brand": "foglight",
+      "url": "https://www.wpteknologi.com/foglight-by-quest/",
+      "verification": "Source brand listing",
+      "image": "img/brands/quest.svg",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Toad by Quest",
+      "brand": "toad",
+      "url": "https://www.wpteknologi.com/toad-by-quest/",
+      "verification": "Source brand listing",
+      "image": "img/brands/quest.svg",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "SharePlex by Quest",
+      "brand": "shareplex",
+      "url": "https://www.wpteknologi.com/shareplex-by-quest/",
+      "verification": "Source brand listing",
+      "image": "img/brands/quest.svg",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "MariaDB",
+      "brand": "mariadb",
+      "url": "https://www.wpteknologi.com/mariadb/",
+      "verification": "Source brand listing",
+      "image": "img/brands/mariadb.svg",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Altai",
+      "brand": "altai",
+      "url": "https://www.wpteknologi.com/altai/",
+      "verification": "Source brand listing",
+      "image": "img/solutions/b2a28ff03dd6162006.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Linkyfi",
+      "brand": "linkyfi",
+      "url": "https://www.wpteknologi.com/linkyfi/",
+      "verification": "Source brand listing",
+      "image": "img/solutions/0a4d7a18b235eeb115.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Exos X 2U12",
+      "brand": "seagate",
+      "url": "https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x-2u12-DS1994-1-1809US-en_US.pdf",
+      "verification": "Source datasheet link",
+      "image": "img/solutions/223ecc72c210d83690.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Exos X 2U24",
+      "brand": "seagate",
+      "url": "https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x-2u24-DS1981-3-1903US-en_US.pdf",
+      "verification": "Source datasheet link",
+      "image": "img/solutions/223ecc72c210d83690.png",
+      "image_type": "brand logo"
+    },
+    {
+      "name": "Exos X 5U84",
+      "brand": "seagate",
+      "url": "https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x-5u84DS1982-5-2003US-en_US.pdf",
+      "verification": "Source datasheet link",
+      "image": "img/solutions/223ecc72c210d83690.png",
+      "image_type": "brand logo"
+    }
+  ]
+}
