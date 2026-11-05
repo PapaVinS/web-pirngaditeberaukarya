@@ -730,7 +730,29 @@ footer.ptk-contact a:hover {color:#fff}
 footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-top:14px;font-size:11px;color:#92969a;text-align:left}
 @media(max-width:1100px){.ptk-contact .contact-grid{grid-template-columns:1.2fr 1fr;gap:26px 32px}}
 @media(max-width:600px){footer.ptk-contact{padding-top:26px}.ptk-contact .contact-grid{grid-template-columns:1fr;gap:22px}.ptk-contact .contact-item{gap:14px}footer.ptk-contact h4{margin-bottom:7px}}
-</style><style>.product-details{display:block;margin-top:12px;color:#9a1c20;font-size:13px;font-weight:700}</style><style>.new-brand-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;padding:10px}.brands .new-brand-link img{width:132px;height:38px;object-fit:contain}.new-brand-link span{font-size:11px;color:#525760;line-height:1.2;text-align:center}</style><style>section.home-it-solutions{padding-top:32px}section.home-it-solutions h2{margin-top:0}@media(max-width:767px){section.home-it-solutions{padding-top:24px}}</style></head>
+</style><style>.product-details{display:block;margin-top:12px;color:#9a1c20;font-size:13px;font-weight:700}</style><style>.new-brand-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;padding:10px}.brands .new-brand-link img{width:132px;height:38px;object-fit:contain}.new-brand-link span{font-size:11px;color:#525760;line-height:1.2;text-align:center}</style><style>section.home-it-solutions{padding-top:32px}section.home-it-solutions h2{margin-top:0}@media(max-width:767px){section.home-it-solutions{padding-top:24px}}</style><style id="software-category-accordion">
+.software-category-grid{align-items:start}
+details.software-category{min-height:0!important;padding:0!important;display:block;overflow:hidden}
+.software-category summary{display:block;list-style:none;cursor:pointer;padding:24px}
+.software-category summary::-webkit-details-marker{display:none}
+.software-category summary:focus-visible{outline:2px solid #9a1c20;outline-offset:-4px}
+.software-category-title{display:block;font:700 20px/1.3 Manrope,Arial,sans-serif;color:#17191b;margin-bottom:10px}
+.software-category-description{display:block;font-size:14px;line-height:1.6;color:#6d7075}
+.software-category-count{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:12px;font-weight:800;color:#9a1c20}
+.software-category-indicator{font-size:24px;line-height:1}
+details.software-category[open]{grid-column:1/-1;border-color:#9a1c20}
+.software-category[open] .software-category-indicator{transform:rotate(45deg)}
+.software-category-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:0 24px 24px}
+.software-category-products article{display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid #d8dadd;border-radius:5px;background:#fff;min-width:0}
+.software-category-products h3{font-size:17px;margin:0;letter-spacing:0;color:#17191b}
+.software-category-products p{font-size:13px;line-height:1.6;margin:0;color:#6d7075}
+.software-category-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:auto}
+.software-category-links a{font-size:12px;font-weight:800;color:#9a1c20}
+@media(max-width:960px){.software-category-products{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.software-category-products{grid-template-columns:1fr;padding:0 20px 20px}.software-category summary{padding:20px}}
+</style><style id="products-dropdown-style">
+header .products-dropdown{position:relative;align-self:stretch;display:flex;align-items:center}header .products-dropdown summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;font-weight:inherit}header .products-dropdown summary::-webkit-details-marker{display:none}header .products-dropdown summary::after{content:"";width:6px;height:6px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-top:-4px}header .products-dropdown[open] summary{color:#b52228}header .products-submenu{position:absolute;top:100%;left:-16px;min-width:225px;padding:8px;background:white;border:1px solid #dee0e2;box-shadow:0 8px 24px #0002;z-index:100}header .products-submenu a{display:block;height:auto;padding:12px 14px;white-space:nowrap}header .products-submenu a:hover{background:#f4f5f6}header .products-submenu a::after{display:none!important}@media(max-width:960px){header .products-dropdown{display:block;align-self:auto}header .products-dropdown summary{padding:12px 0}header .products-submenu{position:static;box-shadow:none;min-width:0;margin-bottom:8px}}
+</style><style id="engineering-category-style">#engineering .grid{align-items:start}#engineering details.engineering-category{padding:0;min-height:0;display:block}#engineering .engineering-category summary{padding:24px;cursor:pointer;list-style:none}#engineering summary::-webkit-details-marker{display:none}#engineering summary h3{margin-top:0}#engineering .engineering-toggle{color:#b52228;font-size:13px;font-weight:700}#engineering .engineering-toggle::after{content:" +"}#engineering details[open] .engineering-toggle::after{content:" −"}#engineering .engineering-category-list{padding:0 24px 24px;display:grid;gap:10px}#engineering .engineering-category-list a{font-size:14px;color:#b52228;line-height:1.5}#engineering .engineering-category-list a:hover{text-decoration:underline}</style></head>
   <body id="top">
     <div class="util">
       <div class="wrap">
@@ -750,7 +772,7 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
         <nav id="mainnav" aria-label="Main navigation">
           <a class="is-active" href="#top" aria-current="page">Home</a>
           <a href="solutions.html">Solutions</a>
-          <a href="home.html#featured">Products</a>
+          <details class="products-dropdown"><summary>Products</summary><div class="products-submenu"><a href="software.html">Software product</a><a href="engineering-products.html">Engineering product</a></div></details>
           <a href="about.html">About PTK</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -805,39 +827,7 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
           </div>
         </div>
       </section>
-      <section id="software" class="soft">
-        <div class="wrap">
-          <h2 class="t">Software by category</h2>
-          <p class="lead">Choose a category, or filter the featured products by license type below.</p>
-          <div class="grid">
-            <div class="card">
-              <h3>Creative and design</h3>
-              <p>Graphics, photo, video, and presentation tools.</p>
-              <span class="ex">Adobe, CorelDRAW, Wondershare</span>
-            </div>
-            <div class="card">
-              <h3>CAD, BIM and engineering</h3>
-              <p>Design and modelling for buildings and products.</p>
-              <span class="ex">Autodesk, SketchUp</span>
-            </div>
-            <div class="card">
-              <h3>Developer tools and components</h3>
-              <p>IDEs, UI controls, and document libraries.</p>
-              <span class="ex">DevExpress, JetBrains, Aspose</span>
-            </div>
-            <div class="card">
-              <h3>Database and data management</h3>
-              <p>Build, query, and manage databases.</p>
-              <span class="ex">Quest Toad, Navicat</span>
-            </div>
-            <div class="card">
-              <h3>Research and analytics</h3>
-              <p>Statistics and qualitative research software.</p>
-              <span class="ex">Stata, SmartPLS, NVivo</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="software" class="soft"><div class="wrap"><h2 class="t">Software by category</h2><p class="lead">Select a category to expand its products, or browse Featured Software below.</p><div class="grid software-category-grid"><details class="card software-category"><summary><span class="software-category-title">Creative and design</span><span class="software-category-description">Graphics, photo and video tools.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="0"></div></details><details class="card software-category"><summary><span class="software-category-title">CAD, BIM and engineering</span><span class="software-category-description">Design and modelling for buildings and products.</span><span class="software-category-count">2 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="1"></div></details><details class="card software-category"><summary><span class="software-category-title">Developer tools and components</span><span class="software-category-description">IDEs, UI controls and document libraries.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="2"></div></details><details class="card software-category"><summary><span class="software-category-title">Database and data management</span><span class="software-category-description">Database development, analytics, monitoring and replication.</span><span class="software-category-count">5 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="3"></div></details><details class="card software-category"><summary><span class="software-category-title">Research and analytics</span><span class="software-category-description">Statistics, modelling and qualitative analysis.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="4"></div></details><details class="card software-category"><summary><span class="software-category-title">IT research and advisory</span><span class="software-category-description">Research and advisory options for business and technology leaders.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="5"></div></details><details class="card software-category"><summary><span class="software-category-title">Remote administration</span><span class="software-category-description">Remote terminal and system administration tools.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="6"></div></details><details class="card software-category"><summary><span class="software-category-title">Monitoring and IT management</span><span class="software-category-description">Observability, performance and IT service management.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="7"></div></details><details class="card software-category"><summary><span class="software-category-title">Identity and access security</span><span class="software-category-description">Identity governance and privileged access management.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="8"></div></details></div></div></section>
       <section id="featured">
         <div class="wrap">
           <h2 class="t">Featured software</h2>
@@ -860,30 +850,12 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
           <h2 class="t">Engineering products</h2>
           <p class="lead">Our established range of industrial products, grouped by division.</p>
           <div class="grid">
-            <div class="card">
-              <h3>Electrical and power</h3>
-              <p>Switching and protection components.</p>
-            </div>
-            <div class="card">
-              <h3>Motor control</h3>
-              <p>Contactors, starters, and related parts.</p>
-            </div>
-            <div class="card">
-              <h3>Instrumentation</h3>
-              <p>Pressure, temperature, flow, and level.</p>
-            </div>
-            <div class="card">
-              <h3>Weighing</h3>
-              <p>Industrial and retail scales.</p>
-            </div>
-            <div class="card">
-              <h3>Control power</h3>
-              <p>Control power transformers and equipment.</p>
-            </div>
-            <div class="card">
-              <h3>Replacement parts</h3>
-              <p>Spare and replacement parts.</p>
-            </div>
+            <details class="card engineering-category"><summary><h3>Electrical and power</h3><p>Switching and protection components.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=IsolationSwitch#catalog">Isolation switches</a><a href="engineering-products.html?category=Installation%20In%20Switchgear#catalog">Installation In Switchgear</a><a href="engineering-products.html?category=Equipment#catalog">Equipment</a><a href="engineering-products.html?category=Smoother#catalog">Smoother</a></div></details>
+            <details class="card engineering-category"><summary><h3>Motor control</h3><p>Contactors, starters, and related parts.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=Contractors#catalog">Contactors</a><a href="engineering-products.html?category=Starters#catalog">Starters</a></div></details>
+            <details class="card engineering-category"><summary><h3>Instrumentation</h3><p>Pressure, temperature, flow, and level.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=Air-Gas%20Flow%20Meters#catalog">Air-Gas Flow Meters</a><a href="engineering-products.html?category=Bimetallic%20Switches#catalog">Bimetallic Switches</a><a href="engineering-products.html?category=Bimetallic%20Thermometers#catalog">Bimetallic Thermometers</a><a href="engineering-products.html?category=Calibration%20service#catalog">Calibration service</a><a href="engineering-products.html?category=Capacitive%20-%20Fuel%20Energy#catalog">Capacitive - Fuel Energy</a><a href="engineering-products.html?category=Channel%20Thermostats#catalog">Channel Thermostats</a><a href="engineering-products.html?category=Compact%20Pressure%20Switches#catalog">Compact Pressure Switches</a><a href="engineering-products.html?category=Coriolis%20mass%20flow%20meters#catalog">Coriolis mass flow meters</a><a href="engineering-products.html?category=Differential%20Pressure%20Switches%20Air%20Side#catalog">Differential Pressure Switches Air Side</a><a href="engineering-products.html?category=Differential%20Pressure%20Transmitter%20NAT%20NAT#catalog">Differential Pressure Transmitter NAT NAT</a><a href="engineering-products.html?category=Differential%20Pressure%20Transmitters%20Air%20Side#catalog">Differential Pressure Transmitters Air Side</a><a href="engineering-products.html?category=Digital%20Room%20Thermostats#catalog">Digital Room Thermostats</a><a href="engineering-products.html?category=Electronic%20Pressure%20Switches#catalog">Electronic Pressure Switches</a><a href="engineering-products.html?category=Energy%20Heat%20Meters#catalog">Energy Heat Meters</a><a href="engineering-products.html?category=Evaluation%20Electronics#catalog">Evaluation Electronics</a><a href="engineering-products.html?category=Explosion%20Proof#catalog">Explosion Proof</a><a href="engineering-products.html?category=Flow%20Indicator#catalog">Flow Indicator</a><a href="engineering-products.html?category=Flow%20Switches#catalog">Flow Switches</a><a href="engineering-products.html?category=Frost%20Thermostats#catalog">Frost Thermostats</a><a href="engineering-products.html?category=Fuel%20Consumption#catalog">Fuel Consumption</a><a href="engineering-products.html?category=Gas%20Bottle%20Level#catalog">Gas Bottle Level</a><a href="engineering-products.html?category=Gas%20Density%20SF6#catalog">Gas Density SF6</a><a href="engineering-products.html?category=Gauges#catalog">Gauges</a><a href="engineering-products.html?category=Gauges%20Glasses#catalog">Gauges Glasses</a><a href="engineering-products.html?category=Hydrostatic%28Pressure%29#catalog">Hydrostatic(Pressure)</a><a href="engineering-products.html?category=Immersion%20Thermostats#catalog">Immersion Thermostats</a><a href="engineering-products.html?category=Installation%20Thermostats#catalog">Installation Thermostats</a><a href="engineering-products.html?category=Level%20Radars#catalog">Level Radars</a><a href="engineering-products.html?category=Level%20Switches#catalog">Level Switches</a><a href="engineering-products.html?category=Mechanical%20flowmeters#catalog">Mechanical flowmeters</a><a href="engineering-products.html?category=OEM%20Pressure%20Switches#catalog">OEM Pressure Switches</a><a href="engineering-products.html?category=Pick%20up%20and%20Amplifiers#catalog">Pick up and Amplifiers</a><a href="engineering-products.html?category=Pressure%20Other%20Explosion%20Proof#catalog">Pressure Other Explosion Proof</a><a href="engineering-products.html?category=Room%20Thermostats#catalog">Room Thermostats</a><a href="engineering-products.html?category=Signal%20Conditioning#catalog">Signal Conditioning</a><a href="engineering-products.html?category=Temperature%20Controls#catalog">Temperature Controls</a><a href="engineering-products.html?category=Trafag%20Pressure%20Stations#catalog">Trafag Pressure Stations</a><a href="engineering-products.html?category=Trafag%20Thermostats#catalog">Trafag Thermostats</a><a href="engineering-products.html?category=Ultrasonic%20Flow%20Meters#catalog">Ultrasonic Flow Meters</a><a href="engineering-products.html?category=Ultrasonic%20and%20Radar#catalog">Ultrasonic and Radar</a><a href="engineering-products.html?category=Variable%20Area%20Flowmeters#catalog">Variable Area Flowmeters</a><a href="engineering-products.html?category=Water%20Meters#catalog">Water Meters</a></div></details>
+            <details class="card engineering-category"><summary><h3>Weighing</h3><p>Industrial and retail scales.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=Counting%20Scales#catalog">Counting Scales</a><a href="engineering-products.html?category=Crane%20Weighing%20Hooks#catalog">Crane Weighing Hooks</a><a href="engineering-products.html?category=Floor%20Scales#catalog">Floor Scales</a><a href="engineering-products.html?category=Forklift%20Scales#catalog">Forklift Scales</a><a href="engineering-products.html?category=GRAM%20Indicators#catalog">GRAM Indicators</a><a href="engineering-products.html?category=Gas%20Cylinder%20Scales#catalog">Gas Cylinder Scales</a><a href="engineering-products.html?category=Pallet%20Trucks#catalog">Pallet Trucks</a><a href="engineering-products.html?category=Retail%20Compact%20Scales#catalog">Retail Compact Scales</a><a href="engineering-products.html?category=Retail%20Printing%20Scales#catalog">Retail Printing Scales</a><a href="engineering-products.html?category=Store%20Scales#catalog">Store Scales</a><a href="engineering-products.html?category=Wheel%20Axis%20Roaders#catalog">Wheel Axis Roaders</a></div></details>
+            <details class="card engineering-category"><summary><h3>Control power</h3><p>Control power transformers and equipment.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=ControlPower#catalog">Control power</a></div></details>
+            <details class="card engineering-category"><summary><h3>Replacement parts</h3><p>Spare and replacement parts.</p><span class="engineering-toggle">View categories</span></summary><div class="engineering-category-list"><a href="engineering-products.html?category=Parts#catalog">Parts</a><a href="engineering-products.html?category=Accessories#catalog">Accessories</a></div></details>
           </div>
         </div>
       </section>
@@ -913,12 +885,6 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
               <span>Reminders ahead of expiry.</span>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="experience">
-        <div class="wrap">
-          <h2 class="t">Project experience</h2>
-          <p class="lead">Experience supporting software procurement requirements for government institutions and enterprise customers. Customer names appear only with permission.</p>
         </div>
       </section>
       <section id="quote" class="soft">
@@ -1217,5 +1183,24 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
       });
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
-  </body>
+  <script id="software-category-behaviour">
+(function(){
+const products=[["SolarWinds Products", "SolarWinds", "Monitoring, observability, database performance and IT service management.", [], "https://www.solarwinds.com/products"], ["MariaDB OLAP", "MariaDB", "Database analytics solutions for analytical workloads. Edition and deployment scope confirmed on enquiry.", [], "https://mariadb.com/"], ["Foglight by Quest", "Quest", "Database performance monitoring, diagnostics and optimisation.", [], "https://www.quest.com/foglight"], ["SharePlex by Quest", "Quest", "Database replication and migration for data availability and reporting.", [], "https://www.wpteknologi.com/shareplex-by-quest/"], ["One Identity by Quest", "One Identity", "Identity governance, access management and privileged access security.", [], "https://www.oneidentity.com/"], ["Gartner Product", "Gartner", "Research and advisory across 23 business and technology functions.", ["Subscription"]], ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]], ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]], ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]], ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]], ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]], ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]], ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]], ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]], ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]], ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]], ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]], ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]], ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]], ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]]];
+const categories=[["Creative and design", "Graphics, photo and video tools.", ["Adobe Creative Cloud", "CorelDRAW", "Wondershare Filmora"]], ["CAD, BIM and engineering", "Design and modelling for buildings and products.", ["Autodesk AutoCAD", "SketchUp Pro"]], ["Developer tools and components", "IDEs, UI controls and document libraries.", ["DevExpress DXperience", "JetBrains All Products Pack", "Aspose Total for .NET"]], ["Database and data management", "Database development, analytics, monitoring and replication.", ["MariaDB OLAP", "Foglight by Quest", "SharePlex by Quest", "Toad for Oracle", "Navicat Premium"]], ["Research and analytics", "Statistics, modelling and qualitative analysis.", ["Stata MP", "SmartPLS Professional", "NVivo"]], ["IT research and advisory", "Research and advisory options for business and technology leaders.", ["Gartner Product"]], ["Remote administration", "Remote terminal and system administration tools.", ["MobaXterm"]], ["Monitoring and IT management", "Observability, performance and IT service management.", ["SolarWinds Products"]], ["Identity and access security", "Identity governance and privileged access management.", ["One Identity by Quest"]]];
+const byName=new Map(products.map(p=>[p[0],p]));
+document.querySelectorAll('.software-category-products').forEach(panel=>{
+ const names=categories[Number(panel.dataset.categoryIndex)][2];
+ names.forEach(name=>{
+  const p=byName.get(name);if(!p)return;
+  const card=document.createElement('article');
+  const title=document.createElement('h3');title.textContent=p[0];card.appendChild(title);
+  const description=document.createElement('p');description.textContent=p[2];card.appendChild(description);
+  const links=document.createElement('div');links.className='software-category-links';
+  const quote=document.createElement('a');quote.href='request-quotation.html?'+new URLSearchParams({principal:p[1]==='Developer'?'DevExpress':p[1],product:p[0]}).toString();quote.textContent='Request quotation →';links.appendChild(quote);
+  if(p[1]==='Gartner'||p[4]){const more=document.createElement('a');more.href=p[1]==='Gartner'?'gartner.html':p[4];more.textContent=p[1]==='Gartner'?'Explore Gartner Product →':'Product details ↗';if(p[1]!=='Gartner'){more.target='_blank';more.rel='noopener';}links.appendChild(more);}
+  card.appendChild(links);panel.appendChild(card);
+ });
+});
+})();
+</script><script id="products-dropdown-script">document.querySelectorAll('.products-dropdown').forEach(function(d){document.addEventListener('click',function(e){if(!d.contains(e.target))d.open=false});d.addEventListener('keydown',function(e){if(e.key==='Escape'){d.open=false;d.querySelector('summary').focus()}})});</script></body>
 </html>

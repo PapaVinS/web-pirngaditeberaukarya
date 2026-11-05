@@ -535,6 +535,8 @@ header .btn.sm{min-height:48px;display:inline-flex;align-items:center;justify-co
 @media(max-width:1300px){.util .wrap{width:calc(100% - 80px)}}
 @media(max-width:960px){header nav,header .btn.sm{display:none}header .menu-btn{display:grid;place-items:center;margin-left:auto;width:42px;height:42px;padding:0;border:1px solid #dee0e2;border-radius:5px;background:#fff;color:#17191b;font-size:21px;cursor:pointer}header nav.open{display:flex;position:absolute;top:86px;left:0;right:0;height:auto;flex-direction:column;gap:0;padding:12px 24px;background:#fff;box-shadow:0 12px 15px rgba(0,0,0,.08)}header nav.open a{display:block;padding:12px 0}header nav.open a.is-active:after{display:none}}
 @media(max-width:767px){.util{display:none}header nav.open{top:72px;padding:10px 20px 14px}}
+</style><style id="products-dropdown-style">
+header .products-dropdown{position:relative;align-self:stretch;display:flex;align-items:center}header .products-dropdown summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;font-weight:inherit}header .products-dropdown summary::-webkit-details-marker{display:none}header .products-dropdown summary::after{content:"";width:6px;height:6px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-top:-4px}header .products-dropdown[open] summary{color:#b52228}header .products-submenu{position:absolute;top:100%;left:-16px;min-width:225px;padding:8px;background:white;border:1px solid #dee0e2;box-shadow:0 8px 24px #0002;z-index:100}header .products-submenu a{display:block;height:auto;padding:12px 14px;white-space:nowrap}header .products-submenu a:hover{background:#f4f5f6}header .products-submenu a::after{display:none!important}@media(max-width:960px){header .products-dropdown{display:block;align-self:auto}header .products-dropdown summary{padding:12px 0}header .products-submenu{position:static;box-shadow:none;min-width:0;margin-bottom:8px}}
 </style></head>
   <body id="top"><div class="util">
       <div class="wrap">
@@ -553,7 +555,7 @@ header .btn.sm{min-height:48px;display:inline-flex;align-items:center;justify-co
         <nav id="mainnav" aria-label="Main navigation">
           <a href="home.html#top">Home</a>
           <a href="solutions.html">Solutions</a>
-          <a class="is-active" href="home.html#featured" aria-current="page">Products</a>
+          <details class="products-dropdown"><summary>Products</summary><div class="products-submenu"><a href="software.html">Software product</a><a href="engineering-products.html">Engineering product</a></div></details>
           <a href="about.html">About PTK</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -566,4 +568,4 @@ const toggle=document.getElementById('menu-btn'),nav=document.getElementById('ma
 if(toggle&&nav)toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
 const year=document.getElementById('y');if(year)year.textContent=new Date().getFullYear();
 const search=document.getElementById('g-search');if(search)search.addEventListener('input',()=>{let n=0;document.querySelectorAll('[data-function]').forEach(c=>{c.hidden=!c.dataset.function.includes(search.value.toLowerCase().trim());if(!c.hidden)n++});document.getElementById('g-count').textContent=n+' functions found';});
-</script></body></html>
+</script><script id="products-dropdown-script">document.querySelectorAll('.products-dropdown').forEach(function(d){document.addEventListener('click',function(e){if(!d.contains(e.target))d.open=false});d.addEventListener('keydown',function(e){if(e.key==='Escape'){d.open=false;d.querySelector('summary').focus()}})});</script></body></html>

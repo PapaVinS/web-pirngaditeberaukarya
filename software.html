@@ -492,7 +492,29 @@ footer.ptk-contact a:hover {color:#fff}
 footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-top:14px;font-size:11px;color:#92969a;text-align:left}
 @media(max-width:1100px){.ptk-contact .contact-grid{grid-template-columns:1.2fr 1fr;gap:26px 32px}}
 @media(max-width:600px){footer.ptk-contact{padding-top:26px}.ptk-contact .contact-grid{grid-template-columns:1fr;gap:22px}.ptk-contact .contact-item{gap:14px}footer.ptk-contact h4{margin-bottom:7px}}
-</style><style>.product-details{display:block;margin-top:12px;color:#9a1c20;font-size:13px;font-weight:700}</style></head>
+</style><style>.product-details{display:block;margin-top:12px;color:#9a1c20;font-size:13px;font-weight:700}</style><style id="software-category-accordion">
+.software-category-grid{align-items:start}
+details.software-category{min-height:0!important;padding:0!important;display:block;overflow:hidden}
+.software-category summary{display:block;list-style:none;cursor:pointer;padding:24px}
+.software-category summary::-webkit-details-marker{display:none}
+.software-category summary:focus-visible{outline:2px solid #9a1c20;outline-offset:-4px}
+.software-category-title{display:block;font:700 20px/1.3 Manrope,Arial,sans-serif;color:#17191b;margin-bottom:10px}
+.software-category-description{display:block;font-size:14px;line-height:1.6;color:#6d7075}
+.software-category-count{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:12px;font-weight:800;color:#9a1c20}
+.software-category-indicator{font-size:24px;line-height:1}
+details.software-category[open]{grid-column:1/-1;border-color:#9a1c20}
+.software-category[open] .software-category-indicator{transform:rotate(45deg)}
+.software-category-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:0 24px 24px}
+.software-category-products article{display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid #d8dadd;border-radius:5px;background:#fff;min-width:0}
+.software-category-products h3{font-size:17px;margin:0;letter-spacing:0;color:#17191b}
+.software-category-products p{font-size:13px;line-height:1.6;margin:0;color:#6d7075}
+.software-category-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:auto}
+.software-category-links a{font-size:12px;font-weight:800;color:#9a1c20}
+@media(max-width:960px){.software-category-products{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.software-category-products{grid-template-columns:1fr;padding:0 20px 20px}.software-category summary{padding:20px}}
+</style><style id="software-cta-spacing">section.software-cta{padding:32px 0}section.software-cta h2{margin:0 0 12px}section.software-cta p{margin:0 0 18px}section.software-cta .btn{margin-right:12px}@media(max-width:767px){section.software-cta{padding:24px 0}}</style><style id="products-dropdown-style">
+header .products-dropdown{position:relative;align-self:stretch;display:flex;align-items:center}header .products-dropdown summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;font-weight:inherit}header .products-dropdown summary::-webkit-details-marker{display:none}header .products-dropdown summary::after{content:"";width:6px;height:6px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-top:-4px}header .products-dropdown[open] summary{color:#b52228}header .products-submenu{position:absolute;top:100%;left:-16px;min-width:225px;padding:8px;background:white;border:1px solid #dee0e2;box-shadow:0 8px 24px #0002;z-index:100}header .products-submenu a{display:block;height:auto;padding:12px 14px;white-space:nowrap}header .products-submenu a:hover{background:#f4f5f6}header .products-submenu a::after{display:none!important}@media(max-width:960px){header .products-dropdown{display:block;align-self:auto}header .products-dropdown summary{padding:12px 0}header .products-submenu{position:static;box-shadow:none;min-width:0;margin-bottom:8px}}
+</style><style id="software-cta-columns">.software-cta-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}.software-cta-panel{display:flex;flex-direction:column;align-items:flex-start}.software-cta-panel h2{font-size:24px;line-height:1.3}.software-cta-panel p{flex:1}.software-cta-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.software-cta-actions .btn{margin-right:0}@media(max-width:767px){.software-cta-columns{grid-template-columns:1fr;gap:32px}}</style></head>
   <body>
     <div class="util">
       <div class="wrap">
@@ -512,7 +534,7 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
         <nav id="mainnav" aria-label="Main navigation">
           <a href="home.html#top">Home</a>
           <a href="solutions.html">Solutions</a>
-          <a href="home.html#featured" class="active" aria-current="page">Products</a>
+          <details class="products-dropdown"><summary>Products</summary><div class="products-submenu"><a href="software.html">Software product</a><a href="engineering-products.html">Engineering product</a></div></details>
           <a href="about.html">About PTK</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -526,59 +548,17 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
           <p>Browse our comprehensive range of software solutions. We support a variety of licensing models including subscriptions, perpetual licenses, renewals, and enterprise volume arrangements.</p>
         </div>
       </div>
-      <section id="categories" class="soft">
-        <div class="wrap">
-          <h2 class="t">Software Categories</h2>
-          <p class="lead">Explore our software portfolio by specific industry and application domain.</p>
-          <div class="grid">
-            <div class="card">
-              <h3>Creative and design</h3>
-              <p>Graphics, photo, video, and presentation tools.</p>
-              <span class="ex">Adobe, CorelDRAW, Wondershare</span>
-            </div>
-            <div class="card">
-              <h3>CAD, BIM and engineering</h3>
-              <p>Design and modelling for buildings and products.</p>
-              <span class="ex">Autodesk, SketchUp</span>
-            </div>
-            <div class="card">
-              <h3>Developer tools and components</h3>
-              <p>IDEs, UI controls, and document libraries.</p>
-              <span class="ex">DevExpress, JetBrains, Aspose</span>
-            </div>
-            <div class="card">
-              <h3>Database and data management</h3>
-              <p>Build, query, and manage databases.</p>
-              <span class="ex">Quest Toad, Navicat</span>
-            </div>
-            <div class="card">
-              <h3>Research and analytics</h3>
-              <p>Statistics and qualitative research software.</p>
-              <span class="ex">Stata, SmartPLS, Lumivero / NVivo</span>
-            </div>
-            <div class="card">
-              <h3>IT research and advisory</h3>
-              <p>Research subscriptions for technology leaders.</p>
-              <span class="ex">Gartner</span>
-            </div>
-            <div class="card">
-              <h3>Remote administration</h3>
-              <p>Advanced terminal and network administration tools.</p>
-              <span class="ex">MobaXterm</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="categories" class="soft"><div class="wrap"><h2 class="t">Software by category</h2><p class="lead">Select a category to expand its products, or browse Featured Software below.</p><div class="grid software-category-grid"><details class="card software-category"><summary><span class="software-category-title">Creative and design</span><span class="software-category-description">Graphics, photo and video tools.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="0"></div></details><details class="card software-category"><summary><span class="software-category-title">CAD, BIM and engineering</span><span class="software-category-description">Design and modelling for buildings and products.</span><span class="software-category-count">2 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="1"></div></details><details class="card software-category"><summary><span class="software-category-title">Developer tools and components</span><span class="software-category-description">IDEs, UI controls and document libraries.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="2"></div></details><details class="card software-category"><summary><span class="software-category-title">Database and data management</span><span class="software-category-description">Database development, analytics, monitoring and replication.</span><span class="software-category-count">5 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="3"></div></details><details class="card software-category"><summary><span class="software-category-title">Research and analytics</span><span class="software-category-description">Statistics, modelling and qualitative analysis.</span><span class="software-category-count">3 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="4"></div></details><details class="card software-category"><summary><span class="software-category-title">IT research and advisory</span><span class="software-category-description">Research and advisory options for business and technology leaders.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="5"></div></details><details class="card software-category"><summary><span class="software-category-title">Remote administration</span><span class="software-category-description">Remote terminal and system administration tools.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="6"></div></details><details class="card software-category"><summary><span class="software-category-title">Monitoring and IT management</span><span class="software-category-description">Observability, performance and IT service management.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="7"></div></details><details class="card software-category"><summary><span class="software-category-title">Identity and access security</span><span class="software-category-description">Identity governance and privileged access management.</span><span class="software-category-count">1 products <span class="software-category-indicator" aria-hidden="true">+</span></span></summary><div class="software-category-products" data-category-index="8"></div></details></div></div></section>
       <section id="catalog">
         <div class="wrap">
-          <h2 class="t">Product Explorer</h2>
+          <h2 class="t">Featured Software</h2>
           <p class="lead">Filter available software by your required licensing model to find the right fit for your organization. Please request a formal quotation for exact pricing.</p>
           <div class="chips" id="chips"></div>
           <div class="grid" id="prod"></div>
           <p class="note">License tags indicate common procurement options. Please confirm specific availability and terms for your organization type with our licensing team.</p>
         </div>
       </section>
-    <section class="soft"><div class="wrap"><h2>Gartner research &amp; advisory by function</h2><p>Explore all 23 business and technology functions and prepare a focused enquiry.</p><a class="btn" href="gartner.html">Explore Gartner Product</a></div></section><section class="soft"><div class="wrap"><h2>Explore IT solutions &amp; products</h2><p>Browse eight solution areas, technology brands and their product catalogues.</p><a class="btn" href="solutions.html">Explore solutions</a> <a href="it-products.html">Browse products →</a></div></section></main>
+    <section class="soft software-cta"><div class="wrap software-cta-columns"><div class="software-cta-panel"><h2>Gartner research &amp; advisory by function</h2><p>Explore all 23 business and technology functions and prepare a focused enquiry.</p><a class="btn" href="gartner.html">Explore Gartner Product</a></div><div class="software-cta-panel"><h2>Explore IT solutions &amp; products</h2><p>Browse eight solution areas, technology brands and their product catalogues.</p><div class="software-cta-actions"><a class="btn" href="solutions.html">Explore solutions</a><a href="it-products.html">Browse products →</a></div></div></div></section></main>
     <footer id="contact" class="ptk-contact"><div class="wrap"><div class="contact-grid"><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><h4>Address</h4><p>Jalan Jaksa No. 7D, Kebon Sirih, Menteng<br>Jakarta Pusat, DKI Jakarta 10340</p></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7c-2 4 3 9 7 8l1-2-3-1-1 1-2-2 1-1-1-3Z"/></svg><div><h4>WhatsApp</h4><a href="https://wa.me/6285811151135" target="_blank" rel="noopener">085811151135</a><a href="https://wa.me/6282122167320" target="_blank" rel="noopener">082122167320</a></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg><div><h4>Email</h4><a href="mailto:romiyan@pirngaditeberaukarya.com">romiyan@pirngaditeberaukarya.com</a><a href="mailto:info@pirngaditeberaukarya.com">info@pirngaditeberaukarya.com</a><a href="mailto:corp.pirngaditeberaukarya@gmail.com">corp.pirngaditeberaukarya@gmail.com</a></div></div><div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M11 17v-7M11 13c0-4 6-4 6 0v4"/><circle cx="7" cy="7" r=".5"/></svg><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/company/pirngaditeberaukarya/" target="_blank" rel="noopener">PT. Pirngadi Teberau Karya ↗</a></div></div></div><div class="copy">&copy; <span id="y">2026</span> PT. Pirngadi Teberau Karya. All rights reserved. Privacy policy &middot; Terms of use</div></div></footer>
     <script>
       var menuBtn = document.getElementById("menu-btn"), mainNav = document.getElementById("mainnav");
@@ -599,28 +579,7 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
           menuBtn.textContent = "\u2630";
         };
       });
-      var P = [
-["SolarWinds Products", "SolarWinds", "Monitoring, observability, database performance and IT service management.", [], "https://www.solarwinds.com/products"],
-["MariaDB OLAP", "MariaDB", "Database analytics solutions for analytical workloads. Edition and deployment scope confirmed on enquiry.", [], "https://mariadb.com/"],
-["Foglight by Quest", "Quest", "Database performance monitoring, diagnostics and optimisation.", [], "https://www.quest.com/foglight"],
-["SharePlex by Quest", "Quest", "Database replication and migration for data availability and reporting.", [], "https://www.wpteknologi.com/shareplex-by-quest/"],
-["One Identity by Quest", "One Identity", "Identity governance, access management and privileged access security.", [], "https://www.oneidentity.com/"],
-        ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]],
-        ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]],
-        ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]],
-        ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]],
-        ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]],
-        ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]],
-        ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]],
-        ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]],
-        ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]],
-        ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]],
-        ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]],
-        ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]],
-        ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]],
-        ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]],
-        ["Gartner for IT Leaders", "Gartner", "Research and advisory access.", ["Subscription"]]
-      ];
+      var P = [["SolarWinds Products", "SolarWinds", "Monitoring, observability, database performance and IT service management.", [], "https://www.solarwinds.com/products"], ["MariaDB OLAP", "MariaDB", "Database analytics solutions for analytical workloads. Edition and deployment scope confirmed on enquiry.", [], "https://mariadb.com/"], ["Foglight by Quest", "Quest", "Database performance monitoring, diagnostics and optimisation.", [], "https://www.quest.com/foglight"], ["SharePlex by Quest", "Quest", "Database replication and migration for data availability and reporting.", [], "https://www.wpteknologi.com/shareplex-by-quest/"], ["One Identity by Quest", "One Identity", "Identity governance, access management and privileged access security.", [], "https://www.oneidentity.com/"], ["Gartner Product", "Gartner", "Research and advisory across 23 business and technology functions.", ["Subscription"]], ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]], ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]], ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]], ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]], ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]], ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]], ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]], ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]], ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]], ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]], ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]], ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]], ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]], ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]]];
       var F = ["All", "Subscription", "Perpetual", "Renewal", "Floating", "Government"],
         cur = "All";
       var chips = document.getElementById("chips"),
@@ -673,5 +632,24 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
       });
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>
-  </body>
+  <script id="software-category-behaviour">
+(function(){
+const products=[["SolarWinds Products", "SolarWinds", "Monitoring, observability, database performance and IT service management.", [], "https://www.solarwinds.com/products"], ["MariaDB OLAP", "MariaDB", "Database analytics solutions for analytical workloads. Edition and deployment scope confirmed on enquiry.", [], "https://mariadb.com/"], ["Foglight by Quest", "Quest", "Database performance monitoring, diagnostics and optimisation.", [], "https://www.quest.com/foglight"], ["SharePlex by Quest", "Quest", "Database replication and migration for data availability and reporting.", [], "https://www.wpteknologi.com/shareplex-by-quest/"], ["One Identity by Quest", "One Identity", "Identity governance, access management and privileged access security.", [], "https://www.oneidentity.com/"], ["Gartner Product", "Gartner", "Research and advisory across 23 business and technology functions.", ["Subscription"]], ["DevExpress DXperience", "Developer", "UI controls for .NET and web apps.", ["Subscription", "Renewal"]], ["Adobe Creative Cloud", "Adobe", "Creative apps for design, photo, and video.", ["Subscription", "Renewal"]], ["Autodesk AutoCAD", "Autodesk", "2D and 3D CAD design.", ["Subscription", "Renewal"]], ["CorelDRAW", "CorelDRAW", "Vector graphics and illustration.", ["Perpetual", "Subscription"]], ["SketchUp Pro", "SketchUp", "3D modelling for design and construction.", ["Subscription", "Renewal"]], ["Wondershare Filmora", "Wondershare", "Video editing software.", ["Subscription", "Perpetual"]], ["Stata MP", "Stata", "Statistical software for research.", ["Floating", "Government"]], ["SmartPLS Professional", "SmartPLS", "Structural equation modelling.", ["Floating"]], ["NVivo", "Lumivero", "Qualitative data analysis.", ["Subscription", "Government"]], ["JetBrains All Products Pack", "JetBrains", "IDEs for every major language.", ["Subscription", "Renewal"]], ["Toad for Oracle", "Quest", "Database development and administration.", ["Subscription"]], ["Navicat Premium", "Navicat", "Multi-database management.", ["Perpetual"]], ["MobaXterm", "MobaXterm", "Remote administration toolbox.", ["Perpetual"]], ["Aspose Total for .NET", "Aspose", "Document and file format APIs.", ["Subscription"]]];
+const categories=[["Creative and design", "Graphics, photo and video tools.", ["Adobe Creative Cloud", "CorelDRAW", "Wondershare Filmora"]], ["CAD, BIM and engineering", "Design and modelling for buildings and products.", ["Autodesk AutoCAD", "SketchUp Pro"]], ["Developer tools and components", "IDEs, UI controls and document libraries.", ["DevExpress DXperience", "JetBrains All Products Pack", "Aspose Total for .NET"]], ["Database and data management", "Database development, analytics, monitoring and replication.", ["MariaDB OLAP", "Foglight by Quest", "SharePlex by Quest", "Toad for Oracle", "Navicat Premium"]], ["Research and analytics", "Statistics, modelling and qualitative analysis.", ["Stata MP", "SmartPLS Professional", "NVivo"]], ["IT research and advisory", "Research and advisory options for business and technology leaders.", ["Gartner Product"]], ["Remote administration", "Remote terminal and system administration tools.", ["MobaXterm"]], ["Monitoring and IT management", "Observability, performance and IT service management.", ["SolarWinds Products"]], ["Identity and access security", "Identity governance and privileged access management.", ["One Identity by Quest"]]];
+const byName=new Map(products.map(p=>[p[0],p]));
+document.querySelectorAll('.software-category-products').forEach(panel=>{
+ const names=categories[Number(panel.dataset.categoryIndex)][2];
+ names.forEach(name=>{
+  const p=byName.get(name);if(!p)return;
+  const card=document.createElement('article');
+  const title=document.createElement('h3');title.textContent=p[0];card.appendChild(title);
+  const description=document.createElement('p');description.textContent=p[2];card.appendChild(description);
+  const links=document.createElement('div');links.className='software-category-links';
+  const quote=document.createElement('a');quote.href='request-quotation.html?'+new URLSearchParams({principal:p[1]==='Developer'?'DevExpress':p[1],product:p[0]}).toString();quote.textContent='Request quotation →';links.appendChild(quote);
+  if(p[1]==='Gartner'||p[4]){const more=document.createElement('a');more.href=p[1]==='Gartner'?'gartner.html':p[4];more.textContent=p[1]==='Gartner'?'Explore Gartner Product →':'Product details ↗';if(p[1]!=='Gartner'){more.target='_blank';more.rel='noopener';}links.appendChild(more);}
+  card.appendChild(links);panel.appendChild(card);
+ });
+});
+})();
+</script><script id="products-dropdown-script">document.querySelectorAll('.products-dropdown').forEach(function(d){document.addEventListener('click',function(e){if(!d.contains(e.target))d.open=false});d.addEventListener('keydown',function(e){if(e.key==='Escape'){d.open=false;d.querySelector('summary').focus()}})});</script></body>
 </html>

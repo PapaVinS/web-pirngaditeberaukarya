@@ -718,6 +718,8 @@ footer.ptk-contact a:hover {color:#fff}
 footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-top:14px;font-size:11px;color:#92969a;text-align:left}
 @media(max-width:1100px){.ptk-contact .contact-grid{grid-template-columns:1.2fr 1fr;gap:26px 32px}}
 @media(max-width:600px){footer.ptk-contact{padding-top:26px}.ptk-contact .contact-grid{grid-template-columns:1fr;gap:22px}.ptk-contact .contact-item{gap:14px}footer.ptk-contact h4{margin-bottom:7px}}
+</style><style id="products-dropdown-style">
+header .products-dropdown{position:relative;align-self:stretch;display:flex;align-items:center}header .products-dropdown summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:7px;font-weight:inherit}header .products-dropdown summary::-webkit-details-marker{display:none}header .products-dropdown summary::after{content:"";width:6px;height:6px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-top:-4px}header .products-dropdown[open] summary{color:#b52228}header .products-submenu{position:absolute;top:100%;left:-16px;min-width:225px;padding:8px;background:white;border:1px solid #dee0e2;box-shadow:0 8px 24px #0002;z-index:100}header .products-submenu a{display:block;height:auto;padding:12px 14px;white-space:nowrap}header .products-submenu a:hover{background:#f4f5f6}header .products-submenu a::after{display:none!important}@media(max-width:960px){header .products-dropdown{display:block;align-self:auto}header .products-dropdown summary{padding:12px 0}header .products-submenu{position:static;box-shadow:none;min-width:0;margin-bottom:8px}}
 </style></head>
 <body id="top">
 <div class="util">
@@ -738,7 +740,7 @@ footer.ptk-contact .copy {border-top:1px solid #45474a;margin:24px 0 0;padding-t
 <nav aria-label="Main navigation" id="mainnav">
 <a class="" href="home.html">Home</a>
 <a href="solutions.html">Solutions</a>
-<a class="" href="home.html#featured">Products</a>
+<details class="products-dropdown"><summary>Products</summary><div class="products-submenu"><a href="software.html">Software product</a><a href="engineering-products.html">Engineering product</a></div></details>
 <a href="about.html">About PTK</a>
 <a class="" href="#contact">Contact</a>
 </nav>
@@ -766,5 +768,5 @@ quoteForm.addEventListener('submit',event=>{event.preventDefault();if(!quoteForm
 document.getElementById('editQuote').addEventListener('click',()=>{quoteReview.hidden=true;quoteForm.elements.namedItem('name').focus();});
 quoteForm.addEventListener('input',()=>{quoteReview.hidden=true;});quoteForm.addEventListener('change',()=>{quoteReview.hidden=true;});
 document.getElementById('copyQuote').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('quoteSummary').textContent);document.getElementById('quoteStatus').textContent='Enquiry copied. Paste it into your email.';}catch(error){document.getElementById('quoteStatus').textContent='Please select and copy the enquiry text above.';}});
-</script></body>
+</script><script id="products-dropdown-script">document.querySelectorAll('.products-dropdown').forEach(function(d){document.addEventListener('click',function(e){if(!d.contains(e.target))d.open=false});d.addEventListener('keydown',function(e){if(e.key==='Escape'){d.open=false;d.querySelector('summary').focus()}})});</script></body>
 </html>
